@@ -1,0 +1,356 @@
+{
+  "num_queries": 48,
+  "models": {
+    "tfidf": {
+      "P@5": 0.6167,
+      "P@10": 0.6083
+    },
+    "bm25": {
+      "P@5": 0.625,
+      "P@10": 0.5917
+    },
+    "semantic": {
+      "P@5": 0.5667,
+      "P@10": 0.5667
+    }
+  },
+  "per_query": [
+    {
+      "query": "a heartbreaking story about family secrets in rural America...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.6
+    },
+    {
+      "query": "coming of age story with complex friendships...",
+      "tfidf_p@5": 0.2,
+      "tfidf_p@10": 0.2,
+      "bm25_p@5": 0.2,
+      "bm25_p@10": 0.3
+    },
+    {
+      "query": "a novel about identity and belonging in a foreign country...",
+      "tfidf_p@5": 0.4,
+      "tfidf_p@10": 0.7,
+      "bm25_p@5": 1.0,
+      "bm25_p@10": 0.9
+    },
+    {
+      "query": "interconnected stories about love and loss in a small town...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.8,
+      "bm25_p@5": 1.0,
+      "bm25_p@10": 0.9
+    },
+    {
+      "query": "a story about grief and moving on after tragedy...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.7,
+      "bm25_p@5": 1.0,
+      "bm25_p@10": 1.0
+    },
+    {
+      "query": "a thriller set in Japan with a detective protagonist...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.7,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.7
+    },
+    {
+      "query": "psychological thriller about a woman who cannot trust her ow...",
+      "tfidf_p@5": 0.4,
+      "tfidf_p@10": 0.4,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.5
+    },
+    {
+      "query": "detective investigating a murder in a locked room...",
+      "tfidf_p@5": 1.0,
+      "tfidf_p@10": 1.0,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.9
+    },
+    {
+      "query": "spy novel set during the Cold War...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.9,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.7
+    },
+    {
+      "query": "a crime novel with an unreliable narrator...",
+      "tfidf_p@5": 0.0,
+      "tfidf_p@10": 0.0,
+      "bm25_p@5": 0.0,
+      "bm25_p@10": 0.0
+    },
+    {
+      "query": "humanity's first contact with an alien civilization...",
+      "tfidf_p@5": 1.0,
+      "tfidf_p@10": 0.8,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.5
+    },
+    {
+      "query": "dystopian society controlled by an authoritarian government...",
+      "tfidf_p@5": 0.4,
+      "tfidf_p@10": 0.4,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.5
+    },
+    {
+      "query": "a space opera with epic battles across multiple planets...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.7,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.6
+    },
+    {
+      "query": "artificial intelligence becomes sentient and questions its e...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.5
+    },
+    {
+      "query": "time travel causing unintended consequences in the past...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.5,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.7
+    },
+    {
+      "query": "epic fantasy with magic systems and a chosen hero...",
+      "tfidf_p@5": 0.2,
+      "tfidf_p@10": 0.3,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.4
+    },
+    {
+      "query": "a world where dragons and humans coexist...",
+      "tfidf_p@5": 1.0,
+      "tfidf_p@10": 0.8,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.8
+    },
+    {
+      "query": "dark fantasy with morally ambiguous characters...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.5
+    },
+    {
+      "query": "fairy tale retelling from the villain's perspective...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.8,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.4
+    },
+    {
+      "query": "urban fantasy set in modern day New York...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.8
+    },
+    {
+      "query": "a slow burn romance between rivals forced to work together...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.7
+    },
+    {
+      "query": "historical romance set in Victorian England...",
+      "tfidf_p@5": 0.4,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.6
+    },
+    {
+      "query": "second chance romance between childhood sweethearts...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.7,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.7
+    },
+    {
+      "query": "forbidden love story with a tragic ending...",
+      "tfidf_p@5": 1.0,
+      "tfidf_p@10": 0.9,
+      "bm25_p@5": 1.0,
+      "bm25_p@10": 0.8
+    },
+    {
+      "query": "supernatural horror involving an ancient evil awakening...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.9,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.8
+    },
+    {
+      "query": "ghost story in an old haunted mansion...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.8,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.7
+    },
+    {
+      "query": "psychological horror where protagonist loses grip on reality...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.5,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.7
+    },
+    {
+      "query": "a story set during World War II from a civilian perspective...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.8,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.7
+    },
+    {
+      "query": "life in ancient Rome told through multiple characters...",
+      "tfidf_p@5": 1.0,
+      "tfidf_p@10": 1.0,
+      "bm25_p@5": 1.0,
+      "bm25_p@10": 0.7
+    },
+    {
+      "query": "a novel about the American Civil War and its aftermath...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.8,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.7
+    },
+    {
+      "query": "how habits shape our daily lives and how to change them...",
+      "tfidf_p@5": 0.2,
+      "tfidf_p@10": 0.2,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.2
+    },
+    {
+      "query": "leadership lessons from successful business executives...",
+      "tfidf_p@5": 1.0,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.5
+    },
+    {
+      "query": "the science of motivation and achieving long-term goals...",
+      "tfidf_p@5": 0.0,
+      "tfidf_p@10": 0.0,
+      "bm25_p@5": 0.2,
+      "bm25_p@10": 0.1
+    },
+    {
+      "query": "mindfulness and meditation for reducing stress and anxiety...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.4,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.4
+    },
+    {
+      "query": "biography of a scientist who changed our understanding of th...",
+      "tfidf_p@5": 0.4,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.4
+    },
+    {
+      "query": "a memoir about overcoming addiction and rebuilding life...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.6
+    },
+    {
+      "query": "the rise and fall of a powerful political empire...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.7,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.4
+    },
+    {
+      "query": "a young wizard discovering their magical powers...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.9,
+      "bm25_p@5": 1.0,
+      "bm25_p@10": 0.9
+    },
+    {
+      "query": "a teenager dealing with bullying and finding their voice...",
+      "tfidf_p@5": 0.4,
+      "tfidf_p@10": 0.7,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.6
+    },
+    {
+      "query": "a joyful story about unlikely friendships overcoming differe...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.6
+    },
+    {
+      "query": "a deeply sad story about death and remembrance...",
+      "tfidf_p@5": 0.8,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.8,
+      "bm25_p@10": 0.7
+    },
+    {
+      "query": "an angry political narrative about social injustice...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.5,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.5
+    },
+    {
+      "query": "a fearful survival story in extreme wilderness conditions...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.5,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.8
+    },
+    {
+      "query": "a philosophical novel questioning the meaning of existence...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.2,
+      "bm25_p@10": 0.4
+    },
+    {
+      "query": "technology and ethics in a near-future surveillance state...",
+      "tfidf_p@5": 1.0,
+      "tfidf_p@10": 0.9,
+      "bm25_p@5": 1.0,
+      "bm25_p@10": 0.8
+    },
+    {
+      "query": "a road trip story about self-discovery and freedom...",
+      "tfidf_p@5": 0.6,
+      "tfidf_p@10": 0.6,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.5
+    },
+    {
+      "query": "an ensemble cast of characters connected by a single event...",
+      "tfidf_p@5": 0.2,
+      "tfidf_p@10": 0.4,
+      "bm25_p@5": 0.4,
+      "bm25_p@10": 0.4
+    },
+    {
+      "query": "nature writing about the relationship between humans and wil...",
+      "tfidf_p@5": 0.2,
+      "tfidf_p@10": 0.1,
+      "bm25_p@5": 0.6,
+      "bm25_p@10": 0.3
+    }
+  ],
+  "model_name": "BAAI/bge-small-en-v1.5"
+}

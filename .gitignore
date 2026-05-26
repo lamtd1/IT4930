@@ -1,0 +1,36 @@
+# Python cache & bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+
+# Environments (conda envs are managed separately)
+.env
+.env.local
+
+# IDE & Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+
+# Large datasets
+AI/data/raw/
+AI/data/chroma_db/
+
+# Generated models and outputs
+AI/models/
+
+# Jupyter Notebook Checkpoints (keep .ipynb, ignore checkpoints)
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
