@@ -1,0 +1,397 @@
+[
+  {
+    "query": "a heartbreaking story about family secrets in rural America",
+    "relevant_categories": [
+      "Fiction",
+      "Literary Fiction",
+      "Family & Relationships"
+    ]
+  },
+  {
+    "query": "coming of age story with complex friendships",
+    "relevant_categories": [
+      "Fiction",
+      "Young Adult Fiction",
+      "Coming of Age"
+    ]
+  },
+  {
+    "query": "a novel about identity and belonging in a foreign country",
+    "relevant_categories": [
+      "Fiction",
+      "Literary Fiction",
+      "Cultural"
+    ]
+  },
+  {
+    "query": "interconnected stories about love and loss in a small town",
+    "relevant_categories": [
+      "Fiction",
+      "Short Stories",
+      "Literary Fiction"
+    ]
+  },
+  {
+    "query": "a story about grief and moving on after tragedy",
+    "relevant_categories": [
+      "Fiction",
+      "Literary Fiction",
+      "Family & Relationships"
+    ]
+  },
+  {
+    "query": "a thriller set in Japan with a detective protagonist",
+    "relevant_categories": [
+      "Mystery & Detective",
+      "Thriller",
+      "Fiction",
+      "Crime"
+    ]
+  },
+  {
+    "query": "psychological thriller about a woman who cannot trust her own memory",
+    "relevant_categories": [
+      "Thriller",
+      "Mystery & Detective",
+      "Psychological Fiction"
+    ]
+  },
+  {
+    "query": "detective investigating a murder in a locked room",
+    "relevant_categories": [
+      "Mystery & Detective",
+      "Crime",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "spy novel set during the Cold War",
+    "relevant_categories": [
+      "Thriller",
+      "Spy Stories",
+      "Fiction",
+      "Historical Fiction"
+    ]
+  },
+  {
+    "query": "a crime novel with an unreliable narrator",
+    "relevant_categories": [
+      "Mystery & Detective",
+      "Crime",
+      "Thriller"
+    ]
+  },
+  {
+    "query": "humanity's first contact with an alien civilization",
+    "relevant_categories": [
+      "Science Fiction",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "dystopian society controlled by an authoritarian government",
+    "relevant_categories": [
+      "Science Fiction",
+      "Dystopian",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "a space opera with epic battles across multiple planets",
+    "relevant_categories": [
+      "Science Fiction",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "artificial intelligence becomes sentient and questions its existence",
+    "relevant_categories": [
+      "Science Fiction",
+      "Fiction",
+      "Technology"
+    ]
+  },
+  {
+    "query": "time travel causing unintended consequences in the past",
+    "relevant_categories": [
+      "Science Fiction",
+      "Fiction",
+      "Time Travel"
+    ]
+  },
+  {
+    "query": "epic fantasy with magic systems and a chosen hero",
+    "relevant_categories": [
+      "Fantasy",
+      "Fiction",
+      "Epic Fantasy"
+    ]
+  },
+  {
+    "query": "a world where dragons and humans coexist",
+    "relevant_categories": [
+      "Fantasy",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "dark fantasy with morally ambiguous characters",
+    "relevant_categories": [
+      "Fantasy",
+      "Dark Fantasy",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "fairy tale retelling from the villain's perspective",
+    "relevant_categories": [
+      "Fantasy",
+      "Fiction",
+      "Fairy Tales"
+    ]
+  },
+  {
+    "query": "urban fantasy set in modern day New York",
+    "relevant_categories": [
+      "Fantasy",
+      "Urban Fantasy",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "a slow burn romance between rivals forced to work together",
+    "relevant_categories": [
+      "Romance",
+      "Fiction",
+      "Love Stories"
+    ]
+  },
+  {
+    "query": "historical romance set in Victorian England",
+    "relevant_categories": [
+      "Romance",
+      "Historical Fiction",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "second chance romance between childhood sweethearts",
+    "relevant_categories": [
+      "Romance",
+      "Fiction",
+      "Love Stories"
+    ]
+  },
+  {
+    "query": "forbidden love story with a tragic ending",
+    "relevant_categories": [
+      "Romance",
+      "Fiction",
+      "Love Stories"
+    ]
+  },
+  {
+    "query": "supernatural horror involving an ancient evil awakening",
+    "relevant_categories": [
+      "Horror",
+      "Fiction",
+      "Supernatural"
+    ]
+  },
+  {
+    "query": "ghost story in an old haunted mansion",
+    "relevant_categories": [
+      "Horror",
+      "Fiction",
+      "Ghost Stories"
+    ]
+  },
+  {
+    "query": "psychological horror where protagonist loses grip on reality",
+    "relevant_categories": [
+      "Horror",
+      "Fiction",
+      "Psychological Fiction"
+    ]
+  },
+  {
+    "query": "a story set during World War II from a civilian perspective",
+    "relevant_categories": [
+      "Historical Fiction",
+      "Fiction",
+      "War Stories"
+    ]
+  },
+  {
+    "query": "life in ancient Rome told through multiple characters",
+    "relevant_categories": [
+      "Historical Fiction",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "a novel about the American Civil War and its aftermath",
+    "relevant_categories": [
+      "Historical Fiction",
+      "Fiction",
+      "War Stories"
+    ]
+  },
+  {
+    "query": "how habits shape our daily lives and how to change them",
+    "relevant_categories": [
+      "Self-Help",
+      "Psychology",
+      "Personal Development"
+    ]
+  },
+  {
+    "query": "leadership lessons from successful business executives",
+    "relevant_categories": [
+      "Business & Economics",
+      "Leadership",
+      "Management"
+    ]
+  },
+  {
+    "query": "the science of motivation and achieving long-term goals",
+    "relevant_categories": [
+      "Self-Help",
+      "Psychology",
+      "Personal Development"
+    ]
+  },
+  {
+    "query": "mindfulness and meditation for reducing stress and anxiety",
+    "relevant_categories": [
+      "Self-Help",
+      "Health & Fitness",
+      "Psychology"
+    ]
+  },
+  {
+    "query": "biography of a scientist who changed our understanding of the universe",
+    "relevant_categories": [
+      "Biography & Autobiography",
+      "Science"
+    ]
+  },
+  {
+    "query": "a memoir about overcoming addiction and rebuilding life",
+    "relevant_categories": [
+      "Biography & Autobiography",
+      "Self-Help",
+      "Health"
+    ]
+  },
+  {
+    "query": "the rise and fall of a powerful political empire",
+    "relevant_categories": [
+      "History",
+      "Political Science",
+      "Biography & Autobiography"
+    ]
+  },
+  {
+    "query": "a young wizard discovering their magical powers",
+    "relevant_categories": [
+      "Juvenile Fiction",
+      "Fantasy",
+      "Young Adult Fiction"
+    ]
+  },
+  {
+    "query": "a teenager dealing with bullying and finding their voice",
+    "relevant_categories": [
+      "Young Adult Fiction",
+      "Juvenile Fiction"
+    ]
+  },
+  {
+    "query": "a joyful story about unlikely friendships overcoming differences",
+    "relevant_categories": [
+      "Fiction",
+      "Family & Relationships"
+    ]
+  },
+  {
+    "query": "a deeply sad story about death and remembrance",
+    "relevant_categories": [
+      "Fiction",
+      "Literary Fiction",
+      "Family & Relationships"
+    ]
+  },
+  {
+    "query": "an angry political narrative about social injustice",
+    "relevant_categories": [
+      "Political Science",
+      "Social Science",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "a fearful survival story in extreme wilderness conditions",
+    "relevant_categories": [
+      "Fiction",
+      "Adventure",
+      "Survival"
+    ]
+  },
+  {
+    "query": "a philosophical novel questioning the meaning of existence",
+    "relevant_categories": [
+      "Philosophy",
+      "Fiction",
+      "Literary Fiction"
+    ]
+  },
+  {
+    "query": "technology and ethics in a near-future surveillance state",
+    "relevant_categories": [
+      "Science Fiction",
+      "Technology",
+      "Political Science"
+    ]
+  },
+  {
+    "query": "a road trip story about self-discovery and freedom",
+    "relevant_categories": [
+      "Fiction",
+      "Travel",
+      "Literary Fiction"
+    ]
+  },
+  {
+    "query": "an ensemble cast of characters connected by a single event",
+    "relevant_categories": [
+      "Fiction",
+      "Literary Fiction"
+    ]
+  },
+  {
+    "query": "nature writing about the relationship between humans and wilderness",
+    "relevant_categories": [
+      "Nature",
+      "Travel",
+      "Science",
+      "Biography & Autobiography"
+    ]
+  },
+  {
+    "query": "a guide to personal finance and investing for beginners",
+    "relevant_categories": [
+      "Business & Economics",
+      "Finance",
+      "Self-Help"
+    ]
+  },
+  {
+    "query": "a cookbook with traditional recipes from around the world",
+    "relevant_categories": [
+      "Cooking",
+      "Food",
+      "Non-Fiction"
+    ]
+  }
+]

@@ -1,0 +1,4 @@
+# Crawl + build dependencies (Python 3.10+)
+requests>=2.31
+python-dotenv>=1.0
+pandas>=2.0
