@@ -1,0 +1,158 @@
+[
+  {
+    "query": "artificial intelligence becomes sentient and questions its existence",
+    "relevant_categories": [
+      "Science Fiction",
+      "Fiction",
+      "Technology"
+    ]
+  },
+  {
+    "query": "dystopian society controlled by an authoritarian government",
+    "relevant_categories": [
+      "Science Fiction",
+      "Dystopian",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "fairy tale retelling from the villain's perspective",
+    "relevant_categories": [
+      "Fantasy",
+      "Fiction",
+      "Fairy Tales"
+    ]
+  },
+  {
+    "query": "dark fantasy with morally ambiguous characters",
+    "relevant_categories": [
+      "Fantasy",
+      "Dark Fantasy",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "a deeply sad story about death and remembrance",
+    "relevant_categories": [
+      "Fiction",
+      "Literary Fiction",
+      "Family & Relationships"
+    ]
+  },
+  {
+    "query": "a novel about identity and belonging in a foreign country",
+    "relevant_categories": [
+      "Fiction",
+      "Literary Fiction",
+      "Cultural"
+    ]
+  },
+  {
+    "query": "historical romance set in Victorian England",
+    "relevant_categories": [
+      "Romance",
+      "Historical Fiction",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "second chance romance between childhood sweethearts",
+    "relevant_categories": [
+      "Romance",
+      "Fiction",
+      "Love Stories"
+    ]
+  },
+  {
+    "query": "life in ancient Rome told through multiple characters",
+    "relevant_categories": [
+      "Historical Fiction",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "ghost story in an old haunted mansion",
+    "relevant_categories": [
+      "Horror",
+      "Fiction",
+      "Ghost Stories"
+    ]
+  },
+  {
+    "query": "detective investigating a murder in a locked room",
+    "relevant_categories": [
+      "Mystery & Detective",
+      "Crime",
+      "Fiction"
+    ]
+  },
+  {
+    "query": "how habits shape our daily lives and how to change them",
+    "relevant_categories": [
+      "Self-Help",
+      "Psychology",
+      "Personal Development"
+    ]
+  },
+  {
+    "query": "a memoir about overcoming addiction and rebuilding life",
+    "relevant_categories": [
+      "Biography & Autobiography",
+      "Self-Help",
+      "Health"
+    ]
+  },
+  {
+    "query": "leadership lessons from successful business executives",
+    "relevant_categories": [
+      "Business & Economics",
+      "Leadership",
+      "Management"
+    ]
+  },
+  {
+    "query": "psychological thriller about a woman who cannot trust her own memory",
+    "relevant_categories": [
+      "Thriller",
+      "Mystery & Detective",
+      "Psychological Fiction"
+    ]
+  },
+  {
+    "query": "a teenager dealing with bullying and finding their voice",
+    "relevant_categories": [
+      "Young Adult Fiction",
+      "Juvenile Fiction"
+    ]
+  },
+  {
+    "query": "epic fantasy with magic systems and a chosen hero",
+    "relevant_categories": [
+      "Fantasy",
+      "Fiction",
+      "Epic Fantasy"
+    ]
+  },
+  {
+    "query": "a philosophical novel questioning the meaning of existence",
+    "relevant_categories": [
+      "Philosophy",
+      "Fiction",
+      "Literary Fiction"
+    ]
+  },
+  {
+    "query": "biography of a scientist who changed our understanding of the universe",
+    "relevant_categories": [
+      "Biography & Autobiography",
+      "Science"
+    ]
+  },
+  {
+    "query": "a space opera with epic battles across multiple planets",
+    "relevant_categories": [
+      "Science Fiction",
+      "Fiction"
+    ]
+  }
+]

@@ -40,10 +40,38 @@ MODEL_COLORS = {
 print("\n--- 1. PREPROCESSING ---")
 df = pd.read_csv(DATA_RAW)
 df = df.dropna(subset=['description', 'isbn13'])
+
+# Lọc mô tả boilerplate public-domain
+BOILERPLATE = [
+    "this work has been selected by scholars",
+    "this is a reproduction of",
+    "we appreciate your understanding of the imperfections",
+]
+_low = df["description"].str.lower()
+is_boiler = _low.apply(lambda s: any(p in s for p in BOILERPLATE))
+df = df[~is_boiler]
+
+# Keep first occurrence of isbn13
 df = df.drop_duplicates(subset=['isbn13'], keep='first')
+
+# Khử trùng lặp edition (tác phẩm) theo title + author
+_dlen = df["description"].str.split().str.len()
+_key = df["title"].str.lower().str.strip() + "::" + df["authors"].str.lower().str.strip()
+df = (
+    df.assign(_dlen=_dlen, _key=_key)
+      .sort_values("_dlen", ascending=False)
+      .drop_duplicates("_key", keep="first")
+      .drop(columns=["_dlen", "_key"])
+      .sort_index()
+)
+
+# Đổi 0 thành NaN (Google Books dùng 0 làm ký hiệu "không rõ số trang")
+df['num_pages'] = df['num_pages'].replace(0, pd.NA)
+
 mask_pages = (df['num_pages'].isna() | ((df['num_pages'] >= 10) & (df['num_pages'] <= 1500)))
 df = df[mask_pages]
-mask_year = (df['published_year'].isna() | ((df['published_year'] >= 1800) & (df['published_year'] <= 2024)))
+
+mask_year = (df['published_year'].isna() | ((df['published_year'] >= 1800) & (df['published_year'] <= 2026)))
 df = df[mask_year]
 
 df['thumbnail'] = df['thumbnail'].fillna('https://via.placeholder.com/128x192.png?text=No+Cover')
@@ -54,7 +82,7 @@ df['num_pages'] = df['num_pages'].fillna(df['num_pages'].median())
 df['published_year'] = df['published_year'].fillna(df['published_year'].median()).astype(int)
 
 df['description_length'] = df['description'].str.split().str.len()
-df['book_age'] = 2024 - df['published_year']
+df['book_age'] = 2026 - df['published_year']
 df['tag_clean'] = df['categories'].str.lower().str.strip()
 
 def clean_text(text):

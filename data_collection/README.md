@@ -8,6 +8,7 @@ Bộ dữ liệu sách tiếng Anh **tự thu thập** bằng Google Books API, 
 data_collection/
 ├── books.csv               # Dataset chính: 12 cột, schema chuẩn cho pipeline
 ├── build_team_dataset.py   # raw/google_search.jsonl → books.csv
+├── split_queries.py        # Phân chia 50 eval queries thành dev (30) và test (20)
 ├── quality_report.py       # Báo cáo chất lượng theo đúng field pipeline dùng
 ├── requirements.txt
 ├── raw/
@@ -68,5 +69,6 @@ pip install -r requirements.txt
 python crawler/crawl_google_search.py --test   # thử 1 query, 2 trang
 python crawler/crawl_google_search.py          # crawl đầy đủ (resumable)
 python build_team_dataset.py                   # raw → books.csv
+python split_queries.py                        # phân chia query dev/test
 python quality_report.py                        # in báo cáo chất lượng
 ```
