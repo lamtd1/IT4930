@@ -144,7 +144,6 @@ def sample_df() -> pd.DataFrame:
             ],
             "categories": ["Science Fiction", "Fantasy", "Psychology", "Science Fiction"],
             "authors": ["Liu Cixin", "Patrick Rothfuss", "Daniel Kahneman", "Orson Scott Card"],
-            "average_rating": [4.5, 4.6, 4.2, 4.7],
             "published_year": [2008, 2007, 2011, 1985],
             "thumbnail": ["", "", "", ""],
         }

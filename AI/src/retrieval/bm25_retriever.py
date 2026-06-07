@@ -139,10 +139,13 @@ class BM25Retriever(BaseRetriever):
         tokenized_query = tokenize_for_bm25(query)
         scores: np.ndarray = self._bm25.get_scores(tokenized_query)
 
-        top_indices = np.argsort(scores)[::-1][:top_k]
+        top_indices = np.argsort(scores)[::-1]
         results: list[RetrievalResult] = []
 
-        for rank, idx in enumerate(top_indices, start=1):
+        rank = 1
+        for idx in top_indices:
+            if idx >= len(self._isbn_list):
+                continue
             isbn = self._isbn_list[idx]
             results.append(
                 RetrievalResult(
@@ -152,5 +155,8 @@ class BM25Retriever(BaseRetriever):
                     rank=rank,
                 )
             )
+            rank += 1
+            if rank > top_k:
+                break
 
         return results

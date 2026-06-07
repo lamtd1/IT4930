@@ -150,7 +150,6 @@ class DenseRetriever(BaseRetriever):
                     "title": str(row.get("title", "")),
                     "authors": str(row.get("authors", "")),
                     "categories": str(row.get("categories", "")),
-                    "average_rating": float(row.get("average_rating", 0.0)),
                     "published_year": int(row.get("published_year", 0)),
                     "thumbnail": str(row.get("thumbnail", "")),
                 }

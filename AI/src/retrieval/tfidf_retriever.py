@@ -173,10 +173,13 @@ class TFIDFRetriever(BaseRetriever):
         query_vec = self._vectorizer.transform([query])
         scores: np.ndarray = cosine_similarity(query_vec, self._tfidf_matrix).flatten()
 
-        top_indices = np.argsort(scores)[::-1][:top_k]
+        top_indices = np.argsort(scores)[::-1]
         results: list[RetrievalResult] = []
 
-        for rank, idx in enumerate(top_indices, start=1):
+        rank = 1
+        for idx in top_indices:
+            if idx >= len(self._isbn_list):
+                continue
             isbn = self._isbn_list[idx]
             results.append(
                 RetrievalResult(
@@ -186,5 +189,8 @@ class TFIDFRetriever(BaseRetriever):
                     rank=rank,
                 )
             )
+            rank += 1
+            if rank > top_k:
+                break
 
         return results

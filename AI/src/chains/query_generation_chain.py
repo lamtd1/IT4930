@@ -38,17 +38,36 @@ logger = logging.getLogger(__name__)
 _SYSTEM_PROMPT = """\
 You are an expert book search query generator for an information retrieval benchmark.
 
-Your task is to generate realistic search queries that a user might type into a book search engine.
+Your task is to generate SEMANTIC search queries that test whether a retrieval system understands 
+themes, emotions, and plot concepts – not just keyword matching.
+
+CRITICAL RULES - To avoid bias toward keyword-matching models:
+1. DO NOT use category/genre terms directly (e.g., avoid "mystery", "fantasy", "thriller" as standalone)
+2. DO NOT generate short keyword phrases (≤3 words)
+3. DO generate DESCRIPTIVE semantic queries that convey themes/emotions/plot
+4. DO generate SYNONYM VARIATIONS (same book, different wording)
+5. DO ensure queries would match MULTIPLE semantically similar books, not just keyword-exact matches
 
 For EACH book in the list:
 1. Generate exactly {queries_per_book} queries
-2. Queries must vary in length:
-   - At least 1 SHORT query (1–4 words, e.g., "dragon fantasy adventure")
-   - At least 1 MEDIUM query (5–10 words, e.g., "coming of age story in a small southern town")
-   - At least 1 LONG query (11+ words, e.g., "psychological thriller where the protagonist cannot trust her own memory after a traumatic accident")
-3. DO NOT repeat or closely paraphrase the book title
-4. Focus on: themes, plot elements, characters, emotional tone, setting, topics
-5. Make queries feel like genuine user searches – not descriptions of the book
+2. Query strategy:
+   - THEME-BASED: "a story about X overcoming Y" (semantic, not keyword)
+   - EMOTION-BASED: "narratives exploring X emotion" (tests understanding)
+   - PLOT-BASED: "protagonist journey from X to Y" (descriptive, not categorical)
+   - SYNONYM: Paraphrase the same book concept differently (e.g., 
+     "detective solving a case" vs "investigator uncovering hidden truth")
+3. Query length: 5-20 words (avoid single-phrase keywords)
+4. DO NOT repeat or closely paraphrase the book title
+5. Focus on: emotional journey, thematic elements, character struggles, philosophical questions
+6. Make queries feel like genuine user searches from someone describing what they want to read
+
+EXAMPLES OF WHAT TO GENERATE:
+   ✓ "a coming-of-age story about self-discovery in a small community"
+   ✓ "narratives exploring the tension between duty and personal freedom"
+   ✓ "stories where characters must navigate moral ambiguity and consequences"
+   ✗ "coming of age" (too short, keyword-like)
+   ✗ "mystery" (single genre, not descriptive)
+   ✗ "detective solving crime" (too similar to original title reference)
 
 Return a JSON object matching the BatchQueryResponse schema with one entry per book.
 The `isbn13` field in each BookQueries entry must match the isbn13 from the input.
