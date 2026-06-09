@@ -1,397 +1,402 @@
 [
   {
-    "query": "a heartbreaking story about family secrets in rural America",
-    "relevant_categories": [
-      "Fiction",
-      "Literary Fiction",
-      "Family & Relationships"
-    ]
+    "query": "Robin Robertson cookbook focusing on vegetarian meals satisfying both appetite and conscience",
+    "target_isbn13": "9781558322059"
   },
   {
-    "query": "coming of age story with complex friendships",
-    "relevant_categories": [
-      "Fiction",
-      "Young Adult Fiction",
-      "Coming of Age"
-    ]
+    "query": "Erich Zann mystery novel by H.P. Lovecraft",
+    "target_isbn13": "9789181084498"
   },
   {
-    "query": "a novel about identity and belonging in a foreign country",
-    "relevant_categories": [
-      "Fiction",
-      "Literary Fiction",
-      "Cultural"
-    ]
+    "query": "Artificial Condition by Ann Leckie",
+    "target_isbn13": "9781250186935"
   },
   {
-    "query": "interconnected stories about love and loss in a small town",
-    "relevant_categories": [
-      "Fiction",
-      "Short Stories",
-      "Literary Fiction"
-    ]
+    "query": "Man the Hunted: Evolutionary Perspectives on Human Origins and Prehistory",
+    "target_isbn13": "9780429978715"
   },
   {
-    "query": "a story about grief and moving on after tragedy",
-    "relevant_categories": [
-      "Fiction",
-      "Literary Fiction",
-      "Family & Relationships"
-    ]
+    "query": "Edwidge Danticat Haiti destitution literature",
+    "target_isbn13": "9781936070657"
   },
   {
-    "query": "a thriller set in Japan with a detective protagonist",
-    "relevant_categories": [
-      "Mystery & Detective",
-      "Thriller",
-      "Fiction",
-      "Crime"
-    ]
+    "query": "Third Edition Handbook Systems Approaches Medical Nutrition Therapy",
+    "target_isbn13": "9780763742904"
   },
   {
-    "query": "psychological thriller about a woman who cannot trust her own memory",
-    "relevant_categories": [
-      "Thriller",
-      "Mystery & Detective",
-      "Psychological Fiction"
-    ]
+    "query": "Hyakki Academy after student drops out",
+    "target_isbn13": "9781975338282"
   },
   {
-    "query": "detective investigating a murder in a locked room",
-    "relevant_categories": [
-      "Mystery & Detective",
-      "Crime",
-      "Fiction"
-    ]
+    "query": "Human Dimension and Interior Space: A Comprehensive Guide to Anthropometric Design Standards",
+    "target_isbn13": "9780823072712"
   },
   {
-    "query": "spy novel set during the Cold War",
-    "relevant_categories": [
-      "Thriller",
-      "Spy Stories",
-      "Fiction",
-      "Historical Fiction"
-    ]
+    "query": "Essential Capoeira: Techniques, History, and Origins",
+    "target_isbn13": "9781583941966"
   },
   {
-    "query": "a crime novel with an unreliable narrator",
-    "relevant_categories": [
-      "Mystery & Detective",
-      "Crime",
-      "Thriller"
-    ]
+    "query": "book where single mother has to sell family car to buy basketball shoes",
+    "target_isbn13": "9781459409729"
   },
   {
-    "query": "humanity's first contact with an alien civilization",
-    "relevant_categories": [
-      "Science Fiction",
-      "Fiction"
-    ]
+    "query": "Childrens literature featuring Hans Christian Andersens famous tales such as The Ugly Duckling and The Little Mermaid",
+    "target_isbn13": "9781480019348"
   },
   {
-    "query": "dystopian society controlled by an authoritarian government",
-    "relevant_categories": [
-      "Science Fiction",
-      "Dystopian",
-      "Fiction"
-    ]
+    "query": "Jane Austen Mansfield Park special edition book collector classic literature special edition Jane Austen collection",
+    "target_isbn13": "9780785293392"
   },
   {
-    "query": "a space opera with epic battles across multiple planets",
-    "relevant_categories": [
-      "Science Fiction",
-      "Fiction"
-    ]
+    "query": "Travel literature early modern period English imperialistic representations national identity ethnic studies",
+    "target_isbn13": "9780874139983"
   },
   {
-    "query": "artificial intelligence becomes sentient and questions its existence",
-    "relevant_categories": [
-      "Science Fiction",
-      "Fiction",
-      "Technology"
-    ]
+    "query": "wild souls emma marris",
+    "target_isbn13": "9781635574968"
   },
   {
-    "query": "time travel causing unintended consequences in the past",
-    "relevant_categories": [
-      "Science Fiction",
-      "Fiction",
-      "Time Travel"
-    ]
+    "query": "Meet Evie, a young woman held captive by Jim in Maketu, NZ, where she pieces together her memories while questioning his claims about protecting her; an intense literary thriller by an Australian author",
+    "target_isbn13": "9780733640230"
   },
   {
-    "query": "epic fantasy with magic systems and a chosen hero",
-    "relevant_categories": [
-      "Fantasy",
-      "Fiction",
-      "Epic Fantasy"
-    ]
+    "query": "Mary Kubica Just the Nicest Couple novel featuring deceptive couple dynamics and thrilling mystery surrounding missing husband",
+    "target_isbn13": "9780778333111"
   },
   {
-    "query": "a world where dragons and humans coexist",
-    "relevant_categories": [
-      "Fantasy",
-      "Fiction"
-    ]
+    "query": "The Spy in Paris: A Novel",
+    "target_isbn13": "9780008373740"
   },
   {
-    "query": "dark fantasy with morally ambiguous characters",
-    "relevant_categories": [
-      "Fantasy",
-      "Dark Fantasy",
-      "Fiction"
-    ]
+    "query": "James Hillman - The Soul of the Mytheme: Myth, Eros, and the Human Condition",
+    "target_isbn13": "9780810116511"
   },
   {
-    "query": "fairy tale retelling from the villain's perspective",
-    "relevant_categories": [
-      "Fantasy",
-      "Fiction",
-      "Fairy Tales"
-    ]
+    "query": "Charles Darwin biography detailing his later life and the impact of On the Origin of Species on society and science",
+    "target_isbn13": "9780712673051"
   },
   {
-    "query": "urban fantasy set in modern day New York",
-    "relevant_categories": [
-      "Fantasy",
-      "Urban Fantasy",
-      "Fiction"
-    ]
+    "query": "Zenia returns after five years in The Death of Zenia",
+    "target_isbn13": "9780748113323"
   },
   {
-    "query": "a slow burn romance between rivals forced to work together",
-    "relevant_categories": [
-      "Romance",
-      "Fiction",
-      "Love Stories"
-    ]
+    "query": "Jesuits Mission to China: A Study of the First European Effort to Engage with Chinese Culture",
+    "target_isbn13": "9780674030367"
   },
   {
-    "query": "historical romance set in Victorian England",
-    "relevant_categories": [
-      "Romance",
-      "Historical Fiction",
-      "Fiction"
-    ]
+    "query": "King Yaos guide to HoldEm poker strategy including sizing opponents, counting outs, pot odds, position, raising/calling/folding, bluffing/semi-bluffing, slowplaying/check",
+    "target_isbn13": "9780935926255"
   },
   {
-    "query": "second chance romance between childhood sweethearts",
-    "relevant_categories": [
-      "Romance",
-      "Fiction",
-      "Love Stories"
-    ]
+    "query": "Pride and Prejudice by Jane Austen",
+    "target_isbn13": "9798644092550"
   },
   {
-    "query": "forbidden love story with a tragic ending",
-    "relevant_categories": [
-      "Romance",
-      "Fiction",
-      "Love Stories"
-    ]
+    "query": "contemporary southern literature about an orphan who becomes a bricklayer, musician, and preacher in lister, north carolina",
+    "target_isbn13": "9780945575535"
   },
   {
-    "query": "supernatural horror involving an ancient evil awakening",
-    "relevant_categories": [
-      "Horror",
-      "Fiction",
-      "Supernatural"
-    ]
+    "query": "maverick physicist Nobel laureate author correspondence insights intimate life scientific luminary",
+    "target_isbn13": "9780738206363"
   },
   {
-    "query": "ghost story in an old haunted mansion",
-    "relevant_categories": [
-      "Horror",
-      "Fiction",
-      "Ghost Stories"
-    ]
+    "query": "Alex Cross novel featuring a final showdown against an all-knowing assassin mastermind in the Montana wilderness",
+    "target_isbn13": "9780316297042"
   },
   {
-    "query": "psychological horror where protagonist loses grip on reality",
-    "relevant_categories": [
-      "Horror",
-      "Fiction",
-      "Psychological Fiction"
-    ]
+    "query": "Substate nationalism, norms, universal human rights, group rights, international law, multiculturalism, group agency, shared beliefs, social ontology, conflict resolution, transitional societies, global justice, political philosophy",
+    "target_isbn13": "9789048126903"
   },
   {
-    "query": "a story set during World War II from a civilian perspective",
-    "relevant_categories": [
-      "Historical Fiction",
-      "Fiction",
-      "War Stories"
-    ]
+    "query": "knuckleball baseball science innovation novel",
+    "target_isbn13": "9781669007272"
   },
   {
-    "query": "life in ancient Rome told through multiple characters",
-    "relevant_categories": [
-      "Historical Fiction",
-      "Fiction"
-    ]
+    "query": "Motivation Science: Uncovering the Science Behind Personal Growth and Success",
+    "target_isbn13": "9788235268020"
   },
   {
-    "query": "a novel about the American Civil War and its aftermath",
-    "relevant_categories": [
-      "Historical Fiction",
-      "Fiction",
-      "War Stories"
-    ]
+    "query": "Victorian-era romance novel featuring handsome, mysterious Peregrine seducing Lady Sara St. James in a clandestine affair against the backdrop of Londons elite society.",
+    "target_isbn13": "9780451202062"
   },
   {
-    "query": "how habits shape our daily lives and how to change them",
-    "relevant_categories": [
-      "Self-Help",
-      "Psychology",
-      "Personal Development"
-    ]
+    "query": "Merlins Quest: The Magic Kings Son",
+    "target_isbn13": "9780689316005"
   },
   {
-    "query": "leadership lessons from successful business executives",
-    "relevant_categories": [
-      "Business & Economics",
-      "Leadership",
-      "Management"
-    ]
+    "query": "Villains Academy Gruesome Games Werewolf Bram prank school sports day",
+    "target_isbn13": "9781665950107"
   },
   {
-    "query": "the science of motivation and achieving long-term goals",
-    "relevant_categories": [
-      "Self-Help",
-      "Psychology",
-      "Personal Development"
-    ]
+    "query": "Gaiman Fragile Things",
+    "target_isbn13": "9780061244933"
   },
   {
-    "query": "mindfulness and meditation for reducing stress and anxiety",
-    "relevant_categories": [
-      "Self-Help",
-      "Health & Fitness",
-      "Psychology"
-    ]
+    "query": "The Shards Shadow (Warhammer 40k)",
+    "target_isbn13": "9798305667943"
   },
   {
-    "query": "biography of a scientist who changed our understanding of the universe",
-    "relevant_categories": [
-      "Biography & Autobiography",
-      "Science"
-    ]
+    "query": "Canids of the World by John P. Archibald",
+    "target_isbn13": "9780691185415"
   },
   {
-    "query": "a memoir about overcoming addiction and rebuilding life",
-    "relevant_categories": [
-      "Biography & Autobiography",
-      "Self-Help",
-      "Health"
-    ]
+    "query": "Escape Pod 15th Anniversary Anthology: New & Exclusive Stories from Todays Bestselling Writers",
+    "target_isbn13": "9781789095012"
   },
   {
-    "query": "the rise and fall of a powerful political empire",
-    "relevant_categories": [
-      "History",
-      "Political Science",
-      "Biography & Autobiography"
-    ]
+    "query": "Miuccia Prada biography fashion collection history textiles design fashion industry fashion designer fashion photography",
+    "target_isbn13": "9781780979038"
   },
   {
-    "query": "a young wizard discovering their magical powers",
-    "relevant_categories": [
-      "Juvenile Fiction",
-      "Fantasy",
-      "Young Adult Fiction"
-    ]
+    "query": "Jean-Paul Sartre Existentialism Is a Humanism book review",
+    "target_isbn13": "9780300115468"
   },
   {
-    "query": "a teenager dealing with bullying and finding their voice",
-    "relevant_categories": [
-      "Young Adult Fiction",
-      "Juvenile Fiction"
-    ]
+    "query": "entrepreneurship tips traps successful business strategies",
+    "target_isbn13": "9780070526761"
   },
   {
-    "query": "a joyful story about unlikely friendships overcoming differences",
-    "relevant_categories": [
-      "Fiction",
-      "Family & Relationships"
-    ]
+    "query": "Renaissance humanism in early modern Europe : primary sources and modern scholarship",
+    "target_isbn13": "9780674004689"
   },
   {
-    "query": "a deeply sad story about death and remembrance",
-    "relevant_categories": [
-      "Fiction",
-      "Literary Fiction",
-      "Family & Relationships"
-    ]
+    "query": "alcohol marketing influence adult drinking behaviors",
+    "target_isbn13": "9798684654602"
   },
   {
-    "query": "an angry political narrative about social injustice",
-    "relevant_categories": [
-      "Political Science",
-      "Social Science",
-      "Fiction"
-    ]
+    "query": "old enemies awaken as camp half-bloods new arrivals prepare for war when jason piper leo crash land at camp half blood",
+    "target_isbn13": "9780141384924"
   },
   {
-    "query": "a fearful survival story in extreme wilderness conditions",
-    "relevant_categories": [
-      "Fiction",
-      "Adventure",
-      "Survival"
-    ]
+    "query": "Sigurd Olson - Reflections from the North Country",
+    "target_isbn13": "9780307761613"
   },
   {
-    "query": "a philosophical novel questioning the meaning of existence",
-    "relevant_categories": [
-      "Philosophy",
-      "Fiction",
-      "Literary Fiction"
-    ]
+    "query": "Maximizing Creativity Edgy Humorous Blog Posts by GapingVoid Writer",
+    "target_isbn13": "9781591842590"
   },
   {
-    "query": "technology and ethics in a near-future surveillance state",
-    "relevant_categories": [
-      "Science Fiction",
-      "Technology",
-      "Political Science"
-    ]
+    "query": "fantasy publishing facts economic analysis social science",
+    "target_isbn13": "9788233977702"
   },
   {
-    "query": "a road trip story about self-discovery and freedom",
-    "relevant_categories": [
-      "Fiction",
-      "Travel",
-      "Literary Fiction"
-    ]
+    "query": "Doctor Faustus by Christopher Marlowe",
+    "target_isbn13": "9781911405498"
   },
   {
-    "query": "an ensemble cast of characters connected by a single event",
-    "relevant_categories": [
-      "Fiction",
-      "Literary Fiction"
-    ]
+    "query": "The Sane Society by Erich Fromm",
+    "target_isbn13": "9780415270984"
   },
   {
-    "query": "nature writing about the relationship between humans and wilderness",
-    "relevant_categories": [
-      "Nature",
-      "Travel",
-      "Science",
-      "Biography & Autobiography"
-    ]
+    "query": "Death on the Installment Plan",
+    "target_isbn13": "9780811200172"
   },
   {
-    "query": "a guide to personal finance and investing for beginners",
-    "relevant_categories": [
-      "Business & Economics",
-      "Finance",
-      "Self-Help"
-    ]
+    "query": "Thank You Breath childrens book on using breath as a superpower for emotional regulation",
+    "target_isbn13": "9781683735175"
   },
   {
-    "query": "a cookbook with traditional recipes from around the world",
-    "relevant_categories": [
-      "Cooking",
-      "Food",
-      "Non-Fiction"
-    ]
+    "query": "Professor Richard Nisbetts book on the Flynn effect and its implications for intelligence measurement and theories",
+    "target_isbn13": "9781139467049"
+  },
+  {
+    "query": "Victorian and modernist haunted house ghost stories exploring gendered representation of domestic space in female-authored literature",
+    "target_isbn13": "9783030407520"
+  },
+  {
+    "query": "The Middle Passage by V.S. Naipaul",
+    "target_isbn13": "9780307776532"
+  },
+  {
+    "query": "Angie Thomas Garden Heights novel exploring Black boyhood and manhood, featuring a seventeen-year-old drug dealers journey as a father, winner of the Printz Award",
+    "target_isbn13": "9780062846754"
+  },
+  {
+    "query": "Jet Set Docs: A Nurses Journey Through Modern Medicine and Love by Tina Beckett",
+    "target_isbn13": "9781335943118"
+  },
+  {
+    "query": "Harry Hole thriller Kill Shot by Jo Nesbo",
+    "target_isbn13": "9781787304888"
+  },
+  {
+    "query": "diachronic hellenism scholarly anthology english language",
+    "target_isbn13": "9781351931069"
+  },
+  {
+    "query": "Costa-Gavras filmography biography history WWII Cold War Greece socio-political films",
+    "target_isbn13": "9781501390913"
+  },
+  {
+    "query": "Bradbury poems new accessible humorous emotionally sensual luxuriating wonder life",
+    "target_isbn13": "9781903392201"
+  },
+  {
+    "query": "Colleen Hoover sequel to It Ends with Us - Atlass story before the main series ends",
+    "target_isbn13": "9781668001226"
+  },
+  {
+    "query": "How Baking Works, Third Edition by Alan Siegel",
+    "target_isbn13": "9780470398142"
+  },
+  {
+    "query": "Emotions rule us all--and turn two womens lives into a ride they can barely control in this hugely entertaining, riveting page-turner",
+    "target_isbn13": "9781538752937"
+  },
+  {
+    "query": "Ian McEwan - The Daydreamer - literary fiction for adults and children",
+    "target_isbn13": "9780307805928"
+  },
+  {
+    "query": "madeline karno 1890s french mystery series",
+    "target_isbn13": "9781476731384"
+  },
+  {
+    "query": "Little Vampire series - Rudolph and Tonys first crushes, spooky and sweet fifth book",
+    "target_isbn13": "9781534494206"
+  },
+  {
+    "query": "History and Climate Change: The Links Between Mans Progress and Environmental Variability",
+    "target_isbn13": "9780415019590"
+  },
+  {
+    "query": "Zadie Smiths collection of essays exploring contemporary issues and figures",
+    "target_isbn13": "9780593834695"
+  },
+  {
+    "query": "four humans surviving extinction novel",
+    "target_isbn13": "9791220116220"
+  },
+  {
+    "query": "environmental education philosophy book accessible theoretical framework",
+    "target_isbn13": "9781402050022"
+  },
+  {
+    "query": "The Happy Prince and Other Tales by Oscar Wilde",
+    "target_isbn13": "9798729318926"
+  },
+  {
+    "query": "healthy cooking cookbook recipes quinoa arame juice smoothie breakfast lunchbox salad snack treat energy vitality feeling great",
+    "target_isbn13": "9780718147976"
+  },
+  {
+    "query": "The Taming of the Shrew critical essays -gender studies -authority -female autonomy -courtship marriage -language speech -performance theatre",
+    "target_isbn13": "9780415295840"
+  },
+  {
+    "query": "Joseph Dauben The History of Sets: Transcending Mathematics and Philosophy",
+    "target_isbn13": "9780691024479"
+  },
+  {
+    "query": "American spy who used non-traditional methods against Russian intelligence during post-Cold War era",
+    "target_isbn13": "9781476788821"
+  },
+  {
+    "query": "Colson Whiteheads Crook Manifesto, a humorous exploration of naming towns and identity in America.",
+    "target_isbn13": "9780307279781"
+  },
+  {
+    "query": "entertainment pop stars influential american popular culture",
+    "target_isbn13": "9781598848311"
+  },
+  {
+    "query": "Machine learning basics for AI",
+    "target_isbn13": "9781558603011"
+  },
+  {
+    "query": "Samuel Pallache biography historical fiction Morocco Fez Spain Netherlands England Portugal Judaism conversos interfaith diplomacy trade Atlantic Mediterranean Europe Early Modern period",
+    "target_isbn13": "9780801872259"
+  },
+  {
+    "query": "World Order as Thinking and Speaking Activity: Neotraditionalism in International Relations",
+    "target_isbn13": "9781403946546"
+  },
+  {
+    "query": "Harry Potter and the Prisoner of Azkaban",
+    "target_isbn13": "9780747549505"
+  },
+  {
+    "query": "Four Weddings and a Sixpence by Julia Quinn, Elizabeth Boyle, Laura Lee Guhrke, and Stefanie Sloane",
+    "target_isbn13": "9780062660114"
+  },
+  {
+    "query": "Jane Austens Northanger Abbey - first published posthumously in 1818, explores Catherine Morlands journey from naive romance to wisdom through wit and satire.",
+    "target_isbn13": "9798739677594"
+  },
+  {
+    "query": "booker prize The Remains of the Day interviews",
+    "target_isbn13": "9781934110621"
+  },
+  {
+    "query": "Crisis Integration With Acceptance and Commitment Therapy: Theory and Practice",
+    "target_isbn13": "9781615374045"
+  },
+  {
+    "query": "Love-Lies-Bleeding -Don DeLillo -play",
+    "target_isbn13": "9780743273060"
+  },
+  {
+    "query": "Egyptian Afterlife Teachings: Preparation for the Afterlife - Procedures and Ceremonies Following Death",
+    "target_isbn13": "9781842156742"
+  },
+  {
+    "query": "Percy Jackson and the Titans Curse",
+    "target_isbn13": "9781423101505"
+  },
+  {
+    "query": "best friend in danger nita takes down black market",
+    "target_isbn13": "9781328863560"
+  },
+  {
+    "query": "Three Little Pigs by Jon Scieszka",
+    "target_isbn13": "9780374373955"
+  },
+  {
+    "query": "Unified presentation of experiment, theory, and technology; includes illustrations, tables, references, and student problems; surveys historical development of field",
+    "target_isbn13": "9783540231646"
+  },
+  {
+    "query": "Norse mythology, underworld goddess, dramatic tales, love stories, destruction, myth history, genealogy",
+    "target_isbn13": "9781534132658"
+  },
+  {
+    "query": "Two in the Bush Gerald Durrell travel wildlife documentary",
+    "target_isbn13": "9781037401848"
+  },
+  {
+    "query": "Reliability Handbook: Fundamentals and Applications Across All Branches of Engineering",
+    "target_isbn13": "9781852334536"
+  },
+  {
+    "query": "The Secrets We Kept - novel about two women working as secretaries for the CIA during the Cold War to smuggle Doctor Zhivago out of the USSR, combining a literary love story with historical",
+    "target_isbn13": "9780525656159"
+  },
+  {
+    "query": "Season of Denial (Scandalous Scions series)",
+    "target_isbn13": "9781772636680"
+  },
+  {
+    "query": "David Sedaris memoirs",
+    "target_isbn13": "9780449910856"
+  },
+  {
+    "query": "The Day After Judgment by John Ringo",
+    "target_isbn13": "9781960241283"
+  },
+  {
+    "query": "Teaching Children with Autism Spectrum Disorders: A Review of Methods for Deriving Intraverbal Behavior Through Instructional Feedback and Stimulus Equivalence Procedures",
+    "target_isbn13": "9781085630382"
+  },
+  {
+    "query": "Treasure Island by Robert Louis Stevenson",
+    "target_isbn13": "9781577656777"
+  },
+  {
+    "query": "time travel adventure for young budding scientists about winning nobel prize",
+    "target_isbn13": "9781610678292"
+  },
+  {
+    "query": "self-made man discovers secret government control force united states",
+    "target_isbn13": "9780553281798"
   }
 ]

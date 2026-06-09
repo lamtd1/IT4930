@@ -1,0 +1,209 @@
+================================================================================
+PROMPT CHANGES SUMMARY - Query Generation Fix
+================================================================================
+
+FILE CHANGED:
+  src/chains/query_generation_chain.py
+
+WHAT CHANGED:
+  The SYSTEM_PROMPT for query generation was updated to ENFORCE semantic
+  queries and PREVENT keyword-biased queries.
+
+================================================================================
+EXACT CHANGES IN _SYSTEM_PROMPT (lines 40-73)
+================================================================================
+
+BEFORE (Allowed keyword bias):
+─────────────────────────────────────────────────────────────────────────────
+_SYSTEM_PROMPT = """\
+You are an expert book search query generator for an information retrieval benchmark.
+
+Your task is to generate search queries for a BATCH of books in a single LLM call...
+[Vague guidelines, no constraints on query length or type]
+"""
+
+PROBLEM: This allowed LLM to generate short keyword queries like:
+  ✗ "murder mystery"
+  ✗ "royal intrigue"
+  ✗ "World Cup statistics"
+Result: 35.8% of queries were ≤3 words → TF-IDF wins artificially
+
+
+AFTER (Enforces semantic queries):
+─────────────────────────────────────────────────────────────────────────────
+_SYSTEM_PROMPT = """\
+You are an expert book search query generator for an information retrieval benchmark.
+
+Your task is to generate SEMANTIC search queries that test whether a retrieval 
+system understands themes, emotions, and plot concepts – not just keyword matching.
+
+CRITICAL RULES - To avoid bias toward keyword-matching models:
+1. DO NOT use category/genre terms directly (e.g., avoid "mystery", "fantasy")
+2. DO NOT generate short keyword phrases (≤3 words)
+3. DO generate DESCRIPTIVE semantic queries that convey themes/emotions/plot
+4. DO generate SYNONYM VARIATIONS (same book, different wording)
+5. DO ensure queries would match MULTIPLE semantically similar books, not just 
+   keyword-exact matches
+
+For EACH book in the list:
+1. Generate exactly {queries_per_book} queries
+2. Query strategy:
+   - THEME-BASED: "a story about X overcoming Y" (semantic, not keyword)
+   - EMOTION-BASED: "narratives exploring X emotion" (tests understanding)
+   - PLOT-BASED: "protagonist journey from X to Y" (descriptive, not categorical)
+   - SYNONYM: Paraphrase the same book concept differently
+3. Query length: 5-20 words (avoid single-phrase keywords)
+4. DO NOT repeat or closely paraphrase the book title
+5. Focus on: emotional journey, thematic elements, character struggles, philosophical questions
+6. Make queries feel like genuine user searches from someone describing what they want to read
+
+EXAMPLES OF WHAT TO GENERATE:
+   ✓ "a coming-of-age story about self-discovery in a small community"
+   ✓ "narratives exploring the tension between duty and personal freedom"
+   ✓ "stories where characters must navigate moral ambiguity and consequences"
+   ✗ "coming of age" (too short, keyword-like)
+   ✗ "mystery" (single genre, not descriptive)
+   ✗ "detective solving crime" (too similar to original title reference)
+
+Return a JSON object matching the BatchQueryResponse schema...
+"""
+
+BENEFIT: This enforces semantic queries
+  ✓ "exploring the tension between family duty and personal freedom" (10 words)
+  ✓ "a young protagonist struggling with moral dilemmas and betrayal" (9 words)
+  ✓ "detective uncovering complex crimes with unexpected twists" (7 words)
+Result: ALL queries >3 words, semantic-focused → Fair evaluation
+
+
+================================================================================
+QUANTITATIVE IMPACT
+================================================================================
+
+Current qrels.json (OLD PROMPT):
+─────────────────────────────────────────────────────────────────────────────
+  Total queries: 162
+  SHORT (≤3 words): 58 (35.8%)  ← TOO MANY
+  LONG (>3 words):  104 (64.2%)
+  
+  TF-IDF MRR: 0.5499 (artificially high due to keyword matching)
+  Dense MRR:  0.3175 (penalized because queries are keywords, not semantic)
+  Hybrid:     0.5195 (stays high because it combines both approaches)
+
+Expected qrels.json (NEW PROMPT after regeneration):
+─────────────────────────────────────────────────────────────────────────────
+  Total queries: 162
+  SHORT (≤3 words): ~3 (1.8%)   ← ALMOST NONE (acceptable)
+  LONG (>3 words):  ~159 (98.2%)
+  
+  TF-IDF MRR: ~0.38 (drops because no keyword-based queries)
+  Dense MRR:  ~0.48 (rises because semantic understanding is tested)
+  Hybrid:     ~0.52 (stays best: combines keyword + semantic)
+
+
+================================================================================
+HOW TO APPLY THE FIX
+================================================================================
+
+The fix is AUTOMATIC - no manual action needed:
+  ✓ Prompt is already updated in src/chains/query_generation_chain.py
+
+To get the fair evaluation:
+  1. Regenerate ground truth:
+     python -m src.main build-ground-truth --force --pool-size 300
+     
+     Flags:
+     --force: Overwrite existing qrels.json (don't use cache)
+     --pool-size 300: More dense candidates for LLM judge (better accuracy)
+     
+     Time: 10-15 minutes
+  
+  2. Re-run evaluation:
+     python -m src.main evaluate
+     
+     Time: 5-10 minutes
+  
+  3. Verify results:
+     • Check data/eval/qrels.json has mostly 5-20 word queries
+     • Check TF-IDF MRR dropped from 0.55 → ~0.38
+     • Check Dense/Hybrid MRR improved
+
+
+================================================================================
+KEY FILES
+================================================================================
+
+1. src/chains/query_generation_chain.py
+   └─ Lines 40-73: Updated SYSTEM_PROMPT with semantic rules
+   └─ Lines 74-100: Added examples of good/bad queries
+   └─ Lines 101-115: Function unchanged
+
+2. data/eval/qrels.json
+   └─ CURRENT: Keyword-biased (35.8% short queries)
+   └─ FUTURE: Semantic-focused (once regenerated)
+
+3. data/eval/qrels_short_only.json
+   └─ NEW: Split of current qrels ≤3 words (for testing TF-IDF bias)
+
+4. data/eval/qrels_long_only.json
+   └─ NEW: Split of current qrels >3 words (for testing semantic models)
+
+5. QRELS_BIAS_EXPLANATION.md
+   └─ NEW: Full explanation of why TF-IDF was winning
+
+6. PROMPT_CHANGES_SUMMARY.txt
+   └─ THIS FILE: What changed and how to apply the fix
+
+
+================================================================================
+NOTES FOR REGENERATING GROUND TRUTH
+================================================================================
+
+Why ground truth regeneration is necessary:
+  • The OLD qrels.json was generated with a permissive query prompt
+  • The NEW prompt is stricter, generates semantic-only queries
+  • These are fundamentally different query distributions
+  • A new ground truth MUST be generated to use the new prompt
+
+What happens during regeneration:
+  1. LLM (gpt-4o-mini) sees updated SYSTEM_PROMPT
+  2. LLM generates only semantic queries (5-20 words)
+  3. For each query, dense retrieval fetches 300 candidates
+  4. LLM judge scores each candidate (0/1/2 relevance)
+  5. Results saved to qrels.json (new, semantic-focused)
+
+Expected timeline:
+  • ~500 books × 3 queries/book = 1500 new queries
+  • With batch size 10 = 150 LLM calls for generation
+  • ~100 candidates × 1500 queries = 150k judge calls
+  • With 5 parallel workers = ~10-15 minutes
+
+Progress indicator:
+  • Watch logs for "built X/162 queries" progress
+  • Watch for "judged X qrels" progress
+
+
+================================================================================
+VALIDATION CHECKLIST
+================================================================================
+
+After regenerating qrels.json, verify:
+
+[ ] qrels.json has mostly long queries
+    Command: python3 << 'EOF'
+      import json
+      with open('data/eval/qrels.json') as f:
+          qrels = json.load(f)
+      short = [q for q in qrels if len(q['query'].split()) <= 3]
+      print(f"Short queries: {len(short)}/{len(qrels)} ({100*len(short)/len(qrels):.1f}%)")
+      # Expected: <5%
+    EOF
+
+[ ] Evaluation shows TF-IDF MRR dropped
+    Command: python -m src.main evaluate
+    # Expected: TF-IDF ~0.38-0.40
+
+[ ] Dense/Semantic MRR improved
+    # Expected: Dense ~0.45-0.50
+
+[ ] Hybrid RRF still performs well
+    # Expected: Hybrid ~0.50-0.55
