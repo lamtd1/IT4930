@@ -1,23 +1,30 @@
-// ============================================================
-//  charts.jsx — bespoke SVG charts (grouped bar, scatter, radar)
-//  All keyed to the shared 5-method color palette.
-// ============================================================
-import { useState as useStateC, useRef as useRefC, useLayoutEffect } from 'react'
-import { METHODS, METHOD_MAP } from './data'
+import React, { useState, useRef, useLayoutEffect } from 'react';
+import { METHODS, METHOD_MAP } from '../../services/api';
+import type { EvaluationModel, GenreScores } from '../../services/types';
 
-function useWidth() {
-  const ref = useRefC(null);
-  const [w, setW] = useStateC(720);
+export function useWidth(): [React.RefObject<HTMLDivElement | null>, number] {
+  const ref = useRef<HTMLDivElement>(null);
+  const [w, setW] = useState(720);
+
   useLayoutEffect(() => {
     if (!ref.current) return;
-    const ro = new ResizeObserver(entries => { setW(entries[0].contentRect.width); });
+    const ro = new ResizeObserver(entries => {
+      if (!entries || !entries[0]) return;
+      setW(entries[0].contentRect.width);
+    });
     ro.observe(ref.current);
     return () => ro.disconnect();
   }, []);
+
   return [ref, w];
 }
 
-function MethodLegend({ methods = METHODS, style }) {
+interface MethodLegendProps {
+  methods?: typeof METHODS;
+  style?: React.CSSProperties;
+}
+
+export const MethodLegend: React.FC<MethodLegendProps> = ({ methods = METHODS, style }) => {
   return (
     <div style={{ display: "flex", flexWrap: "wrap", gap: "8px 18px", ...style }}>
       {methods.map(m => (
@@ -28,20 +35,29 @@ function MethodLegend({ methods = METHODS, style }) {
       ))}
     </div>
   );
+};
+
+interface GroupedBarChartProps {
+  models: EvaluationModel[];
 }
 
-/* ---------- grouped bar: 3 metric groups × 5 method bars ---------- */
-function GroupedBarChart({ models }) {
+export const GroupedBarChart: React.FC<GroupedBarChartProps> = ({ models }) => {
   const [ref, W] = useWidth();
   const H = 320, padL = 38, padR = 12, padT = 18, padB = 46;
-  const metrics = [{ key: "p_at_5", label: "P@5" }, { key: "p_at_10", label: "P@10" }, { key: "mrr", label: "MRR" }];
-  const [hover, setHover] = useStateC(null);
+  const metrics = [
+    { key: "p_at_5" as const, label: "P@5" },
+    { key: "p_at_10" as const, label: "P@10" },
+    { key: "mrr" as const, label: "MRR" }
+  ];
+  const [hover, setHover] = useState<{ metric: string; method: string; v: number } | null>(null);
+
   const innerW = Math.max(W - padL - padR, 10), innerH = H - padT - padB;
   const groupW = innerW / metrics.length;
   const barGap = 4, groupPad = 0.22;
   const barW = (groupW * (1 - groupPad)) / models.length;
-  const yToPx = v => padT + innerH * (1 - v);
+  const yToPx = (v: number) => padT + innerH * (1 - v);
   const ticks = [0, 0.25, 0.5, 0.75, 1];
+
   return (
     <div ref={ref} style={{ width: "100%" }}>
       <svg width={W} height={H} style={{ display: "block", overflow: "visible" }}>
@@ -56,8 +72,8 @@ function GroupedBarChart({ models }) {
           return (
             <g key={metric.key}>
               {models.map((m, mi) => {
-                const meta = METHOD_MAP[m.method];
-                const v = m[metric.key];
+                const meta = METHOD_MAP[m.method] || { color: 'var(--ink-mute)' };
+                const v = m[metric.key] || 0;
                 const x = gx + mi * barW;
                 const h = innerH * v;
                 const hovered = hover && hover.metric === metric.key && hover.method === m.method;
@@ -77,20 +93,25 @@ function GroupedBarChart({ models }) {
       </svg>
     </div>
   );
+};
+
+interface ScatterChartProps {
+  models: EvaluationModel[];
 }
 
-/* ---------- scatter: ms/query (X, log) vs P@5 (Y) ---------- */
-function ScatterChart({ models }) {
+export const ScatterChart: React.FC<ScatterChartProps> = ({ models }) => {
   const [ref, W] = useWidth();
   const H = 340, padL = 44, padR = 20, padT = 18, padB = 52;
-  const [hover, setHover] = useStateC(null);
+  const [hover, setHover] = useState<string | null>(null);
+
   const innerW = Math.max(W - padL - padR, 10), innerH = H - padT - padB;
   const xticks = [1, 5, 10, 50, 100, 200];
   const xmin = Math.log10(3), xmax = Math.log10(260);
-  const xToPx = ms => padL + innerW * ((Math.log10(ms) - xmin) / (xmax - xmin));
-  const yToPx = v => padT + innerH * (1 - (v - 0.3) / (0.9 - 0.3));
+  const xToPx = (ms: number) => padL + innerW * ((Math.log10(ms) - xmin) / (xmax - xmin));
+  const yToPx = (v: number) => padT + innerH * (1 - (v - 0.3) / (0.9 - 0.3));
   const yticks = [0.3, 0.45, 0.6, 0.75, 0.9];
   const sorted = [...models].sort((a, b) => a.ms_per_query - b.ms_per_query);
+
   return (
     <div ref={ref} style={{ width: "100%" }}>
       <svg width={W} height={H} style={{ display: "block", overflow: "visible" }}>
@@ -106,11 +127,10 @@ function ScatterChart({ models }) {
             <text x={xToPx(t)} y={H - padB + 16} fontSize={10.5} fill="var(--ink-mute)" textAnchor="middle" fontFamily="var(--font-mono)">{t}</text>
           </g>
         ))}
-        {/* tradeoff frontier */}
         <polyline points={sorted.map(m => `${xToPx(m.ms_per_query)},${yToPx(m.p_at_5)}`).join(" ")}
           fill="none" stroke="var(--ink-faint)" strokeWidth={1.4} strokeDasharray="5 4" opacity={0.6} />
         {models.map(m => {
-          const meta = METHOD_MAP[m.method];
+          const meta = METHOD_MAP[m.method] || { color: 'var(--ink-mute)', short: m.method };
           const cx = xToPx(m.ms_per_query), cy = yToPx(m.p_at_5);
           const hv = hover === m.method;
           return (
@@ -126,22 +146,27 @@ function ScatterChart({ models }) {
       </svg>
     </div>
   );
+};
+
+interface GenreRadarChartProps {
+  byGenre: GenreScores[];
+  activeMethods: string[];
 }
 
-/* ---------- radar: P@5 by genre, one polygon per method ---------- */
-function GenreRadarChart({ byGenre, activeMethods }) {
+export const GenreRadarChart: React.FC<GenreRadarChartProps> = ({ byGenre, activeMethods }) => {
   const [ref, W] = useWidth();
   const size = Math.min(W, 420);
   const H = size;
   const cx = W / 2, cy = H / 2, R = size / 2 - 54;
   const genres = byGenre.map(g => g.genre);
   const n = genres.length;
-  const pt = (i, r) => {
+  const pt = (i: number, r: number) => {
     const a = (Math.PI * 2 * i) / n - Math.PI / 2;
     return [cx + Math.cos(a) * r, cy + Math.sin(a) * r];
   };
-  const scaleR = v => R * ((v - 0.3) / (0.9 - 0.3));
+  const scaleR = (v: number) => R * ((v - 0.3) / (0.9 - 0.3));
   const rings = [0.3, 0.45, 0.6, 0.75, 0.9];
+
   return (
     <div ref={ref} style={{ width: "100%", display: "flex", justifyContent: "center" }}>
       <svg width={W} height={H} style={{ display: "block", overflow: "visible" }}>
@@ -160,10 +185,16 @@ function GenreRadarChart({ byGenre, activeMethods }) {
       </svg>
     </div>
   );
+};
+
+interface MiniBarProps {
+  value: number;
+  color: string;
+  max?: number;
+  width?: number;
 }
 
-/* ---------- inline mini-bar for tables ---------- */
-function MiniBar({ value, color, max = 1, width = 64 }) {
+export const MiniBar: React.FC<MiniBarProps> = ({ value, color, max = 1, width = 64 }) => {
   return (
     <span style={{ display: "inline-flex", alignItems: "center", gap: 8 }}>
       <span style={{ width, height: 6, background: "var(--paper-2)", borderRadius: 99, overflow: "hidden", border: "1px solid var(--line-soft)" }}>
@@ -172,6 +203,4 @@ function MiniBar({ value, color, max = 1, width = 64 }) {
       <span className="mono" style={{ fontSize: 12.5, color: "var(--ink)", minWidth: 34 }}>{value.toFixed(2)}</span>
     </span>
   );
-}
-
-export { MethodLegend, GroupedBarChart, ScatterChart, GenreRadarChart, MiniBar, useWidth };
+};

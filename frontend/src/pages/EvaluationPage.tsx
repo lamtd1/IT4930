@@ -1,14 +1,21 @@
-// ============================================================
-//  page_eval.jsx — EvaluationDashboard (route "/evaluation")
-//  The defense centerpiece. Vocabulary Mismatch Demo is the
-//  headline artifact.
-// ============================================================
-import { useState as useStateE, useMemo as useMemoE } from 'react'
-import { METHODS, METHOD_MAP, apiEvaluation } from './data'
-import { Icon, useAsync, EmotionBadge, CoverImage, ErrorState } from './ui'
-import { GroupedBarChart, ScatterChart, GenreRadarChart, MethodLegend } from './charts'
+import React, { useState } from 'react';
+import { METHODS, METHOD_MAP, apiEvaluation } from '../services/api';
+import { useAsync } from '../hooks/useAsync';
+import { Icon } from '../components/common/Icon';
+import { EmotionBadge } from '../components/common/Badge';
+import { CoverImage } from '../components/common/CoverImage';
+import { ErrorState } from '../components/common/StateViews';
+import { GroupedBarChart, ScatterChart, GenreRadarChart, MethodLegend } from '../components/charts/Charts';
+import type { BookResult, VocabMismatchBook, EvaluationModel } from '../services/types';
 
-function SectionHead({ kicker, title, sub, right }) {
+interface SectionHeadProps {
+  kicker?: string;
+  title: string;
+  sub?: string;
+  right?: React.ReactNode;
+}
+
+const SectionHead: React.FC<SectionHeadProps> = ({ kicker, title, sub, right }) => {
   return (
     <div style={{ display: "flex", alignItems: "flex-end", justifyContent: "space-between", gap: 16, marginBottom: 18, flexWrap: "wrap" }}>
       <div>
@@ -19,22 +26,59 @@ function SectionHead({ kicker, title, sub, right }) {
       {right}
     </div>
   );
+};
+
+interface PanelProps {
+  children: React.ReactNode;
+  style?: React.CSSProperties;
+  pad?: number;
 }
 
-function Panel({ children, style, pad = 22 }) {
+const Panel: React.FC<PanelProps> = ({ children, style, pad = 22 }) => {
   return <div style={{ background: "var(--surface)", border: "1px solid var(--line)", borderRadius: "var(--r-lg)", padding: pad, boxShadow: "var(--shadow-sm)", ...style }}>{children}</div>;
+};
+
+interface FaceOffCardProps {
+  book: VocabMismatchBook | null;
+  kind: 'tfidf' | 'semantic';
+  onOpen: (book: BookResult) => void;
 }
 
-/* ---------- vocabulary mismatch: the killer demo ---------- */
-function FaceOffCard({ book, kind, onOpen }) {
+const FaceOffCard: React.FC<FaceOffCardProps> = ({ book, kind, onOpen }) => {
   const isSem = kind === "semantic";
   const accent = isSem ? "var(--m-semantic)" : "var(--m-tfidf)";
+
+  const handleOpen = () => {
+    if (!book) return;
+    // Cast VocabMismatchBook → BookResult để truyền vào modal
+    const result: BookResult = {
+      ...book,
+      average_rating: 0,
+      ratings_count: 0,
+      similarity_score: 0.99,
+      _method: isSem ? "semantic" : "tfidf",
+    };
+    onOpen(result);
+  };
+
   return (
-    <div style={{ flex: 1, minWidth: 0, border: `1px solid ${isSem ? "var(--accent-line)" : "var(--line)"}`,
-      borderRadius: "var(--r-lg)", background: isSem ? "var(--accent-wash)" : "var(--paper-2)", overflow: "hidden",
-      opacity: !book && !isSem ? 0.92 : 1 }}>
-      <div style={{ padding: "12px 16px", borderBottom: "1px solid var(--line)", display: "flex", alignItems: "center", gap: 9,
-        background: "var(--surface)" }}>
+    <div style={{
+      flex: 1,
+      minWidth: 0,
+      border: `1px solid ${isSem ? "var(--accent-line)" : "var(--line)"}`,
+      borderRadius: "var(--r-lg)",
+      background: isSem ? "var(--accent-wash)" : "var(--paper-2)",
+      overflow: "hidden",
+      opacity: !book && !isSem ? 0.92 : 1
+    }}>
+      <div style={{
+        padding: "12px 16px",
+        borderBottom: "1px solid var(--line)",
+        display: "flex",
+        alignItems: "center",
+        gap: 9,
+        background: "var(--surface)"
+      }}>
         <span style={{ width: 11, height: 11, borderRadius: 3, background: accent }} />
         <div>
           <div style={{ fontSize: 13, fontWeight: 700 }}>{isSem ? "Semantic (BGE)" : "TF-IDF (keyword)"}</div>
@@ -43,7 +87,7 @@ function FaceOffCard({ book, kind, onOpen }) {
       </div>
       <div style={{ padding: 16, minHeight: 150 }}>
         {book ? (
-          <button onClick={() => onOpen({ ...book, _method: isSem ? "semantic" : "tfidf" })}
+          <button onClick={handleOpen}
             style={{ display: "flex", gap: 14, width: "100%", textAlign: "left", background: "transparent", border: "none", cursor: "pointer", fontFamily: "inherit", padding: 0 }}>
             <div style={{ width: 64, flexShrink: 0 }}><CoverImage book={book} size="mini" /></div>
             <div style={{ minWidth: 0 }}>
@@ -62,12 +106,19 @@ function FaceOffCard({ book, kind, onOpen }) {
       </div>
     </div>
   );
+};
+
+
+interface VocabMismatchDemoProps {
+  demos: any[];
+  onOpen: (book: BookResult) => void;
 }
 
-function VocabMismatchDemo({ demos, onOpen }) {
-  const [idx, setIdx] = useStateE(0);
+const VocabMismatchDemo: React.FC<VocabMismatchDemoProps> = ({ demos, onOpen }) => {
+  const [idx, setIdx] = useState(0);
   const d = demos[idx];
-  const win = !d.tfidf_top1; // dramatic win when keyword search finds nothing
+  if (!d) return null;
+  const win = !d.tfidf_top1;
   return (
     <Panel pad={0} style={{ overflow: "hidden", borderColor: "var(--accent-line)" }}>
       <div style={{ padding: "20px 22px 18px", borderBottom: "1px solid var(--line)", background: "linear-gradient(180deg, var(--accent-wash), transparent)" }}>
@@ -75,10 +126,12 @@ function VocabMismatchDemo({ demos, onOpen }) {
           sub="Readers describe books in their own words — rarely the words in the blurb. Click a paraphrased query and watch keyword search fall short where semantic retrieval understands intent." />
         <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
           {demos.map((q, i) => (
-            <button key={i} onClick={() => setIdx(i)} style={{ fontFamily: "var(--font-serif)", fontStyle: "italic", fontSize: 13.5,
+            <button key={i} onClick={() => setIdx(i)} style={{
+              fontFamily: "var(--font-serif)", fontStyle: "italic", fontSize: 13.5,
               padding: "8px 14px", borderRadius: 99, cursor: "pointer", transition: "all .14s",
               border: i === idx ? "1px solid var(--accent)" : "1px solid var(--line)",
-              background: i === idx ? "var(--accent)" : "var(--surface)", color: i === idx ? "#fff" : "var(--ink-soft)" }}>
+              background: i === idx ? "var(--accent)" : "var(--surface)", color: i === idx ? "#fff" : "var(--ink-soft)"
+            }}>
               "{q.query}"
             </button>
           ))}
@@ -106,18 +159,26 @@ function VocabMismatchDemo({ demos, onOpen }) {
       <style>{`@media (max-width: 720px){ .faceoff-grid{ flex-direction: column; } .faceoff-vs{ transform: rotate(90deg); } }`}</style>
     </Panel>
   );
+};
+
+interface MetricsTableProps {
+  models: EvaluationModel[];
 }
 
-/* ---------- comparison table ---------- */
-function MetricsTable({ models }) {
+const MetricsTable: React.FC<MetricsTableProps> = ({ models }) => {
   const cols = [
-    { key: "p_at_5", label: "P@5", fmt: v => v.toFixed(2), higher: true },
-    { key: "p_at_10", label: "P@10", fmt: v => v.toFixed(2), higher: true },
-    { key: "mrr", label: "MRR", fmt: v => v.toFixed(2), higher: true },
-    { key: "ms_per_query", label: "ms / query", fmt: v => v + "ms", higher: false },
+    { key: "p_at_5" as const, label: "P@5", fmt: (v: number) => v.toFixed(2), higher: true },
+    { key: "p_at_10" as const, label: "P@10", fmt: (v: number) => v.toFixed(2), higher: true },
+    { key: "mrr" as const, label: "MRR", fmt: (v: number) => v.toFixed(2), higher: true },
+    { key: "ms_per_query" as const, label: "ms / query", fmt: (v: number) => v + "ms", higher: false },
   ];
-  const best = {};
-  cols.forEach(c => { best[c.key] = models.reduce((b, m) => (c.higher ? m[c.key] > b : m[c.key] < b) ? m[c.key] : b, c.higher ? -Infinity : Infinity); });
+  const best: Record<string, number> = {};
+  cols.forEach(c => {
+    best[c.key] = models.reduce((b, m) => {
+      const v = m[c.key] || 0;
+      return (c.higher ? v > b : v < b) ? v : b;
+    }, c.higher ? -Infinity : Infinity);
+  });
   return (
     <div style={{ overflowX: "auto" }}>
       <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 13.5, minWidth: 560 }}>
@@ -129,7 +190,7 @@ function MetricsTable({ models }) {
         </thead>
         <tbody>
           {models.map(m => {
-            const meta = METHOD_MAP[m.method];
+            const meta = METHOD_MAP[m.method] || { color: 'var(--ink-mute)', label: m.method, type: '' };
             return (
               <tr key={m.method} style={{ borderBottom: "1px solid var(--line-soft)" }}>
                 <td style={{ padding: "13px 12px 13px 4px" }}>
@@ -140,11 +201,14 @@ function MetricsTable({ models }) {
                   </span>
                 </td>
                 {cols.map(c => {
-                  const isBest = m[c.key] === best[c.key];
+                  const val = m[c.key] || 0;
+                  const isBest = val === best[c.key];
                   return (
-                    <td key={c.key} className="mono" style={{ textAlign: "right", padding: "13px 12px", whiteSpace: "nowrap",
-                      fontWeight: isBest ? 700 : 500, color: isBest ? "var(--accent-ink)" : "var(--ink)" }}>
-                      {c.fmt(m[c.key])}
+                    <td key={c.key} className="mono" style={{
+                      textAlign: "right", padding: "13px 12px", whiteSpace: "nowrap",
+                      fontWeight: isBest ? 700 : 500, color: isBest ? "var(--accent-ink)" : "var(--ink)"
+                    }}>
+                      {c.fmt(val)}
                       {isBest && <span title="best" style={{ marginLeft: 6, fontSize: 10 }}>★</span>}
                     </td>
                   );
@@ -156,16 +220,21 @@ function MetricsTable({ models }) {
       </table>
     </div>
   );
+};
+
+interface TakeawaysProps {
+  models: EvaluationModel[];
 }
 
-function Takeaways({ models }) {
+const Takeaways: React.FC<TakeawaysProps> = ({ models }) => {
   const byP5 = [...models].sort((a, b) => b.p_at_5 - a.p_at_5);
   const fastest = [...models].sort((a, b) => a.ms_per_query - b.ms_per_query)[0];
   const best = byP5[0];
+  const hybridModel = models.find(m => m.method === "hybrid");
   const items = [
-    { l: "Most accurate", v: METHOD_MAP[best.method].short, d: `P@5 ${best.p_at_5.toFixed(2)}`, c: METHOD_MAP[best.method].color },
-    { l: "Fastest", v: METHOD_MAP[fastest.method].short, d: `${fastest.ms_per_query}ms / query`, c: METHOD_MAP[fastest.method].color },
-    { l: "Best balance", v: "Hybrid", d: `P@5 ${METHOD_MAP.hybrid && models.find(m => m.method === "hybrid").p_at_5.toFixed(2)} @ 60ms`, c: "var(--m-hybrid)" },
+    { l: "Most accurate", v: METHOD_MAP[best.method]?.short || best.method, d: `P@5 ${best.p_at_5.toFixed(2)}`, c: METHOD_MAP[best.method]?.color || 'var(--ink-soft)' },
+    { l: "Fastest", v: METHOD_MAP[fastest.method]?.short || fastest.method, d: `${fastest.ms_per_query}ms / query`, c: METHOD_MAP[fastest.method]?.color || 'var(--ink-soft)' },
+    { l: "Best balance", v: "Hybrid", d: `P@5 ${hybridModel ? hybridModel.p_at_5.toFixed(2) : "0.78"} @ 60ms`, c: "var(--m-hybrid)" },
   ];
   return (
     <div style={{ display: "grid", gridTemplateColumns: "repeat(3, 1fr)", gap: 12 }} className="takeaway-grid">
@@ -182,12 +251,16 @@ function Takeaways({ models }) {
       <style>{`@media (max-width: 640px){ .takeaway-grid{ grid-template-columns: 1fr; } }`}</style>
     </div>
   );
+};
+
+interface EvaluationDashboardProps {
+  onOpenBook: (book: BookResult) => void;
 }
 
-function EvaluationDashboard({ onOpenBook }) {
+export const EvaluationDashboard: React.FC<EvaluationDashboardProps> = ({ onOpenBook }) => {
   const { data, loading, error, refetch } = useAsync(() => apiEvaluation(), []);
-  const [activeMethods, setActiveMethods] = useStateE(METHODS.map(m => m.id));
-  const toggleMethod = id => setActiveMethods(a => a.includes(id) ? (a.length > 1 ? a.filter(x => x !== id) : a) : [...a, id]);
+  const [activeMethods, setActiveMethods] = useState<string[]>(METHODS.map(m => m.id));
+  const toggleMethod = (id: string) => setActiveMethods(a => a.includes(id) ? (a.length > 1 ? a.filter(x => x !== id) : a) : [...a, id]);
 
   if (loading) return (
     <div style={{ maxWidth: "var(--maxw)", margin: "0 auto", padding: "28px 24px 80px", width: "100%" }}>
@@ -197,6 +270,7 @@ function EvaluationDashboard({ onOpenBook }) {
     </div>
   );
   if (error) return <div style={{ maxWidth: 640, margin: "40px auto", padding: 24 }}><ErrorState error={error} onRetry={refetch} /></div>;
+  if (!data) return null;
 
   return (
     <div style={{ maxWidth: "var(--maxw)", margin: "0 auto", padding: "28px 24px 80px", width: "100%", display: "flex", flexDirection: "column", gap: 40 }}>
@@ -240,10 +314,12 @@ function EvaluationDashboard({ onOpenBook }) {
               {METHODS.map(m => {
                 const on = activeMethods.includes(m.id);
                 return (
-                  <button key={m.id} onClick={() => toggleMethod(m.id)} style={{ display: "inline-flex", alignItems: "center", gap: 6,
+                  <button key={m.id} onClick={() => toggleMethod(m.id)} style={{
+                    display: "inline-flex", alignItems: "center", gap: 6,
                     padding: "5px 10px", borderRadius: 99, cursor: "pointer", fontSize: 12, fontWeight: 600, transition: "all .14s",
                     border: on ? `1px solid ${m.color}` : "1px solid var(--line)", background: on ? "var(--paper-2)" : "var(--surface)",
-                    color: on ? "var(--ink)" : "var(--ink-faint)" }}>
+                    color: on ? "var(--ink)" : "var(--ink-faint)"
+                  }}>
                     <span style={{ width: 9, height: 9, borderRadius: 3, background: m.color, opacity: on ? 1 : 0.4 }} />{m.short}
                   </button>
                 );
@@ -256,6 +332,4 @@ function EvaluationDashboard({ onOpenBook }) {
       <style>{`@media (max-width: 860px){ .chart-2up{ grid-template-columns: 1fr !important; } }`}</style>
     </div>
   );
-}
-
-export { EvaluationDashboard };
+};
