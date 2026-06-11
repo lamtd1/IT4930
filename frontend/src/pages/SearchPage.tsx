@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { METHODS, EMOTIONS, EMOTION_META, EXAMPLE_QUERIES, apiSearch, apiStats } from '../services/api';
+import { METHODS, EXAMPLE_QUERIES, apiSearch, apiStats } from '../services/api';
 import { METHOD_EXPLAIN } from '../components/common/Popover';
 import { CoverImage } from '../components/common/CoverImage';
-import { StarRating, EmotionBadge, MethodChip } from '../components/common/Badge';
+import { EmotionBadge, MethodChip } from '../components/common/Badge';
 import { Icon } from '../components/common/Icon';
 import { Button } from '../components/common/Button';
 import { Spinner, EmptyState, ErrorState } from '../components/common/StateViews';
@@ -68,10 +68,6 @@ export const BookCard: React.FC<BookCardProps> = ({ book, method, onOpen, index 
           overflow: "hidden"
         }}>{book.title}</div>
         <div style={{ fontSize: 12.5, color: "var(--ink-mute)" }}>{book.authors} · <span className="mono">{book.published_year}</span></div>
-        <div style={{ display: "flex", alignItems: "center", gap: 7, marginTop: 1 }}>
-          <StarRating value={book.average_rating} size={12} />
-          <span className="mono" style={{ fontSize: 11.5, color: "var(--ink-mute)" }}>{book.average_rating.toFixed(2)}</span>
-        </div>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 5, marginTop: "auto", paddingTop: 6 }}>
           {book.top_emotions.map(em => <EmotionBadge key={em} emotion={em} />)}
         </div>
@@ -132,45 +128,6 @@ const MethodSelector: React.FC<MethodSelectorProps> = ({ value, onChange }) => {
   );
 };
 
-interface EmotionFilterProps {
-  value: string[];
-  onChange: (emotions: string[]) => void;
-}
-
-const EmotionFilter: React.FC<EmotionFilterProps> = ({ value, onChange }) => {
-  const toggle = (em: string) => onChange(value.includes(em) ? value.filter(x => x !== em) : [...value, em]);
-  return (
-    <div style={{ display: "flex", flexWrap: "wrap", gap: 7 }}>
-      {EMOTIONS.map(em => {
-        const m = EMOTION_META[em];
-        if (!m) return null;
-        const active = value.includes(em);
-        return (
-          <button key={em} onClick={() => toggle(em)}
-            style={{
-              display: "inline-flex",
-              alignItems: "center",
-              gap: 6,
-              padding: "5px 11px",
-              cursor: "pointer",
-              borderRadius: 99,
-              fontFamily: "inherit",
-              fontSize: 12.5,
-              fontWeight: 600,
-              transition: "all .14s",
-              border: active ? `1px solid ${m.color}` : "1px solid var(--line)",
-              background: active ? "var(--paper-2)" : "var(--surface)",
-              color: active ? "var(--ink)" : "var(--ink-mute)"
-            }}
-          >
-            <span style={{ width: 9, height: 9, borderRadius: 99, background: m.color, opacity: active ? 1 : 0.45 }} />
-            {m.label}
-          </button>
-        );
-      })}
-    </div>
-  );
-};
 
 interface FieldProps {
   label: string;
@@ -251,7 +208,6 @@ const IdleState: React.FC<IdleStateProps> = ({ stats, onPick }) => {
           : stats.data && [
             { v: stats.data.total_books.toLocaleString(), l: "books indexed" },
             { v: stats.data.total_categories, l: "categories" },
-            { v: stats.data.avg_rating ? stats.data.avg_rating.toFixed(2) : "4.11", l: "avg rating" },
           ].map((s, i) => (
             <div key={i} style={{
               flex: 1,
@@ -304,9 +260,8 @@ interface SearchPageProps {
 
 export const SearchPage: React.FC<SearchPageProps> = ({ onOpenBook }) => {
   const [query, setQuery] = useState("");
-  const [committed, setCommitted] = useState<{ query: string; method: string; emotions: string[]; topK: number } | null>(null);
+  const [committed, setCommitted] = useState<{ query: string; method: string; topK: number } | null>(null);
   const [method, setMethod] = useState("semantic");
-  const [emotions, setEmotions] = useState<string[]>([]);
   const [topK, setTopK] = useState(10);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -321,7 +276,6 @@ export const SearchPage: React.FC<SearchPageProps> = ({ onOpenBook }) => {
           setQuery("");
           setCommitted(null);
           setMethod("semantic");
-          setEmotions([]);
           setTopK(10);
         }
         return;
@@ -330,16 +284,14 @@ export const SearchPage: React.FC<SearchPageProps> = ({ onOpenBook }) => {
       const params = new URLSearchParams(hash.slice(qIdx));
       const q = params.get("query") || "";
       const m = params.get("method") || "semantic";
-      const ems = params.get("emotions") ? params.get("emotions")!.split(",") : [];
       const k = parseInt(params.get("topK") || "10", 10);
 
       setQuery(q);
       setMethod(m);
-      setEmotions(ems);
       setTopK(k);
 
       if (q.trim()) {
-        setCommitted({ query: q.trim(), method: m, emotions: ems, topK: k });
+        setCommitted({ query: q.trim(), method: m, topK: k });
       } else {
         setCommitted(null);
       }
@@ -351,11 +303,10 @@ export const SearchPage: React.FC<SearchPageProps> = ({ onOpenBook }) => {
   }, []);
 
   // Update hash when search details change
-  const updateHash = (q: string, m: string, ems: string[], k: number) => {
+  const updateHash = (q: string, m: string, k: number) => {
     const params = new URLSearchParams();
     if (q.trim()) params.set("query", q.trim());
     if (m !== "semantic") params.set("method", m);
-    if (ems.length) params.set("emotions", ems.join(","));
     if (k !== 10) params.set("topK", k.toString());
 
     const pStr = params.toString();
@@ -373,13 +324,11 @@ export const SearchPage: React.FC<SearchPageProps> = ({ onOpenBook }) => {
       query: committed!.query,
       top_k: committed!.topK,
       method: committed!.method,
-      filter_emotions: committed!.emotions.length ? committed!.emotions : null
     }),
     [
       committed && committed.query,
       committed && committed.method,
       committed && committed.topK,
-      committed && (committed.emotions || []).join(",")
     ],
     { enabled: !!committed }
   );
@@ -388,16 +337,16 @@ export const SearchPage: React.FC<SearchPageProps> = ({ onOpenBook }) => {
     const qq = (q != null ? q : query).trim();
     if (!qq) return;
     if (q != null) setQuery(qq);
-    setCommitted({ query: qq, method, emotions, topK });
-    updateHash(qq, method, emotions, topK);
-  }, [query, method, emotions, topK]);
+    setCommitted({ query: qq, method, topK });
+    updateHash(qq, method, topK);
+  }, [query, method, topK]);
 
   useEffect(() => {
     if (committed) {
-      setCommitted(c => c ? { ...c, method, emotions, topK } : null);
-      updateHash(committed.query, method, emotions, topK);
+      setCommitted(c => c ? { ...c, method, topK } : null);
+      updateHash(committed.query, method, topK);
     }
-  }, [method, emotions, topK]);
+  }, [method, topK]);
 
   const onKey = (e: React.KeyboardEvent<HTMLInputElement>) => { if (e.key === "Enter") submit(); };
 
@@ -458,28 +407,23 @@ export const SearchPage: React.FC<SearchPageProps> = ({ onOpenBook }) => {
           <Field label="Retrieval method" hint="how results are ranked">
             <MethodSelector value={method} onChange={setMethod} />
           </Field>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr auto", gap: 24, alignItems: "start" }} className="search-lower">
-            <Field label="Emotion filter" hint="optional · keep books that evoke these">
-              <EmotionFilter value={emotions} onChange={setEmotions} />
-            </Field>
-            <Field label="Results">
-              <div style={{ display: "inline-flex", background: "var(--paper-2)", borderRadius: "var(--r-md)", padding: 3, border: "1px solid var(--line)" }}>
-                {[5, 10, 20].map(k => (
-                  <button key={k} onClick={() => setTopK(k)} className="mono" style={{
-                    border: "none",
-                    cursor: "pointer",
-                    padding: "7px 15px",
-                    borderRadius: 6,
-                    fontSize: 13,
-                    fontWeight: 600,
-                    background: topK === k ? "var(--surface)" : "transparent",
-                    color: topK === k ? "var(--ink)" : "var(--ink-mute)",
-                    boxShadow: topK === k ? "var(--shadow-sm)" : "none"
-                  }}>{k}</button>
-                ))}
-              </div>
-            </Field>
-          </div>
+          <Field label="Results">
+            <div style={{ display: "inline-flex", background: "var(--paper-2)", borderRadius: "var(--r-md)", padding: 3, border: "1px solid var(--line)" }}>
+              {[5, 10, 20].map(k => (
+                <button key={k} onClick={() => setTopK(k)} className="mono" style={{
+                  border: "none",
+                  cursor: "pointer",
+                  padding: "7px 15px",
+                  borderRadius: 6,
+                  fontSize: 13,
+                  fontWeight: 600,
+                  background: topK === k ? "var(--surface)" : "transparent",
+                  color: topK === k ? "var(--ink)" : "var(--ink-mute)",
+                  boxShadow: topK === k ? "var(--shadow-sm)" : "none"
+                }}>{k}</button>
+              ))}
+            </div>
+          </Field>
         </div>
       </div>
 
@@ -500,8 +444,8 @@ export const SearchPage: React.FC<SearchPageProps> = ({ onOpenBook }) => {
             <SkeletonGrid n={committed.topK} />
           </>
         ) : search.data.results.length === 0 ? (
-          <EmptyState title="No books matched" body={`Nothing came back for "${committed.query}" with the current filters. Try removing an emotion filter or rephrasing.`}
-            action={emotions.length ? <Button variant="outline" onClick={() => setEmotions([])}>Clear emotion filters</Button> : null} />
+          <EmptyState title="No books matched" body={`Nothing came back for "${committed.query}". Try rephrasing your query.`}
+            action={null} />
         ) : (
           <>
             <ResultsHeader data={search.data} committed={committed} fetching={search.fetching} />

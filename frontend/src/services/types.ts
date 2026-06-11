@@ -10,8 +10,6 @@ export interface Book {
   thumbnail: string | null;
   categories: string;
   published_year: number;
-  average_rating: number;
-  ratings_count: number;
   emotion_scores: Record<string, number>;
   top_emotions: string[];
   // Các trường chỉ có trong BookDetail (GET /books/{isbn13})
@@ -29,8 +27,6 @@ export interface BookResult {
   thumbnail: string | null;
   categories: string;
   published_year: number;
-  average_rating: number;
-  ratings_count: number;
   top_emotions: string[];
   similarity_score: number;
   emotion_scores: Record<string, number> | null;
@@ -41,7 +37,6 @@ export interface SearchRequest {
   query: string;
   top_k?: number;
   method?: string;
-  filter_emotions?: string[] | null;
 }
 
 export interface SearchResponse {
@@ -54,7 +49,6 @@ export interface SearchResponse {
 export interface StatsResponse {
   total_books: number;
   total_categories: number;
-  avg_rating?: number;
   emotion_distribution: Record<string, number>;
 }
 

@@ -31,10 +31,6 @@ class SearchRequest(BaseModel):
         default="semantic",
         description="Retrieval method to use.",
     )
-    filter_emotions: list[str] | None = Field(
-        default=None,
-        description="Optional emotion filter (e.g. ['fear', 'sadness']).",
-    )
 
 
 class BookResult(BaseModel):
@@ -47,8 +43,6 @@ class BookResult(BaseModel):
     thumbnail: str | None = None
     categories: str
     published_year: int
-    average_rating: float = 0.0
-    ratings_count: int = 0
     top_emotions: list[str]
     similarity_score: float
     emotion_scores: dict[str, float] | None = None

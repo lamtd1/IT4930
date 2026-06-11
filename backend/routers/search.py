@@ -112,19 +112,6 @@ async def search(req: SearchRequest, request: Request):
 
         book_row = df.loc[df["isbn13"] == rr.isbn13].iloc[0]
 
-        # Apply emotion filter
-        if req.filter_emotions:
-            passes = False
-            for em in req.filter_emotions:
-                try:
-                    if float(book_row.get(em, 0)) >= 0.28:
-                        passes = True
-                        break
-                except (ValueError, TypeError):
-                    pass
-            if not passes:
-                continue
-
         results.append(_build_book_result(book_row, rr.score))
 
         if len(results) >= req.top_k:

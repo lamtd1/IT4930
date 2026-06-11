@@ -3,14 +3,12 @@ import { Icon } from './components/common/Icon';
 import { Popover, MethodsExplained } from './components/common/Popover';
 import { SearchPage } from './pages/SearchPage';
 import { CompareMethodsPage } from './pages/ComparePage';
-import { EvaluationDashboard } from './pages/EvaluationPage';
 import { BookDetailModal } from './components/BookDetailModal';
 import type { BookResult } from './services/types';
 
 const ROUTES = [
   { path: "/", label: "Search", icon: "search" },
   { path: "/compare", label: "Compare", icon: "compare" },
-  { path: "/evaluation", label: "Evaluation", icon: "chart" },
 ];
 
 function useHashRoute(): string {
@@ -161,12 +159,11 @@ export default function App(): React.JSX.Element {
 
   let page;
   if (route.startsWith("/compare")) page = <CompareMethodsPage onOpenBook={setOpenBook} />;
-  else if (route.startsWith("/evaluation")) page = <EvaluationDashboard onOpenBook={setOpenBook} />;
   else page = <SearchPage onOpenBook={setOpenBook} />;
 
   return (
     <>
-      <NavBar current={route.startsWith("/compare") ? "/compare" : route.startsWith("/evaluation") ? "/evaluation" : "/"} theme={theme} toggleTheme={toggleTheme} />
+      <NavBar current={route.startsWith("/compare") ? "/compare" : "/"} theme={theme} toggleTheme={toggleTheme} />
       <main style={{ flex: 1 }}>{page}</main>
       <footer style={{ borderTop: "1px solid var(--line)", padding: "22px 24px", marginTop: "auto" }}>
         <div style={{

@@ -37,10 +37,8 @@ export const EMOTION_META: Record<string, EmotionMeta> = {
 
 // ví dụ tìm kiếm thử nghiệm đặt trên giao diện
 export const EXAMPLE_QUERIES = [
-  "a heartbreaking story about family secrets",
-  "lonely person searching for meaning",
-  "what it means to be human in the age of machines",
-  "fighting an oppressive government",
+  "World Cup statistics",
+  "history of soccer tournaments",
   "a chilling tale that keeps you up at night",
   "slow-burn romance with sharp banter",
 ];
@@ -77,7 +75,6 @@ export async function apiSearch(params: SearchRequest): Promise<SearchResponse> 
       query: params.query,
       top_k: params.top_k ?? 10,
       method: params.method ?? 'semantic',
-      filter_emotions: params.filter_emotions ?? null,
     }),
   });
   return handleResponse<SearchResponse>(res);

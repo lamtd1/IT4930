@@ -4,7 +4,7 @@ import { useAsync } from '../hooks/useAsync';
 import { Icon } from './common/Icon';
 import { Button } from './common/Button';
 import { CoverImage } from './common/CoverImage';
-import { MethodChip, StarRating } from './common/Badge';
+import { MethodChip } from './common/Badge';
 import { ErrorState } from './common/StateViews';
 import type { BookResult } from '../services/types';
 
@@ -125,8 +125,6 @@ export const BookDetailModal: React.FC<BookDetailModalProps> = ({ result, onClos
   }, [onClose]);
 
   const olUrl = `https://openlibrary.org/isbn/${result.isbn13}`;
-  const ratingsCount = (book || result).ratings_count || 0;
-
   return (
     <div onMouseDown={onClose} style={{
       position: "fixed",
@@ -199,12 +197,6 @@ export const BookDetailModal: React.FC<BookDetailModalProps> = ({ result, onClos
               <div style={{ fontSize: 15, color: "var(--ink-soft)" }}>
                 {result.authors} <span style={{ color: "var(--ink-faint)" }}>·</span> <span className="mono" style={{ fontSize: 13, color: "var(--ink-mute)" }}>{result.published_year}</span>
               </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 10, marginTop: 12 }}>
-                <StarRating value={result.average_rating} size={16} />
-                <span className="mono" style={{ fontSize: 13, fontWeight: 600 }}>{result.average_rating.toFixed(2)}</span>
-                <span style={{ fontSize: 13, color: "var(--ink-mute)" }}>· {ratingsCount.toLocaleString()} ratings</span>
-              </div>
-
               <p style={{ fontSize: 14.5, lineHeight: 1.62, color: "var(--ink-soft)", margin: "18px 0 0", textWrap: "pretty" }}>{result.description}</p>
 
               <div style={{ borderTop: "1px solid var(--line)", margin: "22px 0 0", paddingTop: 18 }}>
