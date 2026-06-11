@@ -62,7 +62,34 @@ class Settings(BaseSettings):
     )
     rerank_model: str = Field(
         default="BAAI/bge-reranker-base",
-        description="CrossEncoder model for reranking candidates.",
+        description="CrossEncoder model for reranking candidates (local mode).",
+    )
+
+    # -------------------------------------------------------------------------
+    # Jina Reranker API
+    # -------------------------------------------------------------------------
+    jina_api_key: str = Field(
+        default="",
+        description="Jina AI API key. Required when RERANK_USE_API=true.",
+    )
+    jina_rerank_model: str = Field(
+        default="jina-reranker-v3",
+        description="Jina reranker model name used when RERANK_USE_API=true.",
+    )
+    rerank_use_api: bool = Field(
+        default=False,
+        description=(
+            "If true, use the Jina Reranker REST API instead of a local CrossEncoder. "
+            "Requires JINA_API_KEY to be set."
+        ),
+    )
+    rerank_workers: Annotated[int, Field(gt=0)] = Field(
+        default=5,
+        description=(
+            "Number of concurrent threads for Jina API reranking. "
+            "Each thread handles one candidate (query, document) pair. "
+            "Only used when RERANK_USE_API=true."
+        ),
     )
 
     # -------------------------------------------------------------------------

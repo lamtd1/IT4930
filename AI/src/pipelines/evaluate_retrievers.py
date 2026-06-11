@@ -138,10 +138,14 @@ def run(settings=None) -> None:
 
     rerank = RerankRetriever(
         dense_retriever=dense,
-        rerank_model=settings.rerank_model,
+        rerank_model=settings.jina_rerank_model if settings.rerank_use_api else settings.rerank_model,
         candidate_pool=settings.rerank_candidate_pool,
+        use_api=settings.rerank_use_api,
+        jina_api_key=settings.jina_api_key,
+        rerank_workers=settings.rerank_workers,
     )
-    logger.info("  Reranking retriever configured ✓")
+    backend = "Jina API" if settings.rerank_use_api else "local CrossEncoder"
+    logger.info("  Reranking retriever configured ✓ (backend=%s, workers=%d)", backend, settings.rerank_workers)
 
     retrievers: dict[str, BaseRetriever] = {
         "tfidf": tfidf,

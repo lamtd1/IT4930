@@ -51,12 +51,29 @@ class DenseRetriever(BaseRetriever):
         return "dense"
 
     def _get_encoder(self):
-        """Lazy-load the SentenceTransformer model (avoids loading at import time)."""
+        """Lazy-load the SentenceTransformer model (avoids loading at import time).
+
+        Model weights are cached in ``models/bge_cache/`` inside the project so
+        subsequent runs load from local disk — no internet / API call needed.
+        """
         if self._encoder is None:
             # Import here to allow the module to be imported without torch installed
             from sentence_transformers import SentenceTransformer  # noqa: PLC0415
-            logger.info("Loading SentenceTransformer: %s", self._embedding_model_name)
-            self._encoder = SentenceTransformer(self._embedding_model_name)
+
+            # Resolve cache dir relative to project root (3 levels up from this file)
+            _project_root = Path(__file__).resolve().parents[2]
+            _cache_dir = _project_root / "models" / "bge_cache"
+            _cache_dir.mkdir(parents=True, exist_ok=True)
+
+            logger.info(
+                "Loading SentenceTransformer '%s' (cache: %s)",
+                self._embedding_model_name,
+                _cache_dir,
+            )
+            self._encoder = SentenceTransformer(
+                self._embedding_model_name,
+                cache_folder=str(_cache_dir),
+            )
         return self._encoder
 
     def _get_collection(self):
@@ -112,7 +129,14 @@ class DenseRetriever(BaseRetriever):
         chroma_path = Path(chroma_path)
         chroma_path.mkdir(parents=True, exist_ok=True)
 
-        encoder = SentenceTransformer(embedding_model)
+        # Cache model locally inside the project so every pipeline step reuses
+        # the same weights without hitting the HuggingFace Hub again.
+        _project_root = Path(__file__).resolve().parents[2]
+        _cache_dir = _project_root / "models" / "bge_cache"
+        _cache_dir.mkdir(parents=True, exist_ok=True)
+        logger.info("Model cache dir: %s", _cache_dir)
+
+        encoder = SentenceTransformer(embedding_model, cache_folder=str(_cache_dir))
 
         # Prepare documents (clean description used for corpus – no query prefix)
         descriptions = [clean_text(str(d)) for d in df["description"]]

@@ -7,6 +7,7 @@ Usage:
 Commands:
     build-indexes      Build TF-IDF, BM25, and Dense retrieval indexes
     build-ground-truth Generate evaluation queries and LLM-judged qrels
+    prune-qrels        Remove qrel entries that have 0 relevant books
     evaluate           Run all retrievers against qrels and produce results
 
 Options common to all commands:
@@ -25,6 +26,9 @@ Examples:
 
     # Append new results to existing qrels.json (ignores done_query_ids filter)
     python -m src.main build-ground-truth --pool-size 30 --queries-per-book 2 --append
+
+    # Remove qrel entries that have no relevant books
+    python -m src.main prune-qrels
 
     # Evaluate all retrievers
     python -m src.main evaluate
@@ -224,6 +228,99 @@ def evaluate_cmd(
     except Exception as exc:
         typer.echo(typer.style(f"Error: {exc}", fg=typer.colors.RED, bold=True), err=True)
         raise typer.Exit(code=1)
+
+
+@app.command("prune-qrels")
+def prune_qrels_cmd(
+    log_level: LogLevelOption = "INFO",
+    dry_run: Annotated[
+        bool,
+        typer.Option(
+            "--dry-run/--execute",
+            help="--dry-run (default): only report what would be removed without modifying the file. "
+                 "--execute: actually remove the entries and overwrite qrels.json.",
+        ),
+    ] = True,
+    no_backup: Annotated[
+        bool,
+        typer.Option(
+            "--no-backup",
+            help="Skip creating a .bak backup before overwriting qrels.json (only relevant with --execute).",
+        ),
+    ] = False,
+) -> None:
+    """
+    Remove qrel entries with zero relevant books from qrels.json.
+
+    Entries where ``relevant_isbns`` is empty are useless for evaluation
+    (they contribute nothing to any metric) and inflate the query count.
+    This command finds and optionally removes them.
+
+    By default runs in --dry-run mode (safe preview).  Pass --execute to
+    actually write the pruned file.  A .bak backup is created automatically
+    unless --no-backup is given.
+    """
+    import json  # noqa: PLC0415
+    import shutil  # noqa: PLC0415
+    from src.config.settings import get_settings  # noqa: PLC0415
+    from src.utils.logging_config import setup_logging  # noqa: PLC0415
+
+    settings = get_settings()
+    setup_logging(log_level=log_level, log_dir=settings.log_dir)
+
+    qrels_path = Path(settings.eval_output_path) / "qrels.json"
+
+    if not qrels_path.exists():
+        typer.echo(
+            typer.style(f"qrels.json not found at '{qrels_path}'.", fg=typer.colors.RED),
+            err=True,
+        )
+        raise typer.Exit(code=1)
+
+    with open(qrels_path, encoding="utf-8") as fh:
+        raw: list[dict] = json.load(fh)
+
+    total = len(raw)
+    kept   = [entry for entry in raw if entry.get("relevant_isbns")]
+    pruned = total - len(kept)
+
+    typer.echo(
+        f"qrels.json: {total} entries total | "
+        f"{typer.style(str(len(kept)), fg=typer.colors.GREEN)} with relevants | "
+        f"{typer.style(str(pruned), fg=typer.colors.YELLOW)} with 0 relevant books"
+    )
+
+    if pruned == 0:
+        typer.echo(typer.style("Nothing to prune.", fg=typer.colors.GREEN))
+        return
+
+    if dry_run:
+        typer.echo(
+            typer.style(
+                f"[dry-run] Would remove {pruned} entries. Re-run with --execute to apply.",
+                fg=typer.colors.YELLOW,
+            )
+        )
+        return
+
+    # --execute path
+    if not no_backup:
+        backup_path = qrels_path.with_suffix(".bak.json")
+        shutil.copy2(qrels_path, backup_path)
+        typer.echo(f"Backup saved to: {backup_path}")
+
+    tmp_path = qrels_path.with_suffix(".tmp")
+    with open(tmp_path, "w", encoding="utf-8") as fh:
+        json.dump(kept, fh, indent=2, default=str)
+    tmp_path.replace(qrels_path)
+
+    typer.echo(
+        typer.style(
+            f"Pruned {pruned} entries. qrels.json now has {len(kept)} entries.",
+            fg=typer.colors.GREEN,
+            bold=True,
+        )
+    )
 
 
 # ---------------------------------------------------------------------------
