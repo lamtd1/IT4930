@@ -143,6 +143,8 @@ book-retrieval-benchmark/
 ### 1. Clone and set up virtual environment
 
 ```bash
+
+
 cd "....\AI"
 python -m venv .venv
 .venv\Scripts\activate        # Windows

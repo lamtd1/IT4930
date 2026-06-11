@@ -6,7 +6,10 @@ Workflow:
     ↓
   Batch Query Generation (LLM)
     ↓
-  Dense Retrieval (top GROUND_TRUTH_CANDIDATE_POOL candidates per query)
+  [Concurrent] All 5 Retrievers fetch top-N candidates each
+    TF-IDF | BM25 | Dense | Hybrid RRF | Reranking
+    ↓
+  Union of candidates (dedup by ISBN-13)
     ↓
   LLM Relevance Judging (0/1/2 score per candidate) ← CONCURRENT
     ↓
@@ -19,10 +22,7 @@ KEY FEATURES:
   - Incremental saving: qrels.json updated after EVERY query
   - Concurrent judging: multiple judge calls per query in parallel
   - Graceful Ctrl+C: saves progress before exiting
-
-IMPORTANT:
-  Ground truth uses ONLY the Dense retriever for candidate generation.
-  The Hybrid retriever is NEVER involved here to prevent evaluation bias.
+  - All 5 retrievers contribute to the candidate pool for better recall
 
 Run as a module:
     python -m src.pipelines.build_ground_truth
@@ -48,7 +48,11 @@ if __name__ == "__main__":
 from src.chains.query_generation_chain import build_query_generation_chain
 from src.chains.relevance_judge_chain import build_relevance_judge_chain
 from src.config.settings import get_settings
+from src.retrieval.bm25_retriever import BM25Retriever
 from src.retrieval.dense_retriever import DenseRetriever
+from src.retrieval.hybrid_rrf_retriever import HybridRRFRetriever
+from src.retrieval.rerank_retriever import RerankRetriever
+from src.retrieval.tfidf_retriever import TFIDFRetriever
 from src.schemas.benchmark import QrelItem
 from src.schemas.query import BookInfo
 from src.services.candidate_service import CandidateService
@@ -268,19 +272,77 @@ def run(settings=None, append: bool = False) -> list[QrelItem]:
         return qrels
 
     # ------------------------------------------------------------------
-    # 5. Load dense retriever for candidate generation
+    # 5. Load ALL retrievers for candidate generation
     # ------------------------------------------------------------------
     logger.info(
-        "Connecting to Dense retriever (ChromaDB: %s, collection: %s)…",
-        settings.chroma_path,
-        settings.chroma_collection_name,
+        "Loading all retrievers for candidate generation "
+        "(pool=%d per retriever)…",
+        settings.ground_truth_candidate_pool,
     )
+
+    # 5a. Dense (required by Hybrid & Rerank)
+    logger.info("  Loading Dense retriever (ChromaDB: %s)…", settings.chroma_path)
     dense_retriever = DenseRetriever.load(
         chroma_path=Path(settings.chroma_path),
         embedding_model=settings.embedding_model,
         collection_name=settings.chroma_collection_name,
     )
-    candidate_service = CandidateService(dense_retriever=dense_retriever, settings=settings)
+    logger.info("  Dense ✓")
+
+    # 5b. TF-IDF
+    logger.info("  Loading TF-IDF retriever…")
+    tfidf_retriever = TFIDFRetriever.load(
+        model_path=Path(settings.tfidf_model_path),
+        matrix_path=Path(settings.tfidf_matrix_path),
+        df=df,
+    )
+    logger.info("  TF-IDF ✓")
+
+    # 5c. BM25
+    logger.info("  Loading BM25 retriever…")
+    bm25_retriever = BM25Retriever.load(
+        index_path=Path(settings.bm25_index_path),
+        df=df,
+    )
+    logger.info("  BM25 ✓")
+
+    # 5d. Hybrid RRF
+    hybrid_retriever = HybridRRFRetriever(
+        bm25_retriever=bm25_retriever,
+        dense_retriever=dense_retriever,
+        candidate_pool=settings.hybrid_candidate_pool,
+        rrf_k=settings.rrf_k,
+    )
+    logger.info("  Hybrid RRF ✓")
+
+    # 5e. Reranking
+    rerank_retriever = RerankRetriever(
+        dense_retriever=dense_retriever,
+        rerank_model=(
+            settings.jina_rerank_model if settings.rerank_use_api
+            else settings.rerank_model
+        ),
+        candidate_pool=settings.rerank_candidate_pool,
+        use_api=settings.rerank_use_api,
+        jina_api_key=settings.jina_api_key,
+        rerank_workers=settings.rerank_workers,
+    )
+    logger.info("  Reranking ✓")
+
+    # Build combined CandidateService (all retrievers contribute candidates)
+    all_retrievers = {
+        "tfidf": tfidf_retriever,
+        "bm25": bm25_retriever,
+        "dense": dense_retriever,
+        "hybrid_rrf": hybrid_retriever,
+        "rerank": rerank_retriever,
+    }
+    candidate_service = CandidateService(retrievers=all_retrievers, settings=settings)
+    logger.info(
+        "Candidate pool: %d retrievers × top-%d each → union",
+        len(all_retrievers),
+        settings.ground_truth_candidate_pool,
+    )
 
     # ------------------------------------------------------------------
     # 6. Build judge service
@@ -320,9 +382,9 @@ def run(settings=None, append: bool = False) -> list[QrelItem]:
             query[:70],
         )
 
-        # Retrieve dense candidates
+        # Retrieve candidates from all retrievers (union, dedup)
         candidates = candidate_service.get_candidates(query)
-        logger.debug("  Candidates retrieved: %d", len(candidates))
+        logger.debug("  Candidates retrieved: %d (union of all retrievers)", len(candidates))
 
         # Judge all candidates concurrently
         relevant_isbns = _judge_candidates_concurrent(
