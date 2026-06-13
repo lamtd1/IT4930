@@ -65,16 +65,8 @@ def run(settings=None) -> None:
     df = df.dropna(subset=["description", "isbn13"])
     df = df.drop_duplicates(subset=["isbn13"], keep="first")
 
-    # Apply corpus size cap
-    max_books = settings.max_books_to_process
-    if len(df) > max_books:
-        logger.info(
-            "Capping corpus: %d → %d books (MAX_BOOKS_TO_PROCESS=%d)",
-            len(df),
-            max_books,
-            max_books,
-        )
-        df = df.head(max_books).copy()
+    # Capping corpus cap removed so indexing always runs on the full dataset
+
 
     # Clean text
     logger.info("Cleaning description text for %d books…", len(df))

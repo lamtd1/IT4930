@@ -213,22 +213,27 @@ def run(settings=None, append: bool = False) -> list[QrelItem]:
     # ------------------------------------------------------------------
     dataset_path = Path(settings.dataset_path)
     logger.info("Loading dataset from '%s'…", dataset_path)
-    df = pd.read_csv(dataset_path, dtype={"isbn13": str})
-    df = df.dropna(subset=["description", "isbn13"])
-    df = df.drop_duplicates(subset=["isbn13"], keep="first")
+    df_full = pd.read_csv(dataset_path, dtype={"isbn13": str})
+    df_full = df_full.dropna(subset=["description", "isbn13"])
+    df_full = df_full.drop_duplicates(subset=["isbn13"], keep="first")
 
-    max_books = settings.max_books_to_process
-    if len(df) > max_books:
-        df = df.head(max_books).copy()
-
-    df["description"] = df["description"].apply(lambda t: clean_text(str(t)))
-    df = df[df["description"].str.split().str.len() >= 10].reset_index(drop=True)
-    df["isbn13"] = df["isbn13"].astype(str)
+    df_full["description"] = df_full["description"].apply(lambda t: clean_text(str(t)))
+    df_full = df_full[df_full["description"].str.split().str.len() >= 10].reset_index(drop=True)
+    df_full["isbn13"] = df_full["isbn13"].astype(str)
     for col in ["title", "authors", "categories"]:
-        if col in df.columns:
-            df[col] = df[col].fillna("Unknown")
+        if col in df_full.columns:
+            df_full[col] = df_full[col].fillna("Unknown")
 
-    logger.info("Corpus loaded: %d books", len(df))
+    logger.info("Full corpus loaded: %d books", len(df_full))
+
+    # Sample books for query generation
+    max_books = settings.max_books_to_process
+    if len(df_full) > max_books:
+        df_queries = df_full.sample(n=max_books, random_state=42).reset_index(drop=True)
+        logger.info("Query generation capped to: %d books (MAX_BOOKS_TO_PROCESS=%d)", len(df_queries), max_books)
+    else:
+        df_queries = df_full
+        logger.info("Query generation using full corpus: %d books", len(df_queries))
 
     # ------------------------------------------------------------------
     # 3. Build BookInfo objects
@@ -240,7 +245,7 @@ def run(settings=None, append: bool = False) -> list[QrelItem]:
             description=str(row["description"]),
             categories=str(row.get("categories", "")),
         )
-        for _, row in df.iterrows()
+        for _, row in df_queries.iterrows()
     ]
 
     # ------------------------------------------------------------------
@@ -294,7 +299,7 @@ def run(settings=None, append: bool = False) -> list[QrelItem]:
     tfidf_retriever = TFIDFRetriever.load(
         model_path=Path(settings.tfidf_model_path),
         matrix_path=Path(settings.tfidf_matrix_path),
-        df=df,
+        df=df_full,
     )
     logger.info("  TF-IDF ✓")
 
@@ -302,7 +307,7 @@ def run(settings=None, append: bool = False) -> list[QrelItem]:
     logger.info("  Loading BM25 retriever…")
     bm25_retriever = BM25Retriever.load(
         index_path=Path(settings.bm25_index_path),
-        df=df,
+        df=df_full,
     )
     logger.info("  BM25 ✓")
 
@@ -350,8 +355,8 @@ def run(settings=None, append: bool = False) -> list[QrelItem]:
     judge_chain = build_relevance_judge_chain(settings)
     judge_service = JudgeService(chain=judge_chain, settings=settings)
 
-    isbn_to_desc: dict[str, str] = dict(zip(df["isbn13"], df["description"]))
-    isbn_to_title: dict[str, str] = dict(zip(df["isbn13"], df.get("title", df["isbn13"])))
+    isbn_to_desc: dict[str, str] = dict(zip(df_full["isbn13"], df_full["description"]))
+    isbn_to_title: dict[str, str] = dict(zip(df_full["isbn13"], df_full.get("title", df_full["isbn13"])))
 
     # Parallel workers for judging (conservative to respect rate limits)
     judge_workers = getattr(settings, "judge_parallel_workers", 5)

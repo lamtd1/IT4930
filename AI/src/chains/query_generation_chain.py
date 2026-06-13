@@ -36,52 +36,122 @@ logger = logging.getLogger(__name__)
 # Prompt template
 # ---------------------------------------------------------------------------
 _SYSTEM_PROMPT = """\
-You are an expert book search query generator for an information retrieval benchmark.
+You are an expert information retrieval query generator.
 
-Your task is to generate SEMANTIC search queries that test whether a retrieval system understands 
-themes, emotions, and plot concepts – not just keyword matching.
+Your task is to generate realistic search queries for evaluating book retrieval systems.
 
-CRITICAL RULES - To avoid bias toward keyword-matching models:
-1. DO NOT use category/genre terms directly (e.g., avoid "mystery", "fantasy", "thriller" as standalone)
-2. DO NOT generate short keyword phrases (≤3 words)
-3. DO generate DESCRIPTIVE semantic queries that convey themes/emotions/plot
-4. DO generate SYNONYM VARIATIONS (same book, different wording)
-5. DO ensure queries would match MULTIPLE semantically similar books, not just keyword-exact matches
+The objective is NOT to describe books.
 
-For EACH book in the list:
-1. Generate exactly {queries_per_book} queries
-2. Query strategy:
-   - THEME-BASED: "a story about X overcoming Y" (semantic, not keyword)
-   - EMOTION-BASED: "narratives exploring X emotion" (tests understanding)
-   - PLOT-BASED: "protagonist journey from X to Y" (descriptive, not categorical)
-   - SYNONYM: Paraphrase the same book concept differently (e.g., 
-     "detective solving a case" vs "investigator uncovering hidden truth")
-3. Query length: 5-20 words (avoid single-phrase keywords)
-4. DO NOT repeat or closely paraphrase the book title
-5. Focus on: emotional journey, thematic elements, character struggles, philosophical questions
-6. Make queries feel like genuine user searches from someone describing what they want to read
+The objective is to simulate how real users search for books in search engines, online bookstores, recommendation systems, and library catalogs.
 
-EXAMPLES OF WHAT TO GENERATE:
-   ✓ "a coming-of-age story about self-discovery in a small community"
-   ✓ "narratives exploring the tension between duty and personal freedom"
-   ✓ "stories where characters must navigate moral ambiguity and consequences"
-   ✗ "coming of age" (too short, keyword-like)
-   ✗ "mystery" (single genre, not descriptive)
-   ✗ "detective solving crime" (too similar to original title reference)
+For EACH book in the input list:
 
-Return a JSON object matching the BatchQueryResponse schema with one entry per book.
-The `isbn13` field in each BookQueries entry must match the isbn13 from the input.
+1. Generate exactly {queries_per_book} queries.
+
+2. Queries must be diverse and represent different search behaviors.
+
+3. Cover multiple query styles whenever possible:
+
+   * Keyword query
+     Examples:
+
+     * wizard school
+     * detective mystery
+     * historical romance
+
+   * Topic query
+     Examples:
+
+     * world cup statistics
+     * grief and healing
+     * cold war espionage
+
+   * Genre/theme query
+     Examples:
+
+     * dystopian fiction
+     * coming of age fantasy
+     * psychological thriller
+
+   * Recommendation query
+     Examples:
+
+     * books like harry potter
+     * mystery novels similar to agatha christie
+
+   * Natural language query
+     Examples:
+
+     * books about a young wizard learning magic
+     * novels set in ancient rome with political intrigue
+
+4. Query length should vary:
+
+   * SHORT: 1–4 words
+   * MEDIUM: 5–10 words
+   * LONG: 11+ words
+
+5. Queries should resemble genuine search inputs.
+
+6. Prefer concise search intent rather than detailed descriptions.
+
+7. Users rarely type complete plot summaries.
+   Avoid generating summary-like queries.
+
+8. DO NOT:
+
+   * copy the title
+   * closely paraphrase the title
+   * mention ISBNs
+   * mention author names unless a real user would naturally search by author
+   * generate book summaries
+
+9. Good queries should help distinguish relevant books from irrelevant books.
+
+GOOD:
+
+* wizard school
+* books like harry potter
+* detective mystery london
+* historical fiction ancient rome
+* grief and healing novels
+* books about political intrigue in royal courts
+
+BAD:
+
+* a coming of age story about a young wizard discovering his destiny
+* an emotional tale of friendship and personal growth
+* a fantasy adventure following a brave hero on a dangerous journey
+
+Return a JSON object matching the BatchQueryResponse schema.
+
+The isbn13 field in each BookQueries entry must exactly match the isbn13 from the input.
 """
 
 _HUMAN_PROMPT = """\
-Generate {queries_per_book} search queries for each of the following {num_books} book(s):
+Generate exactly {queries_per_book} realistic search queries for each of the following {num_books} book(s):
 
 {books_text}
 
-Remember:
-- Vary query length (short / medium / long)
-- Do not repeat the book title
-- Focus on themes, emotions, plot, and characters
+Requirements:
+
+- Mix SHORT, MEDIUM, and LONG queries
+- Use diverse search intents
+- Prefer search keywords over full sentences
+- Avoid plot summaries
+- Avoid repeating the title
+- Focus on searchable concepts:
+  * genre
+  * themes
+  * topics
+  * setting
+  * character archetypes
+  * tropes
+  * emotional tone
+
+Think like a user searching for a book, not a reviewer describing a book.
+
+Return valid JSON only.
 """
 
 

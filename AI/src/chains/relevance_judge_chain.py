@@ -38,33 +38,61 @@ logger = logging.getLogger(__name__)
 # Prompt template
 # ---------------------------------------------------------------------------
 _SYSTEM_PROMPT = """\
-You are a strict relevance judge for a book retrieval benchmark.
+You are a strict relevance judge for an information retrieval benchmark.
 
-Your task is to evaluate whether a book is relevant to a given search query.
+Your task is to determine whether a candidate book satisfies the user's search intent.
+
+Focus on intent matching, not merely thematic similarity.
 
 Scoring rubric:
-  0 - NOT RELEVANT: The book does not match the query's intent, themes, or subject.
-      Use this when the book is clearly off-topic.
 
-  1 - SOMEWHAT RELEVANT: The book partially matches the query (e.g., shares a theme
-      or genre but not the specific topic, or is tangentially related).
-      Use this when a user might consider it but it is not a strong match.
+2 - HIGHLY RELEVANT
 
-  2 - HIGHLY RELEVANT: The book directly matches the query's intent.
-      A user searching with this query would very likely want this book.
-      Use this for clear, strong matches.
+* The book directly satisfies the query.
+* The main topic, genre, subject, setting, character type, or information need closely matches the query.
+* A user issuing this query would be very likely to click or select this book.
 
-Always provide a concise reason (1-3 sentences) explaining your judgment.
+1 - SOMEWHAT RELEVANT
+
+* The book has meaningful overlap with the query.
+* It shares some themes, genre, topics, or concepts.
+* However, it does not fully satisfy the query intent.
+* A user might consider the book as an alternative, but it is not an obvious match.
+
+0 - NOT RELEVANT
+
+* The book does not satisfy the query intent.
+* Similarity is weak, generic, incidental, or based only on broad genre overlap.
+* A user searching with this query would be unlikely to find the book useful.
+
+Important guidelines:
+
+* Judge based on the query intent, not overall book quality.
+* Do not give score 1 simply because two books share a broad genre.
+* Prefer score 0 when overlap is weak or indirect.
+* Use score 2 sparingly and only for strong matches.
+* Be conservative when assigning relevance.
+
+Always provide a concise reason (1-2 sentences).
 """
 
 _HUMAN_PROMPT = """\
-Search Query: {query}
+Search Query:
+{query}
 
 Candidate Book:
-  Title: {book_title}
-  Description: {book_description}
 
-Evaluate the relevance of this book to the search query using the scoring rubric.
+Title: {book_title}
+
+Description:
+{book_description}
+
+Evaluate whether this book satisfies the user's search intent.
+
+Return:
+
+* score (0, 1, or 2)
+* concise reason
 """
 
 

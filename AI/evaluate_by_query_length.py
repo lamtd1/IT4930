@@ -46,9 +46,7 @@ def load_dataframe(settings):
     df = df.dropna(subset=["description", "isbn13"])
     df = df.drop_duplicates(subset=["isbn13"], keep="first")
 
-    max_books = settings.max_books_to_process
-    if len(df) > max_books:
-        df = df.head(max_books).copy()
+    # Capping corpus cap removed so query length evaluation always runs on the full dataset
 
     df["description"] = df["description"].apply(lambda t: clean_text(str(t)))
     df = df[df["description"].str.split().str.len() >= 10].reset_index(drop=True)

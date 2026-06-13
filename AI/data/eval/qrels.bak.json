@@ -1,3582 +1,4266 @@
 [
   {
-    "query_id": "q_9780002188319_0",
-    "query": "World Cup statistics",
-    "source_isbn": "9780002188319",
+    "query_id": "q_9781558322059_0",
+    "query": "vegetarian recipes",
+    "source_isbn": "9781558322059",
     "relevant_isbns": [
-      "9780002188319"
+      "9780718147976"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:29:36.591895Z"
+    "created_at": "2026-06-11T12:45:03.793681Z"
   },
   {
-    "query_id": "q_9780002188319_1",
-    "query": "history of soccer tournaments",
-    "source_isbn": "9780002188319",
+    "query_id": "q_9781558322059_1",
+    "query": "meatless comfort food",
+    "source_isbn": "9781558322059",
     "relevant_isbns": [
-      "9780002188319"
+      "9780718147976"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:30:40.762341Z"
+    "created_at": "2026-06-11T12:45:07.614621Z"
   },
   {
-    "query_id": "q_9780002188319_2",
-    "query": "detailed match reports and player statistics from the World Cup finals",
-    "source_isbn": "9780002188319",
-    "relevant_isbns": [
-      "9780002188319"
-    ],
+    "query_id": "q_9781558322059_2",
+    "query": "easy vegetarian meals for families",
+    "source_isbn": "9781558322059",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:31:44.957673Z"
+    "created_at": "2026-06-11T12:45:14.250752Z"
   },
   {
-    "query_id": "q_9780002240802_0",
-    "query": "father-daughter relationship",
-    "source_isbn": "9780002240802",
-    "relevant_isbns": [
-      "9780002240802",
-      "9780007170760",
-      "9780007196951"
-    ],
+    "query_id": "q_9781558322059_3",
+    "query": "cookbooks for hearty vegetarian dishes",
+    "source_isbn": "9781558322059",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:32:49.798802Z"
+    "created_at": "2026-06-11T12:45:20.251579Z"
   },
   {
-    "query_id": "q_9780002240802_1",
-    "query": "journalist adventure in Central America",
-    "source_isbn": "9780002240802",
+    "query_id": "q_9781558322059_4",
+    "query": "delicious vegetarian meals without meat",
+    "source_isbn": "9781558322059",
     "relevant_isbns": [
-      "9780002240802"
+      "9780718147976"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:33:54.908363Z"
+    "created_at": "2026-06-11T12:45:24.639239Z"
   },
   {
-    "query_id": "q_9780002240802_2",
-    "query": "exploring family secrets while navigating a dangerous situation in Central America",
-    "source_isbn": "9780002240802",
-    "relevant_isbns": [
-      "9780002240802",
-      "9780006481799",
-      "9780006753063",
-      "9780006498865",
-      "9780006498858",
-      "9780007145348"
-    ],
+    "query_id": "q_9789181084498_0",
+    "query": "Lovecraft horror stories",
+    "source_isbn": "9789181084498",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:35:01.178170Z"
+    "created_at": "2026-06-11T12:45:29.708709Z"
   },
   {
-    "query_id": "q_9780002246484_0",
-    "query": "royal intrigue",
-    "source_isbn": "9780002246484",
-    "relevant_isbns": [
-      "9780006486015",
-      "9780002246484",
-      "9780007154852",
-      "9780006498865",
-      "9780006498858",
-      "9780002318136",
-      "9780006716815",
-      "9780002312820",
-      "9780007157860",
-      "9780007157600",
-      "9780006755173",
-      "9780006499343",
-      "9780002313247",
-      "9780002311038",
-      "9780002318075",
-      "9780007203567"
-    ],
+    "query_id": "q_9789181084498_1",
+    "query": "eerie music in literature",
+    "source_isbn": "9789181084498",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:36:10.223186Z"
+    "created_at": "2026-06-11T12:45:35.428106Z"
   },
   {
-    "query_id": "q_9780002246484_1",
-    "query": "young assassin in a chaotic court",
-    "source_isbn": "9780002246484",
-    "relevant_isbns": [
-      "9780002246484",
-      "9780006486015",
-      "9780006498865",
-      "9780002318075"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:37:16.254494Z"
+    "query_id": "q_9789181084498_2",
+    "query": "books about mysterious musicians",
+    "source_isbn": "9789181084498",
+    "relevant_isbns": [],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T12:45:40.401006Z"
   },
-  {
-    "query_id": "q_9780002246484_2",
-    "query": "a young man's struggle for survival amidst political turmoil and betrayal in a fantasy kingdom",
-    "source_isbn": "9780002246484",
-    "relevant_isbns": [
-      "9780007159208",
-      "9780007196951",
-      "9780002246484",
-      "9780007157600",
-      "9780006498858",
-      "9780006498865",
-      "9780006486015",
-      "9780006755173",
-      "9780006481799",
-      "9780007157174",
-      "9780007129720",
-      "9780006716815",
-      "9780007203567",
-      "9780007123810"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:38:26.869867Z"
-  },
   {
-    "query_id": "q_9780002252317_0",
-    "query": "murder mystery",
-    "source_isbn": "9780002252317",
+    "query_id": "q_9789181084498_3",
+    "query": "novels exploring the supernatural through music",
+    "source_isbn": "9789181084498",
     "relevant_isbns": [
-      "9780002252317",
-      "9780006499725",
-      "9780002313247",
-      "9780006499343",
-      "9780002318136",
-      "9780002316798",
-      "9780002311038",
-      "9780007136834",
-      "9780007154852",
-      "9780002318075",
-      "9780002312820",
-      "9780007196951",
-      "9780006493143",
-      "9780006486015",
-      "9780007157174",
-      "9780006498513",
-      "9780006753063",
-      "9780007104895",
-      "9780006717669",
-      "9780007145348"
+      "9780061244933"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:39:29.058273Z"
+    "created_at": "2026-06-11T12:45:46.128809Z"
   },
   {
-    "query_id": "q_9780002252317_1",
-    "query": "detective story with a political twist",
-    "source_isbn": "9780002252317",
+    "query_id": "q_9789181084498_4",
+    "query": "stories about hidden truths and dark melodies",
+    "source_isbn": "9789181084498",
     "relevant_isbns": [
-      "9780002252317",
-      "9780006499343",
-      "9780006499725",
-      "9780007154852",
-      "9780006493143",
-      "9780002316798",
-      "9780002313247",
-      "9780002318075",
-      "9780002318136",
-      "9780006498513",
-      "9780007157174",
-      "9780002240802",
-      "9780007136834",
-      "9780002312820",
-      "9780006486015",
-      "9780002311038",
-      "9780007157860",
-      "9780006717669",
-      "9780002246484",
-      "9780006172765",
-      "9780007104895",
-      "9780007145348"
+      "9781936070657"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:40:38.493515Z"
+    "created_at": "2026-06-11T12:45:51.287805Z"
   },
   {
-    "query_id": "q_9780002252317_2",
-    "query": "a gripping tale of murder and revenge in Washington D.C. involving a senator and a child victim",
-    "source_isbn": "9780002252317",
+    "query_id": "q_9781250186935_0",
+    "query": "sci-fi with AI",
+    "source_isbn": "9781250186935",
     "relevant_isbns": [
-      "9780002252317",
-      "9780006499725",
-      "9780002313247",
-      "9780007104895"
+      "9781250186935"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:41:45.235730Z"
+    "created_at": "2026-06-11T12:45:57.541327Z"
   },
   {
-    "query_id": "q_9780002255752_0",
-    "query": "military action thriller",
-    "source_isbn": "9780002255752",
-    "relevant_isbns": [
-      "9780002255752",
-      "9780006172765",
-      "9780006493143",
-      "9780006499343",
-      "9780007157174",
-      "9780002252317",
-      "9780007145348",
-      "9780007157860",
-      "9780007157600",
-      "9780006753063",
-      "9780006498858",
-      "9780002240802",
-      "9780006499725",
-      "9780002246484",
-      "9780007104895",
-      "9780002318075"
-    ],
+    "query_id": "q_9781250186935_1",
+    "query": "Murderbot series",
+    "source_isbn": "9781250186935",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:42:48.944952Z"
+    "created_at": "2026-06-11T12:46:02.714794Z"
   },
   {
-    "query_id": "q_9780002255752_1",
-    "query": "conflict with China",
-    "source_isbn": "9780002255752",
-    "relevant_isbns": [
-      "9780007176151",
-      "9780002255752",
-      "9780007170760",
-      "9780004701431"
-    ],
+    "query_id": "q_9781250186935_2",
+    "query": "books about rogue robots",
+    "source_isbn": "9781250186935",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:43:52.682329Z"
+    "created_at": "2026-06-11T12:46:09.315866Z"
   },
   {
-    "query_id": "q_9780002255752_2",
-    "query": "an intense adventure involving air, land, and sea battles as the USA faces off against China",
-    "source_isbn": "9780002255752",
-    "relevant_isbns": [
-      "9780002255752",
-      "9780006172765",
-      "9780006498858",
-      "9780007157860",
-      "9780004701431"
-    ],
+    "query_id": "q_9781250186935_3",
+    "query": "science fiction exploring identity and memory",
+    "source_isbn": "9781250186935",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:44:56.082975Z"
+    "created_at": "2026-06-11T12:46:15.374061Z"
   },
   {
-    "query_id": "q_9780002311038_0",
-    "query": "mystery with clocks",
-    "source_isbn": "9780002311038",
-    "relevant_isbns": [
-      "9780002311038",
-      "9780007136834",
-      "9780002252317",
-      "9780007154852",
-      "9780002312820",
-      "9780002313247",
-      "9780002318075",
-      "9780007196951",
-      "9780002318136",
-      "9780006717669"
-    ],
+    "query_id": "q_9781250186935_4",
+    "query": "novels featuring artificial intelligence and human interaction",
+    "source_isbn": "9781250186935",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:51:01.640865Z"
+    "created_at": "2026-06-11T12:46:19.684614Z"
   },
   {
-    "query_id": "q_9780002311038_1",
-    "query": "detective story with a time twist",
-    "source_isbn": "9780002311038",
-    "relevant_isbns": [
-      "9780002311038",
-      "9780002252317",
-      "9780007154852",
-      "9780002316798",
-      "9780002313247",
-      "9780002318075",
-      "9780007196951",
-      "9780006499725",
-      "9780002312820",
-      "9780002318136",
-      "9780006476474",
-      "9780007104895"
-    ],
+    "query_id": "q_9780429978715_0",
+    "query": "human evolution theories",
+    "source_isbn": "9780429978715",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:52:05.752928Z"
+    "created_at": "2026-06-11T12:46:23.506115Z"
   },
   {
-    "query_id": "q_9780002311038_2",
-    "query": "a stenographer discovers a murder scene with conflicting clock times, leading to a puzzling investigation",
-    "source_isbn": "9780002311038",
+    "query_id": "q_9780429978715_1",
+    "query": "predator-prey relationships in primates",
+    "source_isbn": "9780429978715",
     "relevant_isbns": [
-      "9780002311038",
-      "9780002252317",
-      "9780002312820",
-      "9780002318075",
-      "9780002316798",
-      "9780002313247",
-      "9780002318136",
-      "9780007136834",
-      "9780006499725",
-      "9780007154852",
-      "9780007104895"
+      "9780429978715"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:53:13.682329Z"
+    "created_at": "2026-06-11T12:46:29.420673Z"
   },
   {
-    "query_id": "q_9780002312820_0",
-    "query": "beach murder mystery",
-    "source_isbn": "9780002312820",
-    "relevant_isbns": [
-      "9780002312820",
-      "9780002313247",
-      "9780007136834",
-      "9780002311038",
-      "9780002318075",
-      "9780006499725",
-      "9780007154852",
-      "9780006753063"
-    ],
+    "query_id": "q_9780429978715_2",
+    "query": "books on human ancestry",
+    "source_isbn": "9780429978715",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:54:18.434426Z"
+    "created_at": "2026-06-11T12:46:33.361374Z"
   },
   {
-    "query_id": "q_9780002312820_1",
-    "query": "detective story with a romantic twist",
-    "source_isbn": "9780002312820",
-    "relevant_isbns": [
-      "9780002252317",
-      "9780007154852",
-      "9780002312820",
-      "9780002318075",
-      "9780002313247",
-      "9780006499725",
-      "9780002318136",
-      "9780006486015",
-      "9780002311038",
-      "9780006498513",
-      "9780007104895",
-      "9780007145348"
-    ],
+    "query_id": "q_9780429978715_3",
+    "query": "social science studies on early humans",
+    "source_isbn": "9780429978715",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:55:19.144647Z"
+    "created_at": "2026-06-11T12:46:38.817557Z"
   },
   {
-    "query_id": "q_9780002312820_2",
-    "query": "a beautiful woman is found dead on the beach, leading to a complex investigation filled with passion and deceit",
-    "source_isbn": "9780002312820",
-    "relevant_isbns": [
-      "9780002312820",
-      "9780007136834",
-      "9780002313247",
-      "9780007154852",
-      "9780002318075",
-      "9780002252317",
-      "9780002318136",
-      "9780002311038",
-      "9780006499725",
-      "9780006498513",
-      "9780007104895",
-      "9780007145348"
-    ],
+    "query_id": "q_9780429978715_4",
+    "query": "evolutionary biology and human survival strategies",
+    "source_isbn": "9780429978715",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:56:23.308029Z"
+    "created_at": "2026-06-11T12:46:44.127635Z"
   },
   {
-    "query_id": "q_9780002313247_0",
-    "query": "mock murder gone wrong",
-    "source_isbn": "9780002313247",
-    "relevant_isbns": [
-      "9780002313247",
-      "9780002318136",
-      "9780002316798",
-      "9780002252317",
-      "9780002318075",
-      "9780007136834",
-      "9780002311038",
-      "9780006499343",
-      "9780006499725",
-      "9780002312820",
-      "9780007154852",
-      "9780006498513",
-      "9780007104895",
-      "9780006717669"
-    ],
+    "query_id": "q_9781936070657_0",
+    "query": "Haitian literature",
+    "source_isbn": "9781936070657",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:57:30.430060Z"
+    "created_at": "2026-06-11T12:46:48.248756Z"
   },
   {
-    "query_id": "q_9780002313247_1",
-    "query": "dinner party mystery",
-    "source_isbn": "9780002313247",
+    "query_id": "q_9781936070657_1",
+    "query": "dark stories from Haiti",
+    "source_isbn": "9781936070657",
     "relevant_isbns": [
-      "9780002313247",
-      "9780007136834",
-      "9780002252317",
-      "9780002311038",
-      "9780002312820",
-      "9780002318136",
-      "9780002316798",
-      "9780002318075",
-      "9780007154852",
-      "9780007104895"
+      "9781936070657"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:58:34.357015Z"
+    "created_at": "2026-06-11T12:46:52.605873Z"
   },
   {
-    "query_id": "q_9780002313247_2",
-    "query": "a staged murder at a pool party turns deadly, revealing hidden secrets and romantic entanglements among the guests",
-    "source_isbn": "9780002313247",
-    "relevant_isbns": [
-      "9780002313247",
-      "9780007136834",
-      "9780002252317",
-      "9780002318136",
-      "9780002312820",
-      "9780002311038",
-      "9780006498513",
-      "9780002318075",
-      "9780006499725",
-      "9780007154852"
-    ],
+    "query_id": "q_9781936070657_2",
+    "query": "books about Haiti's history",
+    "source_isbn": "9781936070657",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T14:59:45.592725Z"
+    "created_at": "2026-06-11T12:46:57.014625Z"
   },
   {
-    "query_id": "q_9780002316798_0",
-    "query": "wrongful conviction",
-    "source_isbn": "9780002316798",
-    "relevant_isbns": [
-      "9780002316798",
-      "9780002318075",
-      "9780002311038",
-      "9780007145348",
-      "9780007104895"
-    ],
+    "query_id": "q_9781936070657_3",
+    "query": "fiction exploring post-earthquake Haiti",
+    "source_isbn": "9781936070657",
+    "relevant_isbns": [],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T12:47:01.845022Z"
+  },
+  {
+    "query_id": "q_9781936070657_4",
+    "query": "anthology of Haitian writers",
+    "source_isbn": "9781936070657",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:00:51.968047Z"
+    "created_at": "2026-06-11T12:47:07.038800Z"
   },
   {
-    "query_id": "q_9780002316798_1",
-    "query": "family secrets",
-    "source_isbn": "9780002316798",
+    "query_id": "q_9780763742904_0",
+    "query": "nutrition support handbook",
+    "source_isbn": "9780763742904",
     "relevant_isbns": [
-      "9780007136834",
-      "9780007157174",
-      "9780002316798",
-      "9780006755173",
-      "9780007170760",
-      "9780002311038",
-      "9780002240802",
-      "9780002313247",
-      "9780007154852",
-      "9780002318075",
-      "9780006486015",
-      "9780006498858",
-      "9780002312820",
-      "9780007196951",
-      "9780002318136",
-      "9780006481799",
-      "9780006499725",
-      "9780006498865",
-      "9780006717669",
-      "9780002246484",
-      "9780007104895",
-      "9780007145348"
+      "9780718147976"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:02:05.313359Z"
+    "created_at": "2026-06-11T12:47:13.673770Z"
   },
   {
-    "query_id": "q_9780002316798_2",
-    "query": "a stranger's arrival challenges the truth behind a man's conviction for his mother's murder, unraveling a web of lies",
-    "source_isbn": "9780002316798",
+    "query_id": "q_9780763742904_1",
+    "query": "medical nutrition therapy",
+    "source_isbn": "9780763742904",
     "relevant_isbns": [
-      "9780002316798",
-      "9780007136834",
-      "9780002252317",
-      "9780007154852",
-      "9780002318075",
-      "9780002313247",
-      "9780002318136",
-      "9780002312820",
-      "9780002311038",
-      "9780007145348",
-      "9780006717669",
-      "9780007104895"
+      "9780718147976"
     ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T12:47:18.710262Z"
+  },
+  {
+    "query_id": "q_9780763742904_2",
+    "query": "enteral and parenteral nutrition",
+    "source_isbn": "9780763742904",
+    "relevant_isbns": [],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T12:47:25.529385Z"
+  },
+  {
+    "query_id": "q_9780763742904_3",
+    "query": "guides for dietitians",
+    "source_isbn": "9780763742904",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:03:22.420617Z"
+    "created_at": "2026-06-11T12:47:32.657641Z"
   },
   {
-    "query_id": "q_9780002318075_0",
-    "query": "mysterious disappearance",
-    "source_isbn": "9780002318075",
+    "query_id": "q_9780763742904_4",
+    "query": "comprehensive nutrition textbooks for students",
+    "source_isbn": "9780763742904",
     "relevant_isbns": [
-      "9780007136834",
-      "9780002318136",
-      "9780006486015",
-      "9780007154852",
-      "9780002312820",
-      "9780002311038",
-      "9780006755173",
-      "9780002318075",
-      "9780002316798",
-      "9780006481799",
-      "9780006753063",
-      "9780007196951",
-      "9780002252317",
-      "9780002313247",
-      "9780002240802",
-      "9780006499343",
-      "9780007157174",
-      "9780007157150",
-      "9780006716815",
-      "9780006498865",
-      "9780006499725",
-      "9780006476474",
-      "9780006493143",
-      "9780006498858",
-      "9780002246484",
-      "9780007145348",
-      "9780007104895",
-      "9780006717669"
+      "9780763758738",
+      "9781264583379",
+      "9781975172794",
+      "9781437722338",
+      "9780897932363",
+      "9781592590407",
+      "9780123918826",
+      "9781847550903"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:04:36.150888Z"
+    "created_at": "2026-06-11T13:34:21.623829Z"
   },
   {
-    "query_id": "q_9780002318075_1",
-    "query": "three girls living together",
-    "source_isbn": "9780002318075",
+    "query_id": "q_9781975338282_0",
+    "query": "manga about school life",
+    "source_isbn": "9781975338282",
     "relevant_isbns": [
-      "9780002318075",
-      "9780007170760",
-      "9780006755173",
-      "9780006753063"
+      "9798888772058",
+      "9781646518869",
+      "9798408749393",
+      "9781975340377",
+      "9781975340391",
+      "9781642126532",
+      "9781975394295"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:05:53.887487Z"
+    "created_at": "2026-06-11T13:34:29.403242Z"
   },
   {
-    "query_id": "q_9780002318075_2",
-    "query": "a young woman believes she is a murderer, leading to a complex investigation involving her two flatmates and dark secrets",
-    "source_isbn": "9780002318075",
+    "query_id": "q_9781975338282_1",
+    "query": "volumes of Ghoul School series",
+    "source_isbn": "9781975338282",
     "relevant_isbns": [
-      "9780002318075",
-      "9780006499725",
-      "9780007154852",
-      "9780007136834",
-      "9780002318136",
-      "9780002316798",
-      "9780002313247",
-      "9780002311038",
-      "9780002312820",
-      "9780006717669"
+      "9781975338282"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:07:10.786047Z"
+    "created_at": "2026-06-11T13:34:39.185369Z"
   },
   {
-    "query_id": "q_9780002318136_0",
-    "query": "mystery in a mansion",
-    "source_isbn": "9780002318136",
+    "query_id": "q_9781975338282_2",
+    "query": "books featuring supernatural school settings",
+    "source_isbn": "9781975338282",
     "relevant_isbns": [
-      "9780002318136",
-      "9780002311038",
-      "9780007136834",
-      "9780002313247",
-      "9780002312820",
-      "9780007154852",
-      "9780002316798",
-      "9780002318075",
-      "9780007196951",
-      "9780006499725",
-      "9780007104895",
-      "9780006717669"
+      "9781423190332",
+      "9781473227996",
+      "9781547609772",
+      "9780316501866"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:08:24.628642Z"
+    "created_at": "2026-06-11T13:34:47.345515Z"
   },
   {
-    "query_id": "q_9780002318136_1",
-    "query": "Miss Marple investigates a shooting incident",
-    "source_isbn": "9780002318136",
+    "query_id": "q_9781975338282_3",
+    "query": "stories about friendship and school challenges",
+    "source_isbn": "9781975338282",
     "relevant_isbns": [
-      "9780002318136",
-      "9780002313247",
-      "9780002318075",
-      "9780007154852",
-      "9780002311038",
-      "9780002316798"
+      "9780063058170",
+      "9780692294840",
+      "9780618724833",
+      "9798293622290",
+      "9780141002941"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:09:36.908716Z"
+    "created_at": "2026-06-11T13:34:57.513137Z"
   },
   {
-    "query_id": "q_9780002318136_2",
-    "query": "a classic detective story featuring a clever amateur sleuth in a Victorian setting",
-    "source_isbn": "9780002318136",
+    "query_id": "q_9781975338282_4",
+    "query": "graphic novels with horror themes in schools",
+    "source_isbn": "9781975338282",
     "relevant_isbns": [
-      "9780007154852",
-      "9780002318136",
-      "9780002313247",
-      "9780002311038",
-      "9780002318075",
-      "9780002312820"
+      "9781506715988",
+      "9781406366334",
+      "9781665950107",
+      "9781569719367",
+      "9781547609772"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:10:46.000481Z"
+    "created_at": "2026-06-11T13:35:06.313104Z"
   },
   {
-    "query_id": "q_9780004701431_0",
-    "query": "military history overview",
-    "source_isbn": "9780004701431",
+    "query_id": "q_9780823072712_0",
+    "query": "interior design standards",
+    "source_isbn": "9780823072712",
     "relevant_isbns": [
-      "9780004701431",
-      "9780007157860",
-      "9780006172765"
+      "9780764132599",
+      "9780609605196",
+      "9781119284352",
+      "9781864701449",
+      "9781000923636",
+      "9780199726530"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:11:57.675462Z"
+    "created_at": "2026-06-11T13:35:15.086682Z"
   },
   {
-    "query_id": "q_9780004701431_1",
-    "query": "encyclopedia of famous battles and wars",
-    "source_isbn": "9780004701431",
+    "query_id": "q_9780823072712_1",
+    "query": "anthropometrics in design",
+    "source_isbn": "9780823072712",
     "relevant_isbns": [
-      "9780004701431",
-      "9780007157860"
+      "9780823072712",
+      "9781855737457",
+      "9780857095572",
+      "9781439835692",
+      "9781119284352"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:13:09.642581Z"
+    "created_at": "2026-06-11T13:35:27.395183Z"
   },
   {
-    "query_id": "q_9780004701431_2",
-    "query": "comprehensive guide to military strategies and significant historical conflicts throughout the ages",
-    "source_isbn": "9780004701431",
+    "query_id": "q_9780823072712_2",
+    "query": "books on human dimensions in architecture",
+    "source_isbn": "9780823072712",
     "relevant_isbns": [
-      "9780004701431",
-      "9780007157860",
-      "9780007170760",
-      "9780006172765"
+      "9781119284352",
+      "9780823072712",
+      "9780521444491"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:15:49.496006Z"
+    "created_at": "2026-06-11T13:35:38.334277Z"
   },
   {
-    "query_id": "q_9780006172765_0",
-    "query": "submarine thriller",
-    "source_isbn": "9780006172765",
+    "query_id": "q_9780823072712_3",
+    "query": "designing spaces for human comfort",
+    "source_isbn": "9780823072712",
     "relevant_isbns": [
-      "9780006172765",
-      "9780006753063",
-      "9780002255752",
-      "9780006499343",
-      "9780007157860",
-      "9780006498858",
-      "9780006717669"
+      "9781426218484",
+      "9781840911619",
+      "9780521444491",
+      "9781119284352",
+      "9781597267151",
+      "9780262082600",
+      "9781861890559"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:17:05.189569Z"
+    "created_at": "2026-06-11T13:35:48.935239Z"
   },
   {
-    "query_id": "q_9780006172765_1",
-    "query": "Cold War naval espionage story",
-    "source_isbn": "9780006172765",
+    "query_id": "q_9780823072712_4",
+    "query": "reference books for interior designers",
+    "source_isbn": "9780823072712",
     "relevant_isbns": [
-      "9780006172765",
-      "9780002255752",
-      "9780007157860",
-      "9780006499343"
+      "9780764132599",
+      "9781119284352",
+      "9789089440846",
+      "9781917399135",
+      "9780199726530",
+      "9781904750079"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:18:21.893120Z"
+    "created_at": "2026-06-11T13:35:56.768583Z"
   },
   {
-    "query_id": "q_9780006172765_2",
-    "query": "a gripping tale of a high-stakes chase involving a rogue submarine and international tensions",
-    "source_isbn": "9780006172765",
+    "query_id": "q_9781583941966_0",
+    "query": "capoeira techniques",
+    "source_isbn": "9781583941966",
     "relevant_isbns": [
-      "9780006172765",
-      "9780002255752",
-      "9780006753063",
-      "9780006498858",
-      "9780007157860",
-      "9780006493143",
-      "9780006499343"
+      "9781583941966"
     ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:36:04.807358Z"
+  },
+  {
+    "query_id": "q_9781583941966_1",
+    "query": "books about Brazilian martial arts",
+    "source_isbn": "9781583941966",
+    "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:19:28.416177Z"
+    "created_at": "2026-06-11T13:36:17.375034Z"
   },
   {
-    "query_id": "q_9780006476474_0",
-    "query": "science fiction short stories",
-    "source_isbn": "9780006476474",
+    "query_id": "q_9781583941966_2",
+    "query": "history of capoeira",
+    "source_isbn": "9781583941966",
     "relevant_isbns": [
-      "9780006476474",
-      "9780007119622",
-      "9780007157150",
-      "9780007157600",
-      "9780006481799",
-      "9780007157174",
-      "9780006755173",
-      "9780006498858",
-      "9780006480419",
-      "9780006716815"
+      "9781583941966"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:20:32.135260Z"
+    "created_at": "2026-06-11T13:36:27.372131Z"
   },
   {
-    "query_id": "q_9780006476474_1",
-    "query": "collection of classic Asimov tales",
-    "source_isbn": "9780006476474",
+    "query_id": "q_9781583941966_3",
+    "query": "guides to learning capoeira",
+    "source_isbn": "9781583941966",
     "relevant_isbns": [
-      "9780006476474"
+      "9781583941966"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:21:38.898839Z"
+    "created_at": "2026-06-11T13:36:40.929482Z"
   },
   {
-    "query_id": "q_9780006476474_2",
-    "query": "a definitive anthology showcasing the best short fiction from one of the greatest science fiction writers of all time",
-    "source_isbn": "9780006476474",
+    "query_id": "q_9781583941966_4",
+    "query": "cultural significance of capoeira",
+    "source_isbn": "9781583941966",
     "relevant_isbns": [
-      "9780006476474",
-      "9780007119622"
+      "9781583941966",
+      "9780897896283"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:22:54.199608Z"
+    "created_at": "2026-06-11T13:36:49.630527Z"
   },
   {
-    "query_id": "q_9780006480419_0",
-    "query": "cyberpunk novel",
-    "source_isbn": "9780006480419",
+    "query_id": "q_9781459409729_0",
+    "query": "children's books about sports",
+    "source_isbn": "9781459409729",
     "relevant_isbns": [
-      "9780006476474",
-      "9780006480419"
+      "9781955804196",
+      "9781534475359",
+      "9781949520187",
+      "9780316498180"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:24:04.895271Z"
+    "created_at": "2026-06-11T13:36:57.888952Z"
   },
   {
-    "query_id": "q_9780006480419_1",
-    "query": "story about artificial intelligence and hackers",
-    "source_isbn": "9780006480419",
+    "query_id": "q_9781459409729_1",
+    "query": "stories for young athletes",
+    "source_isbn": "9781459409729",
     "relevant_isbns": [
-      "9780006480419",
-      "9780006476474"
+      "9781955804196",
+      "9780062309341",
+      "9781761100970"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:25:08.596843Z"
+    "created_at": "2026-06-11T13:37:11.022657Z"
   },
   {
-    "query_id": "q_9780006480419_2",
-    "query": "a thrilling narrative of a washed-up data thief's last chance to pull off a dangerous heist against a powerful AI",
-    "source_isbn": "9780006480419",
+    "query_id": "q_9781459409729_2",
+    "query": "books addressing bullying in sports",
+    "source_isbn": "9781459409729",
     "relevant_isbns": [
-      "9780006480419",
-      "9780007157174",
-      "9780006476474",
-      "9780006493143"
+      "9781602861855",
+      "9781631980015",
+      "9781040724941",
+      "9798293622290",
+      "9780692294840",
+      "9780766091948"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:26:18.887185Z"
+    "created_at": "2026-06-11T13:37:20.169053Z"
   },
   {
-    "query_id": "q_9780006481799_0",
-    "query": "young adult adventure",
-    "source_isbn": "9780006481799",
+    "query_id": "q_9781459409729_3",
+    "query": "inspiring tales for young basketball players",
+    "source_isbn": "9781459409729",
     "relevant_isbns": [
-      "9780006755173",
-      "9780006481799",
-      "9780006753063",
-      "9780007157600",
-      "9780002246484",
-      "9780006498865",
-      "9780007157174",
-      "9780006486015",
-      "9780002318136",
-      "9780007157150",
-      "9780006716815",
-      "9780006498858",
-      "9780007119622",
-      "9780007159208",
-      "9780007157860",
-      "9780006717669",
-      "9780007123810",
-      "9780007129720",
-      "9780007203567"
+      "9780062309341",
+      "9781459409729"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:27:27.604942Z"
+    "created_at": "2026-06-11T13:37:27.049871Z"
   },
   {
-    "query_id": "q_9780006481799_1",
-    "query": "story of a young bat's journey",
-    "source_isbn": "9780006481799",
+    "query_id": "q_9781459409729_4",
+    "query": "novels about overcoming challenges in sports",
+    "source_isbn": "9781459409729",
     "relevant_isbns": [
-      "9780006481799"
+      "9781741963106",
+      "9781476778396",
+      "9780062309341",
+      "9781949520187",
+      "9780316498180",
+      "9781955804196",
+      "9780385681919"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:28:32.814472Z"
+    "created_at": "2026-06-11T13:37:35.687131Z"
   },
   {
-    "query_id": "q_9780006481799_2",
-    "query": "an inspiring tale of a young bat's determination to find his way home while facing dangers and meeting new friends",
-    "source_isbn": "9780006481799",
+    "query_id": "q_9781480019348_0",
+    "query": "classic fairy tales",
+    "source_isbn": "9781480019348",
     "relevant_isbns": [
-      "9780006481799",
-      "9780006716815"
+      "9781435142848",
+      "9781542892308",
+      "9798674656517",
+      "9781548435561",
+      "9781801175661",
+      "9781480019348"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:29:39.225968Z"
+    "created_at": "2026-06-11T13:37:43.551445Z"
   },
   {
-    "query_id": "q_9780006486015_0",
-    "query": "fantasy adventure",
-    "source_isbn": "9780006486015",
+    "query_id": "q_9781480019348_1",
+    "query": "Andersen's stories collection",
+    "source_isbn": "9781480019348",
     "relevant_isbns": [
-      "9780007157600",
-      "9780006498865",
-      "9780006498858",
-      "9780006753063",
-      "9780006481799",
-      "9780006755173",
-      "9780002246484",
-      "9780006486015",
-      "9780006716815",
-      "9780007157174",
-      "9780007159208",
-      "9780007157150",
-      "9780007203567",
-      "9780007123810",
-      "9780007129720",
-      "9780007157860"
+      "9781480019348",
+      "9781721614523"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:30:43.034221Z"
+    "created_at": "2026-06-11T13:37:52.415861Z"
   },
   {
-    "query_id": "q_9780006486015_1",
-    "query": "search for a missing prince",
-    "source_isbn": "9780006486015",
+    "query_id": "q_9781480019348_2",
+    "query": "children's literature by Hans Christian Andersen",
+    "source_isbn": "9781480019348",
     "relevant_isbns": [
-      "9780006486015",
-      "9780006716815",
-      "9780002318075",
-      "9780002246484",
-      "9780006498865",
-      "9780006753063",
-      "9780006498858",
-      "9780007159208"
+      "9781480019348"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:32:06.494334Z"
+    "created_at": "2026-06-11T13:37:59.537044Z"
   },
   {
-    "query_id": "q_9780006486015_2",
-    "query": "a captivating story of loyalty and courage as a young man embarks on a quest to rescue a prince amidst political intrigue",
-    "source_isbn": "9780006486015",
+    "query_id": "q_9781480019348_3",
+    "query": "timeless fairy tales for kids",
+    "source_isbn": "9781480019348",
     "relevant_isbns": [
-      "9780006486015",
-      "9780002246484",
-      "9780006716815",
-      "9780006498858",
-      "9780007157150",
-      "9780007157600",
-      "9780006481799",
-      "9780007157860",
-      "9780006498865",
-      "9780006753063",
-      "9780007129720",
-      "9780007203567",
-      "9780007123810"
+      "9798340806642",
+      "9781480019348",
+      "9781775459194"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:33:17.124155Z"
+    "created_at": "2026-06-11T13:38:12.210008Z"
   },
   {
-    "query_id": "q_9780006493143_0",
-    "query": "financial thriller",
-    "source_isbn": "9780006493143",
+    "query_id": "q_9781480019348_4",
+    "query": "books featuring magical adventures",
+    "source_isbn": "9781480019348",
     "relevant_isbns": [
-      "9780006493143",
-      "9780006499343",
-      "9780002252317",
-      "9780006172765",
-      "9780002255752",
-      "9780006498513",
-      "9780007104895",
-      "9780002318075",
-      "9780007145348"
+      "9798340806642",
+      "9781444936711",
+      "9780515138313",
+      "9780307885142",
+      "9780316557924",
+      "9798999184702",
+      "9781842552148",
+      "9780241999851"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:34:20.777639Z"
+    "created_at": "2026-06-11T13:38:21.665513Z"
   },
   {
-    "query_id": "q_9780006493143_1",
-    "query": "story about a federal agent and lawyer",
-    "source_isbn": "9780006493143",
+    "query_id": "q_9780785293392_0",
+    "query": "Jane Austen novels",
+    "source_isbn": "9780785293392",
     "relevant_isbns": [
-      "9780006493143",
-      "9780002252317",
-      "9780006499343",
-      "9780006498513",
-      "9780007157860",
-      "9780007104895"
+      "9781544778457",
+      "9781534666016",
+      "9781719875707",
+      "9798642266328",
+      "9798644092444",
+      "9798644092550",
+      "9798642451113",
+      "9798642419779"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:35:31.785302Z"
+    "created_at": "2026-06-11T13:38:30.790464Z"
   },
   {
-    "query_id": "q_9780006493143_2",
-    "query": "a fast-paced narrative involving a conspiracy to attack Wall Street and the race to prevent a catastrophic event",
-    "source_isbn": "9780006493143",
+    "query_id": "q_9780785293392_1",
+    "query": "classic literature about social class",
+    "source_isbn": "9780785293392",
     "relevant_isbns": [
-      "9780006493143",
-      "9780006499343",
-      "9780002252317",
-      "9780006498513",
-      "9780007104895"
+      "9783957387608",
+      "9780252068898",
+      "9780702306136",
+      "9781439117132"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:36:43.929400Z"
+    "created_at": "2026-06-11T13:38:40.235801Z"
   },
   {
-    "query_id": "q_9780006498513_0",
-    "query": "legal drama",
-    "source_isbn": "9780006498513",
+    "query_id": "q_9780785293392_2",
+    "query": "books featuring strong female protagonists",
+    "source_isbn": "9780785293392",
     "relevant_isbns": [
-      "9780002252317",
-      "9780002316798",
-      "9780006499725",
-      "9780006493143",
-      "9780002318136",
-      "9780002313247",
-      "9780006498513",
-      "9780002312820",
-      "9780002311038",
-      "9780002318075",
-      "9780007104895",
-      "9780007145348"
+      "9780062077011",
+      "9780062226846",
+      "9781101531341",
+      "9781609452230",
+      "9781250872456",
+      "9781638932161",
+      "9780063455771"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:37:50.553163Z"
+    "created_at": "2026-06-11T13:38:48.952811Z"
   },
   {
-    "query_id": "q_9780006498513_1",
-    "query": "detective story with a twist",
-    "source_isbn": "9780006498513",
+    "query_id": "q_9780785293392_3",
+    "query": "historical fiction set in England",
+    "source_isbn": "9780785293392",
     "relevant_isbns": [
-      "9780002252317",
-      "9780007154852",
-      "9780006499725",
-      "9780002313247",
-      "9780002318075",
-      "9780002316798",
-      "9780007136834",
-      "9780002312820",
-      "9780002311038",
-      "9780002318136",
-      "9780006499343",
-      "9780007196951",
-      "9780006493143",
-      "9780006486015",
-      "9780006498513",
-      "9780007157174",
-      "9780006753063",
-      "9780006755173",
-      "9780007104895",
-      "9780006717669",
-      "9780007145348"
+      "9798611762257",
+      "9798673129234",
+      "9798642511800",
+      "9781482064308",
+      "9798642451113",
+      "9798642451137",
+      "9781534666016",
+      "9791041848706"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:38:59.469553Z"
+    "created_at": "2026-06-11T13:38:58.151904Z"
   },
   {
-    "query_id": "q_9780006498513_2",
-    "query": "a gripping tale of betrayal and ambition within a law firm, as a lawyer uncovers a plot against a corporate president",
-    "source_isbn": "9780006498513",
+    "query_id": "q_9780785293392_4",
+    "query": "coming of age stories in classic literature",
+    "source_isbn": "9780785293392",
     "relevant_isbns": [
-      "9780006493143",
-      "9780006498513",
-      "9780007104895"
+      "9788124109724",
+      "9781945186097",
+      "9798227281753",
+      "9798542822143",
+      "9781551116525"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:40:12.820667Z"
+    "created_at": "2026-06-11T13:39:09.476146Z"
   },
   {
-    "query_id": "q_9780006498858_0",
-    "query": "fantasy sea adventure",
-    "source_isbn": "9780006498858",
+    "query_id": "q_9780874139983_0",
+    "query": "travel literature analysis",
+    "source_isbn": "9780874139983",
     "relevant_isbns": [
-      "9780006753063",
-      "9780006498865",
-      "9780006498858",
-      "9780007157600",
-      "9780002246484",
-      "9780006481799",
-      "9780007157860",
-      "9780006486015",
-      "9780006716815",
-      "9780007203567",
-      "9780007123810"
+      "9780415444651",
+      "9780415060950",
+      "9780691117652",
+      "9780367365295",
+      "9780817311605",
+      "9781845452544",
+      "9783319016696",
+      "9783348055536"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:41:29.019937Z"
+    "created_at": "2026-06-11T13:39:17.767252Z"
   },
   {
-    "query_id": "q_9780006498858_1",
-    "query": "story of a young woman fighting for her inheritance",
-    "source_isbn": "9780006498858",
+    "query_id": "q_9780874139983_1",
+    "query": "books on colonialism and identity",
+    "source_isbn": "9780874139983",
     "relevant_isbns": [
-      "9780006498858",
-      "9780007170760",
-      "9780002240802",
-      "9780006498865",
-      "9780007104895"
+      "9780231105996",
+      "9780874139983",
+      "9780415060950",
+      "9798986547954",
+      "9781443814973",
+      "9780801834783",
+      "9781848884571"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:42:41.207785Z"
+    "created_at": "2026-06-11T13:39:24.942052Z"
   },
   {
-    "query_id": "q_9780006498858_2",
-    "query": "an epic tale of family conflict and adventure on the high seas, as a determined woman battles to reclaim her family's magical ship",
-    "source_isbn": "9780006498858",
+    "query_id": "q_9780874139983_2",
+    "query": "literary criticism of early travel writing",
+    "source_isbn": "9780874139983",
     "relevant_isbns": [
-      "9780006498858",
-      "9780006498865",
-      "9780006753063",
-      "9780007157600",
-      "9780007157860"
+      "9780415444651",
+      "9780192840516",
+      "9780415060950",
+      "9780826353702",
+      "9783039105359",
+      "9781317548201",
+      "9780226429533"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:44:08.638886Z"
+    "created_at": "2026-06-11T13:39:33.412528Z"
   },
   {
-    "query_id": "q_9780006498865_0",
-    "query": "pirate adventure",
-    "source_isbn": "9780006498865",
+    "query_id": "q_9780874139983_3",
+    "query": "exploring national identity in literature",
+    "source_isbn": "9780874139983",
     "relevant_isbns": [
-      "9780006753063",
-      "9780006498865",
-      "9780006498858",
-      "9780002246484",
-      "9780007157860",
-      "9780006716815"
+      "9781527509900",
+      "9783836626729",
+      "9780874139983",
+      "9780205326983",
+      "9780748673964",
+      "9780674673779",
+      "9780415915830",
+      "9783319101279"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:45:14.029674Z"
+    "created_at": "2026-06-11T13:39:39.851485Z"
   },
   {
-    "query_id": "q_9780006498865_1",
-    "query": "liveship and its connection to the sea",
-    "source_isbn": "9780006498865",
+    "query_id": "q_9780874139983_4",
+    "query": "ethnographic writings in English literature",
+    "source_isbn": "9780874139983",
     "relevant_isbns": [
-      "9780006498865",
-      "9780006498858",
-      "9780007157860",
-      "9780007157600"
+      "9780874139983",
+      "9781845453213",
+      "9780748673964",
+      "9781498508384",
+      "9780803925786",
+      "9780321106698"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:46:23.377022Z"
+    "created_at": "2026-06-11T13:39:49.056391Z"
   },
   {
-    "query_id": "q_9780006498865_2",
-    "query": "female protagonist navigating a treacherous world of pirates and magic",
-    "source_isbn": "9780006498865",
+    "query_id": "q_9781635574968_0",
+    "query": "nature writing awards",
+    "source_isbn": "9781635574968",
     "relevant_isbns": [
-      "9780006498865",
-      "9780006498858",
-      "9780006753063",
-      "9780007157600",
-      "9780006755173",
-      "9780006486015",
-      "9780006716815"
+      "9780813920146",
+      "9783031509100",
+      "9780820323503",
+      "9781635574968",
+      "9781498508384",
+      "9781472989093"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:47:32.222372Z"
+    "created_at": "2026-06-11T13:39:54.272791Z"
   },
   {
-    "query_id": "q_9780006499343_0",
-    "query": "murder mystery",
-    "source_isbn": "9780006499343",
+    "query_id": "q_9781635574968_1",
+    "query": "books on wildlife conservation",
+    "source_isbn": "9781635574968",
     "relevant_isbns": [
-      "9780002252317",
-      "9780006499725",
-      "9780002313247",
-      "9780006499343",
-      "9780002318136",
-      "9780002316798",
-      "9780002311038",
-      "9780007136834",
-      "9780007154852",
-      "9780002318075",
-      "9780002312820",
-      "9780007196951",
-      "9780006493143",
-      "9780006486015",
-      "9780007157174",
-      "9780006498513",
-      "9780006753063",
-      "9780007104895",
-      "9780006717669",
-      "9780007145348"
+      "9780199663217",
+      "9780691203591",
+      "9780195107784",
+      "9781472989093",
+      "9781635574968",
+      "9780691228617",
+      "9781786068453",
+      "9781119403739"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:47:32.382252Z"
+    "created_at": "2026-06-11T13:40:00.859165Z"
   },
   {
-    "query_id": "q_9780006499343_1",
-    "query": "conspiracy involving German names and assassinations",
-    "source_isbn": "9780006499343",
+    "query_id": "q_9781635574968_2",
+    "query": "environmental philosophy literature",
+    "source_isbn": "9781635574968",
     "relevant_isbns": [
-      "9780006499343",
-      "9780002318136",
-      "9780002252317"
+      "9780801895357",
+      "9786610539376",
+      "9780199950850",
+      "9780813920146",
+      "9781351983297",
+      "9780820327594"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:48:38.657805Z"
+    "created_at": "2026-06-11T13:40:08.981263Z"
   },
   {
-    "query_id": "q_9780006499343_2",
-    "query": "detectives uncovering a deadly plot that threatens international security",
-    "source_isbn": "9780006499343",
+    "query_id": "q_9781635574968_3",
+    "query": "insights on human impact on nature",
+    "source_isbn": "9781635574968",
     "relevant_isbns": [
-      "9780006499343",
-      "9780002252317",
-      "9780006499725",
-      "9780002318136",
-      "9780007157174",
-      "9780006172765",
-      "9780006493143",
-      "9780006753063",
-      "9780002255752",
-      "9780002311038",
-      "9780006498513",
-      "9780002312820",
-      "9780002318075",
-      "9780006486015",
-      "9780002313247",
-      "9780007154852",
-      "9780007157860",
-      "9780002246484",
-      "9780007104895"
+      "9781119403739",
+      "9781118576588",
+      "9780801895357",
+      "9781608194551",
+      "9781136535024",
+      "9781472989093",
+      "9781610912983"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:49:48.765540Z"
+    "created_at": "2026-06-11T13:40:16.644579Z"
   },
   {
-    "query_id": "q_9780006499725_0",
-    "query": "serial killer thriller",
-    "source_isbn": "9780006499725",
+    "query_id": "q_9781635574968_4",
+    "query": "books discussing the ethics of wildness",
+    "source_isbn": "9781635574968",
     "relevant_isbns": [
-      "9780006499725",
-      "9780002252317",
-      "9780007136834",
-      "9780006499343",
-      "9780002318136",
-      "9780007196951",
-      "9780002316798",
-      "9780006493143",
-      "9780002312820",
-      "9780002311038",
-      "9780002313247",
-      "9780007154852",
-      "9780002318075",
-      "9780006717669",
-      "9780007145348",
-      "9780007104895"
+      "9781635574968",
+      "9780415275897",
+      "9780008686536",
+      "9781610912983",
+      "9781597264488",
+      "9780307761613"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:50:57.001961Z"
+    "created_at": "2026-06-11T13:40:24.374520Z"
   },
   {
-    "query_id": "q_9780006499725_1",
-    "query": "detective chasing two competing murderers",
-    "source_isbn": "9780006499725",
+    "query_id": "q_9780733640230_0",
+    "query": "psychological thrillers",
+    "source_isbn": "9780733640230",
     "relevant_isbns": [
-      "9780006499725",
-      "9780002252317",
-      "9780006499343",
-      "9780002318136",
-      "9780002318075",
-      "9780006493143",
-      "9780002316798",
-      "9780007154852",
-      "9780002313247",
-      "9780002312820",
-      "9780007136834",
-      "9780002311038",
-      "9780007104895",
-      "9780007145348"
+      "9798988254553",
+      "9780061827426",
+      "9781944831981",
+      "9798294452315",
+      "9783384855428",
+      "9781982103644",
+      "9798297040786"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:52:02.030243Z"
+    "created_at": "2026-06-11T13:40:32.997752Z"
   },
   {
-    "query_id": "q_9780006499725_2",
-    "query": "homicide investigation involving intelligent women and a race against time",
-    "source_isbn": "9780006499725",
+    "query_id": "q_9780733640230_1",
+    "query": "suspense novels set in isolation",
+    "source_isbn": "9780733640230",
     "relevant_isbns": [
-      "9780006499725",
-      "9780002252317",
-      "9780006499343",
-      "9780002311038",
-      "9780002316798",
-      "9780007154852",
-      "9780006493143",
-      "9780002313247",
-      "9780002312820",
-      "9780002318075",
-      "9780002318136",
-      "9780007136834",
-      "9780006498513",
-      "9780007104895",
-      "9780007145348"
+      "9798241965158",
+      "9780063217522",
+      "9780749958718",
+      "9781785657870",
+      "9781501168819",
+      "9781662500534",
+      "9781440620614",
+      "9781839191428"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:53:08.085915Z"
+    "created_at": "2026-06-11T13:40:41.209442Z"
   },
   {
-    "query_id": "q_9780006716815_0",
-    "query": "children's fantasy",
-    "source_isbn": "9780006716815",
+    "query_id": "q_9780733640230_2",
+    "query": "books about memory and trust",
+    "source_isbn": "9780733640230",
     "relevant_isbns": [
-      "9780007157600",
-      "9780006755173",
-      "9780006498865",
-      "9780006498858",
-      "9780006481799",
-      "9780006486015",
-      "9780007159208",
-      "9780006716815",
-      "9780006753063",
-      "9780007123810",
-      "9780007203567",
-      "9780002246484",
-      "9780007157150",
-      "9780007129720"
+      "9798296059307",
+      "9798988254553",
+      "9780262692373",
+      "9780333778159",
+      "9798280545601",
+      "9798217008018",
+      "9789042015289"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:54:12.021825Z"
+    "created_at": "2026-06-11T13:40:48.654451Z"
   },
   {
-    "query_id": "q_9780006716815_1",
-    "query": "search for a missing prince in a magical land",
-    "source_isbn": "9780006716815",
+    "query_id": "q_9780733640230_3",
+    "query": "Australian fiction with dark themes",
+    "source_isbn": "9780733640230",
     "relevant_isbns": [
-      "9780006486015",
-      "9780006716815",
-      "9780006755173",
-      "9780007157600",
-      "9780006481799",
-      "9780006498865",
-      "9780002246484",
-      "9780006753063",
-      "9780006498858",
-      "9780007159208",
-      "9780007123810",
-      "9780007203567"
+      "9780733602900",
+      "9780241993804",
+      "9780369325730"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:55:26.263558Z"
+    "created_at": "2026-06-11T13:40:57.275070Z"
   },
   {
-    "query_id": "q_9780006716815_2",
-    "query": "two siblings embark on a perilous quest to rescue a captive royal from an underground witch",
-    "source_isbn": "9780006716815",
+    "query_id": "q_9780733640230_4",
+    "query": "literary thrillers exploring captivity",
+    "source_isbn": "9780733640230",
     "relevant_isbns": [
-      "9780006716815",
-      "9780006486015",
-      "9780006753063",
-      "9780006498858",
-      "9780007157600",
-      "9780006481799",
-      "9780002246484",
-      "9780006498865",
-      "9780006755173",
-      "9780007123810"
+      "9780733640230",
+      "9780759508309",
+      "9798683235420",
+      "9781524732738",
+      "9781432879198",
+      "9781785657870",
+      "9780735224636"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:56:32.713791Z"
+    "created_at": "2026-06-11T13:41:05.432447Z"
   },
   {
-    "query_id": "q_9780006717669_0",
+    "query_id": "q_9780778333111_0",
     "query": "psychological thriller",
-    "source_isbn": "9780006717669",
+    "source_isbn": "9780778333111",
     "relevant_isbns": [
-      "9780007196951",
-      "9780007136834",
-      "9780006499343",
-      "9780006493143",
-      "9780006499725",
-      "9780006717669",
-      "9780002318136",
-      "9780002252317",
-      "9780007157174",
-      "9780002316798",
-      "9780002312820",
-      "9780002311038",
-      "9780002240802",
-      "9780006755173",
-      "9780002313247",
-      "9780007154852",
-      "9780002318075",
-      "9780007104895",
-      "9780006480419",
-      "9780006498513",
-      "9780007145348",
-      "9780002246484"
+      "9798988254553",
+      "9780307765697",
+      "9783384855428",
+      "9780735280977",
+      "9780297859406",
+      "9781944831981",
+      "9798297040786",
+      "9781542027342"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:57:40.704893Z"
+    "created_at": "2026-06-11T13:41:12.671686Z"
   },
   {
-    "query_id": "q_9780006717669_1",
-    "query": "emotional journey of a troubled protagonist",
-    "source_isbn": "9780006717669",
+    "query_id": "q_9780778333111_1",
+    "query": "books about deception and lies",
+    "source_isbn": "9780778333111",
     "relevant_isbns": [
-      "9780007196951",
-      "9780006498865",
-      "9780006481799",
-      "9780007170760",
-      "9780002316798",
-      "9780006498858",
-      "9780002240802",
-      "9780006486015",
-      "9780002246484",
-      "9780007159208",
-      "9780007157174",
-      "9780002318136",
-      "9780006755173",
-      "9780006717669",
-      "9780007154852",
-      "9780007157860",
-      "9780006499725",
-      "9780007104895",
-      "9780007157150",
-      "9780006480419",
-      "9780002318075",
-      "9780007129720",
-      "9780002313247",
-      "9780007145348",
-      "9780006716815",
-      "9780006498513",
-      "9780007123810"
+      "9780525558972",
+      "9781501151804",
+      "9780062390851",
+      "9780795301896",
+      "9781426217012",
+      "9781984817235",
+      "9798241965158"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:58:48.857869Z"
+    "created_at": "2026-06-11T13:41:20.376340Z"
   },
   {
-    "query_id": "q_9780006717669_2",
-    "query": "a boy's quest for identity amidst a backdrop of mystery and psychological tension",
-    "source_isbn": "9780006717669",
+    "query_id": "q_9780778333111_2",
+    "query": "suspense novels with missing persons",
+    "source_isbn": "9780778333111",
     "relevant_isbns": [
-      "9780007196951",
-      "9780002240802",
-      "9780006481799",
-      "9780007159208",
-      "9780007136834",
-      "9780007157174",
-      "9780006717669",
-      "9780006755173",
-      "9780006486015",
-      "9780006716815",
-      "9780006480419",
-      "9780006498858",
-      "9780002316798",
-      "9780002318136",
-      "9780007154852",
-      "9780006753063",
-      "9780006498865",
-      "9780002313247",
-      "9780002246484",
-      "9780002318075",
-      "9780002312820",
-      "9780007157150",
-      "9780002311038",
-      "9780007145348"
+      "9780748124169",
+      "9798297535411",
+      "9780307358677",
+      "9781538748169",
+      "9781542027342",
+      "9781805088110",
+      "9781780227863"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T15:59:53.043126Z"
+    "created_at": "2026-06-11T13:41:29.076348Z"
   },
   {
-    "query_id": "q_9780006753063_0",
-    "query": "adventure story",
-    "source_isbn": "9780006753063",
+    "query_id": "q_9780778333111_3",
+    "query": "thrillers featuring couples in crisis",
+    "source_isbn": "9780778333111",
     "relevant_isbns": [
-      "9780006481799",
-      "9780006753063",
-      "9780006498858",
-      "9780007119622",
-      "9780006498865",
-      "9780007136834",
-      "9780006172765",
-      "9780007157600",
-      "9780007157150",
-      "9780006486015",
-      "9780006716815",
-      "9780007196951",
-      "9780002255752",
-      "9780007149520",
-      "9780006755173",
-      "9780007157860",
-      "9780007157174",
-      "9780002246484",
-      "9780007154852",
-      "9780002240802",
-      "9780006476474",
-      "9780007159208",
-      "9780002313247",
-      "9780002312820",
-      "9780002318136",
-      "9780006493143",
-      "9780006499343",
-      "9780007173730",
-      "9780007123810",
-      "9780002311038",
-      "9780007129720",
-      "9780006717669",
-      "9780007104895",
-      "9780002318075",
-      "9780007203567",
-      "9780006499725",
-      "9780006480419",
-      "9780007145348"
+      "9781408708354",
+      "9781471130182",
+      "9780316004312",
+      "9781407071602"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:01:05.321941Z"
+    "created_at": "2026-06-11T13:41:38.563669Z"
   },
   {
-    "query_id": "q_9780006753063_1",
-    "query": "children's quest to rescue a kidnapped friend",
-    "source_isbn": "9780006753063",
+    "query_id": "q_9780778333111_4",
+    "query": "novels exploring the consequences of secrets",
+    "source_isbn": "9780778333111",
     "relevant_isbns": [
-      "9780006716815",
-      "9780006753063",
-      "9780006481799",
-      "9780006486015",
-      "9780006755173"
+      "9780857893390",
+      "9781501151804",
+      "9798241965158",
+      "9780307568113",
+      "9781668063705",
+      "9780241379509",
+      "9798267303156",
+      "9781496428752"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:02:16.219061Z"
+    "created_at": "2026-06-11T13:41:48.944566Z"
   },
   {
-    "query_id": "q_9780006753063_2",
-    "query": "a group of young adventurers face danger on a deserted island while trying to save their companion",
-    "source_isbn": "9780006753063",
+    "query_id": "q_9780008373740_0",
+    "query": "spy novels set in Paris",
+    "source_isbn": "9780008373740",
     "relevant_isbns": [
-      "9780006753063",
-      "9780007136834",
-      "9780006498858",
-      "9780006716815",
-      "9780006481799",
-      "9780006498865",
-      "9780002312820",
-      "9780007157860"
+      "9780399593802",
+      "9780008373740",
+      "9780751579253"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:03:38.493777Z"
+    "created_at": "2026-06-11T13:41:58.967119Z"
   },
   {
-    "query_id": "q_9780006755173_0",
-    "query": "magical school",
-    "source_isbn": "9780006755173",
+    "query_id": "q_9780008373740_1",
+    "query": "books about espionage and blackmail",
+    "source_isbn": "9780008373740",
     "relevant_isbns": [
-      "9780006755173",
-      "9780007157600",
-      "9780006486015",
-      "9780006716815"
+      "9781498504843",
+      "9781135186906",
+      "9788674361399",
+      "9781491204955",
+      "9783668034624",
+      "9781626166806",
+      "9781426217012",
+      "9780143038214"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:04:51.898785Z"
+    "created_at": "2026-06-11T13:42:07.114732Z"
   },
   {
-    "query_id": "q_9780006755173_1",
-    "query": "forbidden witchcraft in a school setting",
-    "source_isbn": "9780006755173",
+    "query_id": "q_9780008373740_2",
+    "query": "thrillers involving nuclear secrets",
+    "source_isbn": "9780008373740",
     "relevant_isbns": [
-      "9780006755173",
-      "9780007157174"
+      "9780008373740",
+      "9781087949482",
+      "9781471162640",
+      "9780982166277",
+      "9781539372202",
+      "9781982158651"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:06:00.420483Z"
+    "created_at": "2026-06-11T13:42:15.656655Z"
   },
   {
-    "query_id": "q_9780006755173_2",
-    "query": "a class of witch-orphans grapples with the discovery of a hidden witch among them",
-    "source_isbn": "9780006755173",
+    "query_id": "q_9780008373740_3",
+    "query": "stories about hidden motives in relationships",
+    "source_isbn": "9780008373740",
     "relevant_isbns": [
-      "9780006755173"
+      "9781780221861",
+      "9781551662992",
+      "9798241965158",
+      "9780429673221",
+      "9780375413469",
+      "9780374148317",
+      "9781476763521"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:07:17.989309Z"
+    "created_at": "2026-06-11T13:42:24.726828Z"
   },
   {
-    "query_id": "q_9780007104895_0",
-    "query": "legal thriller",
-    "source_isbn": "9780007104895",
+    "query_id": "q_9780008373740_4",
+    "query": "novels featuring complex moral dilemmas",
+    "source_isbn": "9780008373740",
     "relevant_isbns": [
-      "9780006493143",
-      "9780002252317",
-      "9780006499343",
-      "9780002316798",
-      "9780002318136",
-      "9780006499725",
-      "9780007136834",
-      "9780006498513",
-      "9780002312820",
-      "9780002313247",
-      "9780007154852",
-      "9780007104895",
-      "9780002311038",
-      "9780002318075",
-      "9780007145348"
+      "9789529493524",
+      "9781434404534",
+      "9780199536481",
+      "9780307760234",
+      "9781425049102"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:08:29.086415Z"
+    "created_at": "2026-06-11T13:42:31.492878Z"
   },
   {
-    "query_id": "q_9780007104895_1",
-    "query": "courtroom drama with unexpected twists",
-    "source_isbn": "9780007104895",
+    "query_id": "q_9780810116511_0",
+    "query": "Jungian psychology books",
+    "source_isbn": "9780810116511",
     "relevant_isbns": [
-      "9780002252317",
-      "9780006499725",
-      "9780006493143",
-      "9780002313247",
-      "9780007136834",
-      "9780007154852",
-      "9780002316798",
-      "9780002318136",
-      "9780002312820",
-      "9780006499343",
-      "9780002311038",
-      "9780002246484",
-      "9780006498513",
-      "9780007104895",
-      "9780002318075",
-      "9780006717669",
-      "9780007145348"
+      "9780691270951",
+      "9781587612251",
+      "9780810116511",
+      "9783030243470",
+      "9781603440783",
+      "9781447497134"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:09:30.726170Z"
+    "created_at": "2026-06-11T13:42:38.994333Z"
   },
   {
-    "query_id": "q_9780007104895_2",
-    "query": "a lawyer fights against the odds to uncover the truth in a gripping legal case",
-    "source_isbn": "9780007104895",
+    "query_id": "q_9780810116511_1",
+    "query": "philosophy of myth and psyche",
+    "source_isbn": "9780810116511",
     "relevant_isbns": [
-      "9780002252317",
-      "9780006493143",
-      "9780006498513",
-      "9780002316798",
-      "9780002312820",
-      "9780002313247",
-      "9780002318075",
-      "9780007104895",
-      "9780002311038",
-      "9780007145348"
+      "9781603440783",
+      "9781953035103",
+      "9781403901224",
+      "9783030243470",
+      "9780226618555"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:10:38.613400Z"
+    "created_at": "2026-06-11T13:42:48.375027Z"
   },
   {
-    "query_id": "q_9780007119622_0",
-    "query": "science fiction",
-    "source_isbn": "9780007119622",
+    "query_id": "q_9780810116511_2",
+    "query": "books on female inferiority themes",
+    "source_isbn": "9780810116511",
     "relevant_isbns": [
-      "9780006476474",
-      "9780007157150",
-      "9780007149520",
-      "9780007157600",
-      "9780007119622",
-      "9780007157174",
-      "9780006755173",
-      "9780006481799",
-      "9780006172765",
-      "9780007196951",
-      "9780006498858",
-      "9780006717669",
-      "9780006480419",
-      "9780002246484",
-      "9780007193820",
-      "9780007159208",
-      "9780006716815"
+      "9780810116511",
+      "9781851680221",
+      "9781101872932",
+      "9783030407520",
+      "9783389082294",
+      "9781439925515"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:11:47.640180Z"
+    "created_at": "2026-06-11T13:43:01.011446Z"
   },
   {
-    "query_id": "q_9780007119622_1",
-    "query": "human experiences and challenges on Mars",
-    "source_isbn": "9780007119622",
+    "query_id": "q_9780810116511_3",
+    "query": "works discussing the role of imagination in therapy",
+    "source_isbn": "9780810116511",
     "relevant_isbns": [
-      "9780007119622",
-      "9780007157150",
-      "9780006476474"
+      "9781351005289",
+      "9780868066196",
+      "9780826149145"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:12:57.943745Z"
+    "created_at": "2026-06-11T13:43:08.573747Z"
   },
   {
-    "query_id": "q_9780007119622_2",
-    "query": "a collection of stories exploring humanity's journey and struggles in the colonization of Mars",
-    "source_isbn": "9780007119622",
+    "query_id": "q_9780810116511_4",
+    "query": "explorations of psychological reality and myth",
+    "source_isbn": "9780810116511",
     "relevant_isbns": [
-      "9780007119622",
-      "9780007157150",
-      "9780006476474"
+      "9780810116511",
+      "9781000556445",
+      "9781583940945",
+      "9781452077703",
+      "9789358561012",
+      "9781603440783",
+      "9780226618555"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:14:06.508048Z"
+    "created_at": "2026-06-11T13:43:16.665591Z"
   },
   {
-    "query_id": "q_9780007123810_0",
-    "query": "epic fantasy",
-    "source_isbn": "9780007123810",
+    "query_id": "q_9780712673051_0",
+    "query": "biographies of Charles Darwin",
+    "source_isbn": "9780712673051",
     "relevant_isbns": [
-      "9780007157600",
-      "9780006498865",
-      "9780006481799",
-      "9780006498858",
-      "9780006755173",
-      "9780007159208",
-      "9780007157174",
-      "9780007129720",
-      "9780006486015",
-      "9780007123810",
-      "9780007203567",
-      "9780006753063",
-      "9780002246484",
-      "9780007157150",
-      "9780006716815"
+      "9780679733379"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:15:10.891936Z"
+    "created_at": "2026-06-11T13:43:22.071578Z"
   },
   {
-    "query_id": "q_9780007123810_1",
-    "query": "journey through Middle-earth",
-    "source_isbn": "9780007123810",
+    "query_id": "q_9780712673051_1",
+    "query": "books on evolution and natural selection",
+    "source_isbn": "9780712673051",
     "relevant_isbns": [
-      "9780006498865",
-      "9780006498858",
-      "9780007157600",
-      "9780007203567",
-      "9780002246484",
-      "9780006481799",
-      "9780006486015",
-      "9780007123810",
-      "9780007129720",
-      "9780006716815"
+      "9780192880512",
+      "9781451626636",
+      "9780716745259",
+      "9798576734344",
+      "9780520063860",
+      "9781593080778",
+      "9780300002294",
+      "9780691023694"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:24:55.956440Z"
+    "created_at": "2026-06-11T13:43:27.945773Z"
   },
   {
-    "query_id": "q_9780007123810_2",
-    "query": "a classic tale of friendship, courage, and the battle against dark forces in a richly imagined world",
-    "source_isbn": "9780007123810",
+    "query_id": "q_9780712673051_2",
+    "query": "historical accounts of Darwin's life",
+    "source_isbn": "9780712673051",
+    "relevant_isbns": [],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:43:33.480058Z"
+  },
+  {
+    "query_id": "q_9780712673051_3",
+    "query": "scientific literature from the 19th century",
+    "source_isbn": "9780712673051",
     "relevant_isbns": [
-      "9780006481799",
-      "9780006498858",
-      "9780006498865",
-      "9780007196951",
-      "9780007157600",
-      "9780007157174",
-      "9780007157860",
-      "9780006753063",
-      "9780007157150",
-      "9780007129720",
-      "9780007203567",
-      "9780007123810",
-      "9780002246484",
-      "9780006755173",
-      "9780006486015",
-      "9780006476474",
-      "9780006716815"
+      "9780226089287",
+      "9781498508384",
+      "9781435749344",
+      "9781400849949",
+      "9798690350185",
+      "9780265827628",
+      "9780813524429"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:26:09.405548Z"
+    "created_at": "2026-06-11T13:43:42.147936Z"
   },
   {
-    "query_id": "q_9780007129492_0",
-    "query": "woodworking techniques",
-    "source_isbn": "9780007129492",
+    "query_id": "q_9780712673051_4",
+    "query": "works discussing the origins of species",
+    "source_isbn": "9780712673051",
     "relevant_isbns": [
-      "9780007129492"
+      "9781593080778",
+      "9781435749344",
+      "9798576734344",
+      "9780300002294",
+      "9781108014236",
+      "9780197643037"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:27:09.483347Z"
+    "created_at": "2026-06-11T13:43:50.325666Z"
   },
   {
-    "query_id": "q_9780007129492_1",
-    "query": "beginner's guide to woodworking tools and materials",
-    "source_isbn": "9780007129492",
+    "query_id": "q_9780748113323_0",
+    "query": "female friendship novels",
+    "source_isbn": "9780748113323",
     "relevant_isbns": [
-      "9780007129492"
+      "9781609459475",
+      "9781534432895",
+      "9780393635027",
+      "9780374607289",
+      "9781609451479",
+      "9781501151804",
+      "9780804726603",
+      "9781787701151"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:28:09.561640Z"
+    "created_at": "2026-06-11T13:43:58.043971Z"
   },
   {
-    "query_id": "q_9780007129492_2",
-    "query": "how to start woodworking as a hobby and essential tools needed for beginners",
-    "source_isbn": "9780007129492",
+    "query_id": "q_9780748113323_1",
+    "query": "books about manipulative characters",
+    "source_isbn": "9780748113323",
     "relevant_isbns": [
-      "9780007129492"
+      "9780385536837",
+      "9780063499928",
+      "9798646351303",
+      "9780645539615",
+      "9780199536481",
+      "9780316501866",
+      "9781605205106"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:29:12.511352Z"
+    "created_at": "2026-06-11T13:44:06.616645Z"
   },
   {
-    "query_id": "q_9780007129720_0",
-    "query": "fantasy epic",
-    "source_isbn": "9780007129720",
+    "query_id": "q_9780748113323_2",
+    "query": "fiction exploring themes of betrayal",
+    "source_isbn": "9780748113323",
     "relevant_isbns": [
-      "9780007157600",
-      "9780006498865",
-      "9780006498858",
-      "9780006481799",
-      "9780007129720",
-      "9780006755173",
-      "9780006486015",
-      "9780007157174",
-      "9780007203567",
-      "9780007123810",
-      "9780007159208",
-      "9780002246484",
-      "9780006753063",
-      "9780007157150",
-      "9780006716815"
+      "9798241965158",
+      "9780330418942",
+      "9781623958213",
+      "9781425049102"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:30:15.254845Z"
+    "created_at": "2026-06-11T13:44:15.975576Z"
   },
   {
-    "query_id": "q_9780007129720_1",
-    "query": "journey to destroy a powerful ring",
-    "source_isbn": "9780007129720",
+    "query_id": "q_9780748113323_3",
+    "query": "stories with complex female protagonists",
+    "source_isbn": "9780748113323",
     "relevant_isbns": [
-      "9780007129720",
-      "9780007157174",
-      "9780006498858",
-      "9780007157600",
-      "9780006498865",
-      "9780002246484",
-      "9780006486015",
-      "9780006481799",
-      "9780007203567",
-      "9780007123810",
-      "9780006716815"
+      "9781668063705",
+      "9780801495106",
+      "9781101531341",
+      "9781040085417",
+      "9781550963540",
+      "9781609452230",
+      "9780748673964",
+      "9781960988249"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:31:18.991157Z"
+    "created_at": "2026-06-11T13:44:23.461974Z"
   },
   {
-    "query_id": "q_9780007129720_2",
-    "query": "characters battling dark forces while a hobbit struggles with a heavy burden of a magical ring",
-    "source_isbn": "9780007129720",
+    "query_id": "q_9780748113323_4",
+    "query": "novels about the impact of a deceased friend",
+    "source_isbn": "9780748113323",
     "relevant_isbns": [
-      "9780007129720",
-      "9780006498865",
-      "9780007157600",
-      "9780007157174",
-      "9780006486015",
-      "9780002246484",
-      "9780007203567",
-      "9780007123810",
-      "9780006716815"
+      "9781913193065",
+      "9781488709098",
+      "9781984822192",
+      "9780316248679",
+      "9780063058170",
+      "9780415957656",
+      "9781609452230"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:41:12.290481Z"
+    "created_at": "2026-06-11T13:44:33.228926Z"
   },
   {
-    "query_id": "q_9780007136834_0",
-    "query": "murder mystery",
-    "source_isbn": "9780007136834",
+    "query_id": "q_9780674030367_0",
+    "query": "historical accounts of Jesuit missions",
+    "source_isbn": "9780674030367",
     "relevant_isbns": [
-      "9780002252317",
-      "9780006499725",
-      "9780002313247",
-      "9780006499343",
-      "9780002318136",
-      "9780002316798",
-      "9780002311038",
-      "9780007136834",
-      "9780007154852",
-      "9780002318075",
-      "9780002312820",
-      "9780007196951",
-      "9780006493143",
-      "9780006486015",
-      "9780007157174",
-      "9780006498513",
-      "9780006753063",
-      "9780007104895",
-      "9780006717669",
-      "9780007145348"
+      "9780674030367",
+      "9780804736510"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:41:12.376700Z"
+    "created_at": "2026-06-11T13:44:44.726705Z"
   },
   {
-    "query_id": "q_9780007136834_1",
-    "query": "suspense on a deserted island",
-    "source_isbn": "9780007136834",
+    "query_id": "q_9780674030367_1",
+    "query": "books on European encounters with China",
+    "source_isbn": "9780674030367",
     "relevant_isbns": [
-      "9780007136834",
-      "9780006753063",
-      "9780002312820",
-      "9780007196951",
-      "9780002311038",
-      "9780002313247",
-      "9780006498858",
-      "9780006481799",
-      "9780007154852",
-      "9780007157860",
-      "9780006717669"
+      "9798765177358",
+      "9781847921987",
+      "9780520066861",
+      "9781529332469"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:42:22.344067Z"
+    "created_at": "2026-06-11T13:44:52.962832Z"
   },
   {
-    "query_id": "q_9780007136834_2",
-    "query": "ten strangers face their dark secrets as they are picked off one by one in a remote mansion",
-    "source_isbn": "9780007136834",
+    "query_id": "q_9780674030367_2",
+    "query": "works about cultural exchange in history",
+    "source_isbn": "9780674030367",
     "relevant_isbns": [
-      "9780007136834",
-      "9780002318136",
-      "9780007196951",
-      "9780002311038",
-      "9780002252317",
-      "9780007154852",
-      "9780002318075",
-      "9780002312820",
-      "9780002313247",
-      "9780006499725",
-      "9780002316798",
-      "9780006717669"
+      "9781807588076",
+      "9780897896283",
+      "9780822317401",
+      "9780874139983",
+      "9780520237643",
+      "9780691054988",
+      "9781107386891",
+      "9783598220463"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:43:34.892333Z"
+    "created_at": "2026-06-11T13:45:03.213346Z"
   },
   {
-    "query_id": "q_9780007145348_0",
-    "query": "Texas thriller",
-    "source_isbn": "9780007145348",
+    "query_id": "q_9780674030367_3",
+    "query": "narratives of religious missions in Asia",
+    "source_isbn": "9780674030367",
     "relevant_isbns": [
-      "9780002252317",
-      "9780007145348",
-      "9780006493143",
-      "9780006499725",
-      "9780007196951",
-      "9780006717669",
-      "9780007104895",
-      "9780006498513"
+      "9780195188356",
+      "9780804736510",
+      "9780674030367",
+      "9780190677602"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:44:44.932455Z"
+    "created_at": "2026-06-11T13:45:09.813410Z"
   },
   {
-    "query_id": "q_9780007145348_1",
-    "query": "man protecting woman from abusive husband",
-    "source_isbn": "9780007145348",
+    "query_id": "q_9780674030367_4",
+    "query": "explorations of early modern European history",
+    "source_isbn": "9780674030367",
     "relevant_isbns": [
-      "9780007145348",
-      "9780007104895"
+      "9780812236293",
+      "9780822312758",
+      "9780874139983",
+      "9780199249879",
+      "9780691054988"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:45:52.174559Z"
+    "created_at": "2026-06-11T13:45:18.475698Z"
   },
   {
-    "query_id": "q_9780007145348_2",
-    "query": "ex-military policeman becomes embroiled in a dangerous situation while hitchhiking through Texas",
-    "source_isbn": "9780007145348",
+    "query_id": "q_9780935926255_0",
+    "query": "poker strategy books",
+    "source_isbn": "9780935926255",
     "relevant_isbns": [
-      "9780007145348"
+      "9781770903173",
+      "9784871876391",
+      "9781880685082",
+      "9780818406386",
+      "9780818407215",
+      "9781419680892",
+      "9780818406423",
+      "9781880685433"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:54:01.960952Z"
+    "created_at": "2026-06-11T13:45:28.146526Z"
   },
   {
-    "query_id": "q_9780007149520_0",
-    "query": "scientific discovery biography",
-    "source_isbn": "9780007149520",
+    "query_id": "q_9780935926255_1",
+    "query": "guides to playing Hold'em poker",
+    "source_isbn": "9780935926255",
     "relevant_isbns": [
-      "9780007149520",
-      "9780007193820"
+      "9781483607535",
+      "9780935926255",
+      "9781880685327",
+      "9781880685372",
+      "9781880685228",
+      "9780967755175",
+      "9780984619429",
+      "9780975895306"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:55:05.187838Z"
+    "created_at": "2026-06-11T13:45:34.016398Z"
   },
   {
-    "query_id": "q_9780007149520_1",
-    "query": "Romantic Science in the 18th century",
-    "source_isbn": "9780007149520",
+    "query_id": "q_9780935926255_2",
+    "query": "books on gambling techniques",
+    "source_isbn": "9780935926255",
     "relevant_isbns": [
+      "9781572438071",
+      "9780415380454",
+      "9781880685556",
+      "9781483607535",
+      "9781880685433",
+      "9781880685242",
+      "9780818406386",
+      "9781880685327"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:45:43.745671Z"
+  },
+  {
+    "query_id": "q_9780935926255_3",
+    "query": "resources for improving poker skills",
+    "source_isbn": "9780935926255",
+    "relevant_isbns": [
+      "9781770902305",
+      "9781880685495",
+      "9781880685556",
+      "9781572438071",
+      "9780818406386",
+      "9781483607535",
+      "9780967755175"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:45:51.736256Z"
+  },
+  {
+    "query_id": "q_9780935926255_4",
+    "query": "strategies for winning at card games",
+    "source_isbn": "9780935926255",
+    "relevant_isbns": [
+      "9781880685242",
+      "9780818406386",
+      "9781849942102",
+      "9781880685495",
+      "9781394169115",
+      "9781880685259",
+      "9781572438071",
+      "9781483607535"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:45:59.730736Z"
+  },
+  {
+    "query_id": "q_9798644092550_0",
+    "query": "classic romantic novels",
+    "source_isbn": "9798644092550",
+    "relevant_isbns": [
+      "9781101042472",
+      "9783753801421",
+      "9781006877025",
+      "9780698167834",
+      "9781719875707",
+      "9798642266328",
+      "9781078390972",
+      "9798644092550"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:46:08.246649Z"
+  },
+  {
+    "query_id": "q_9798644092550_1",
+    "query": "books about social class and marriage",
+    "source_isbn": "9798644092550",
+    "relevant_isbns": [
+      "9798553804978"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:46:17.267160Z"
+  },
+  {
+    "query_id": "q_9798644092550_2",
+    "query": "stories featuring strong female leads",
+    "source_isbn": "9798644092550",
+    "relevant_isbns": [
+      "9781466820777",
+      "9781801175661",
+      "9780063455771",
+      "9780316022835",
+      "9781488790386",
+      "9781609452230",
+      "9780571354641"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:46:49.591128Z"
+  },
+  {
+    "query_id": "q_9798644092550_3",
+    "query": "literature exploring hasty judgments",
+    "source_isbn": "9798644092550",
+    "relevant_isbns": [
+      "9783110209389",
+      "9780745608983",
+      "9780062170002",
+      "9781476642864",
+      "9780809316076"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:47:00.852342Z"
+  },
+  {
+    "query_id": "q_9798644092550_4",
+    "query": "novels set in Regency England",
+    "source_isbn": "9798644092550",
+    "relevant_isbns": [
+      "9780553574098",
+      "9798611762257",
+      "9780786755066",
+      "9780063138933",
+      "9798642451137",
+      "9798642266328"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:47:11.640405Z"
+  },
+  {
+    "query_id": "q_9780945575535_0",
+    "query": "contemporary Southern fiction",
+    "source_isbn": "9780945575535",
+    "relevant_isbns": [
+      "9781984877826",
+      "9798987725146",
+      "9780553295979",
+      "9780062834386"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:47:21.648034Z"
+  },
+  {
+    "query_id": "q_9780945575535_1",
+    "query": "books about orphans in literature",
+    "source_isbn": "9780945575535",
+    "relevant_isbns": [
+      "9780007866090",
+      "9780593492550",
+      "9798734556870",
+      "9780062242204",
+      "9781760987329"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:47:30.768344Z"
+  },
+  {
+    "query_id": "q_9780945575535_2",
+    "query": "stories featuring music and preaching",
+    "source_isbn": "9780945575535",
+    "relevant_isbns": [
+      "9780060523541",
+      "9780060526559",
+      "9780664219277",
+      "9780008686536"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:47:44.581169Z"
+  },
+  {
+    "query_id": "q_9780945575535_3",
+    "query": "novels set in small towns",
+    "source_isbn": "9780945575535",
+    "relevant_isbns": [
+      "9780553386479",
+      "9781101883266",
+      "9798330574612",
+      "9781662519550",
+      "9798553804978",
+      "9780553295979",
+      "9781250213273",
+      "9798349601897"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:47:57.009369Z"
+  },
+  {
+    "query_id": "q_9780945575535_4",
+    "query": "works exploring themes of identity and belonging",
+    "source_isbn": "9780945575535",
+    "relevant_isbns": [
+      "9781848884571",
+      "9780415915830",
+      "9781443810005",
+      "9783836626729",
+      "9781527509900",
+      "9780801898358",
+      "9780674639768",
+      "9780231105996"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:48:10.415129Z"
+  },
+  {
+    "query_id": "q_9780738206363_0",
+    "query": "scientific biography collections",
+    "source_isbn": "9780738206363",
+    "relevant_isbns": [
+      "9780224050449",
+      "9780099749714",
+      "9780521432528",
+      "9780195143652",
+      "9781784386498",
+      "9781402033247",
+      "9781379585695",
       "9780007149520"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:56:11.424607Z"
+    "created_at": "2026-06-11T13:48:31.734037Z"
   },
   {
-    "query_id": "q_9780007149520_2",
-    "query": "exploration of the age of scientific enlightenment and its impact on society through the lives of key figures",
-    "source_isbn": "9780007149520",
+    "query_id": "q_9780738206363_1",
+    "query": "letters of famous physicists",
+    "source_isbn": "9780738206363",
     "relevant_isbns": [
-      "9780007149520",
-      "9780007193820"
+      "9780738206363",
+      "9780192806727"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:57:18.879904Z"
+    "created_at": "2026-06-11T13:48:42.282685Z"
   },
   {
-    "query_id": "q_9780007154852_0",
-    "query": "Agatha Christie short stories",
-    "source_isbn": "9780007154852",
+    "query_id": "q_9780738206363_2",
+    "query": "books about Nobel laureates",
+    "source_isbn": "9780738206363",
     "relevant_isbns": [
-      "9780007154852",
-      "9780002313247",
-      "9780002318075",
-      "9780002312820",
-      "9780002311038",
+      "9780307740915",
+      "9781548451622",
+      "9780241957882",
+      "9780141917474",
+      "9780684835822",
+      "9781616142810"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:48:52.104757Z"
+  },
+  {
+    "query_id": "q_9780738206363_3",
+    "query": "insights into the life of a scientist",
+    "source_isbn": "9780738206363",
+    "relevant_isbns": [
+      "9780738206363",
+      "9780521432528",
+      "9780767920810",
+      "9798280847965",
+      "9780712673051",
+      "9780007149520"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:49:08.540696Z"
+  },
+  {
+    "query_id": "q_9780738206363_4",
+    "query": "correspondence of influential thinkers",
+    "source_isbn": "9780738206363",
+    "relevant_isbns": [
+      "9780198285700",
+      "9789811356896",
+      "9780791414194",
+      "9781789626377",
+      "9780199250899",
+      "9780758338693",
+      "9781134882328",
+      "9780226096070"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:49:17.261938Z"
+  },
+  {
+    "query_id": "q_9780316297042_0",
+    "query": "thrillers with personal stakes",
+    "source_isbn": "9780316297042",
+    "relevant_isbns": [
+      "9780061827426",
+      "9780759525771",
+      "9780316225892",
+      "9781784702298",
+      "9781101128602",
+      "9781982143459",
+      "9780684820750",
+      "9780307358677"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:49:27.622833Z"
+  },
+  {
+    "query_id": "q_9780316297042_1",
+    "query": "books about family and danger",
+    "source_isbn": "9780316297042",
+    "relevant_isbns": [
+      "9780735224308",
+      "9780399592812",
+      "9781488709098",
+      "9780553593075",
+      "9781982196592",
+      "9780349134291",
+      "9781982156305",
+      "9780679744665"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:49:37.946377Z"
+  },
+  {
+    "query_id": "q_9780316297042_2",
+    "query": "suspense novels set in wilderness",
+    "source_isbn": "9780316297042",
+    "relevant_isbns": [
+      "9781785657870",
+      "9781838889876",
+      "9781101147153",
+      "9780008333287",
+      "9780525521877"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:49:48.286496Z"
+  },
+  {
+    "query_id": "q_9780316297042_3",
+    "query": "stories featuring assassins and survival",
+    "source_isbn": "9780316297042",
+    "relevant_isbns": [
+      "9781456613457",
+      "9781803362335",
+      "9780349437033",
+      "9781473231085",
+      "9781429949620"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:50:02.691848Z"
+  },
+  {
+    "query_id": "q_9780316297042_4",
+    "query": "novels with psychological tension",
+    "source_isbn": "9780316297042",
+    "relevant_isbns": [
+      "9781425049102",
+      "9780810117099",
+      "9798294452315",
+      "9780195148107",
+      "9781542027342",
+      "9780061827426",
+      "9789529493524"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:50:14.717146Z"
+  },
+  {
+    "query_id": "q_9789048126903_0",
+    "query": "books on nationalism and justice",
+    "source_isbn": "9789048126903",
+    "relevant_isbns": [
+      "9781137490124",
+      "9780331528268",
+      "9781527509900",
+      "9780847691524",
+      "9781584778226"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:50:23.521204Z"
+  },
+  {
+    "query_id": "q_9789048126903_1",
+    "query": "philosophy of minority rights",
+    "source_isbn": "9789048126903",
+    "relevant_isbns": [
+      "9780521645362",
+      "9789402413182",
+      "9781914317811",
+      "9780333653159",
+      "9780701186586",
+      "9780333794661",
+      "9781557288493"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:50:33.012806Z"
+  },
+  {
+    "query_id": "q_9789048126903_2",
+    "query": "works discussing collective behavior",
+    "source_isbn": "9789048126903",
+    "relevant_isbns": [
+      "9781475791167",
+      "9780691020808",
+      "9781412941259",
+      "9780716757153",
+      "9780521588515",
+      "9781453826676",
+      "9781567311075",
+      "9781597454797"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:50:44.838680Z"
+  },
+  {
+    "query_id": "q_9789048126903_3",
+    "query": "political theory in multinational states",
+    "source_isbn": "9789048126903",
+    "relevant_isbns": [
+      "9780415773041",
+      "9780312295813",
+      "9780312225438"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:50:56.207177Z"
+  },
+  {
+    "query_id": "q_9789048126903_4",
+    "query": "normative approaches to nationalism",
+    "source_isbn": "9789048126903",
+    "relevant_isbns": [
+      "9780230321502",
+      "9781137490124",
+      "9783030070328",
+      "9781000143423"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:51:06.497379Z"
+  },
+  {
+    "query_id": "q_9781669007272_0",
+    "query": "children's books about baseball",
+    "source_isbn": "9781669007272",
+    "relevant_isbns": [
+      "9780060821449"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:51:15.139228Z"
+  },
+  {
+    "query_id": "q_9781669007272_1",
+    "query": "stories featuring young inventors",
+    "source_isbn": "9781669007272",
+    "relevant_isbns": [
+      "9781590173510",
+      "9780593124499"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:51:26.275012Z"
+  },
+  {
+    "query_id": "q_9781669007272_2",
+    "query": "novels for kids about sports",
+    "source_isbn": "9781669007272",
+    "relevant_isbns": [
+      "9781955804196",
+      "9781949520187",
+      "9781459412644",
+      "9781668011300"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:51:40.000586Z"
+  },
+  {
+    "query_id": "q_9781669007272_3",
+    "query": "fiction exploring science and creativity",
+    "source_isbn": "9781669007272",
+    "relevant_isbns": [
+      "9781350171107",
+      "9780804168953",
+      "9780691147154",
+      "9780822311683",
+      "9780374270872",
+      "9781512829334"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:51:54.715660Z"
+  },
+  {
+    "query_id": "q_9781669007272_4",
+    "query": "books about teamwork and friendship",
+    "source_isbn": "9781669007272",
+    "relevant_isbns": [
+      "9788172248796",
+      "9781984822192",
+      "9780451499073",
+      "9781578513338",
+      "9780670923175",
+      "9781998178117",
+      "9780008287979",
+      "9781609452230"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:52:08.858709Z"
+  },
+  {
+    "query_id": "q_9788235268020_0",
+    "query": "historical romance novels",
+    "source_isbn": "9788235268020",
+    "relevant_isbns": [
+      "9780804726603",
+      "9780373776924",
+      "9781482064308",
+      "9798317058449",
+      "9781772636390",
+      "9780451404527",
+      "9781772638356",
+      "9781772637090"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:52:22.863176Z"
+  },
+  {
+    "query_id": "q_9788235268020_1",
+    "query": "books set in Victorian London",
+    "source_isbn": "9788235268020",
+    "relevant_isbns": [
+      "9780451202062",
+      "9780199686667",
+      "9781733056977",
+      "9798317058449",
+      "9798592843174",
+      "9780991314263",
+      "9780369706324",
+      "9781772634020"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:52:33.999260Z"
+  },
+  {
+    "query_id": "q_9788235268020_2",
+    "query": "stories about seduction and secrets",
+    "source_isbn": "9788235268020",
+    "relevant_isbns": [
+      "9781476791463",
+      "9780385335317",
+      "9780670846504",
+      "9780525656159",
+      "9780299206741",
+      "9781466846463",
+      "9781501151804"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:52:46.125988Z"
+  },
+  {
+    "query_id": "q_9788235268020_3",
+    "query": "romantic fiction with complex characters",
+    "source_isbn": "9788235268020",
+    "relevant_isbns": [
+      "9781425049102",
+      "9798534653311",
+      "9780804726603",
+      "9780525522881",
+      "9781040085417",
+      "9780312598914"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:53:01.935595Z"
+  },
+  {
+    "query_id": "q_9788235268020_4",
+    "query": "narratives exploring wealth and mystery",
+    "source_isbn": "9788235268020",
+    "relevant_isbns": [
+      "9781137397751",
+      "9780857199096",
+      "9781620139660"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:53:15.357845Z"
+  },
+  {
+    "query_id": "q_9780689316005_0",
+    "query": "Arthurian magic",
+    "source_isbn": "9780689316005",
+    "relevant_isbns": [
+      "9780689316005",
+      "9780312156961",
+      "9781440582899",
+      "9780425228166",
+      "9780439918497"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:53:24.946930Z"
+  },
+  {
+    "query_id": "q_9780689316005_1",
+    "query": "books about young wizards",
+    "source_isbn": "9780689316005",
+    "relevant_isbns": [
+      "9780547545110",
+      "9780754805878",
+      "9780807282595",
+      "9780545790352",
+      "9780061975264",
+      "9781792850387",
+      "9781407034546",
+      "9798343911350"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:53:48.845807Z"
+  },
+  {
+    "query_id": "q_9780689316005_2",
+    "query": "fantasy stories with Merlin",
+    "source_isbn": "9780689316005",
+    "relevant_isbns": [
+      "9780399252174",
+      "9780307885142"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:53:59.320968Z"
+  },
+  {
+    "query_id": "q_9780689316005_3",
+    "query": "children's books featuring magic and adventure",
+    "source_isbn": "9780689316005",
+    "relevant_isbns": [
+      "9781405221740",
+      "9781445292663",
+      "9780142410363",
+      "9780754805878",
+      "9781526614704",
+      "9781444936711",
+      "9781528713047"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:54:12.865918Z"
+  },
+  {
+    "query_id": "q_9780689316005_4",
+    "query": "novels about growing up without a father figure",
+    "source_isbn": "9780689316005",
+    "relevant_isbns": [
+      "9781408716922",
+      "9781842705865",
+      "9781501170638",
+      "9781432863609",
+      "9780385353175"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:54:25.993849Z"
+  },
+  {
+    "query_id": "q_9781665950107_0",
+    "query": "villain academy stories",
+    "source_isbn": "9781665950107",
+    "relevant_isbns": [
+      "9780645539615",
+      "9781665950107",
+      "9781626015418",
+      "9781801175661",
+      "9781719238885",
+      "9781069104021",
+      "9780007395118"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:54:36.962376Z"
+  },
+  {
+    "query_id": "q_9781665950107_1",
+    "query": "funny juvenile fiction",
+    "source_isbn": "9781665950107",
+    "relevant_isbns": [
+      "9780063238107",
+      "9780142425008",
+      "9780380017263",
+      "9780063385566",
+      "9781534432895",
+      "9781552632444",
+      "9780061975264",
+      "9781466865532"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:54:48.623394Z"
+  },
+  {
+    "query_id": "q_9781665950107_2",
+    "query": "books about school competitions",
+    "source_isbn": "9781665950107",
+    "relevant_isbns": [
+      "9781665950107",
+      "9780316134705",
+      "9781741963106"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:55:00.471258Z"
+  },
+  {
+    "query_id": "q_9781665950107_3",
+    "query": "novels featuring pranks and mischief",
+    "source_isbn": "9781665950107",
+    "relevant_isbns": [
+      "9780141199382",
+      "9781534432895",
+      "9780061975264",
+      "9780063238107",
+      "9781668068328",
+      "9780063385566",
+      "9781552632444"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:55:13.054717Z"
+  },
+  {
+    "query_id": "q_9781665950107_4",
+    "query": "stories about young heroes in a villainous setting",
+    "source_isbn": "9781665950107",
+    "relevant_isbns": [
+      "9780645539615",
+      "9781548435561",
+      "9798343911350",
+      "9780061793356",
+      "9780545418638"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:55:23.566880Z"
+  },
+  {
+    "query_id": "q_9780061244933_0",
+    "query": "dark fantasy short stories",
+    "source_isbn": "9780061244933",
+    "relevant_isbns": [
+      "9780886771904",
+      "9781607109327",
+      "9781506705293",
+      "9798527126426",
+      "9781649378392",
+      "9781101663035",
+      "9781773563091",
+      "9780061795299"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:55:38.983770Z"
+  },
+  {
+    "query_id": "q_9780061244933_1",
+    "query": "books with mysterious circuses",
+    "source_isbn": "9780061244933",
+    "relevant_isbns": [
+      "9780061244933"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:56:03.437073Z"
+  },
+  {
+    "query_id": "q_9780061244933_2",
+    "query": "novellas featuring supernatural elements",
+    "source_isbn": "9780061244933",
+    "relevant_isbns": [
+      "9781616464820",
+      "9781938570094",
+      "9781473369221",
+      "9781848565630",
+      "9781607109327",
+      "9781620139660",
+      "9781439164754",
+      "9781250169655"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:56:15.411267Z"
+  },
+  {
+    "query_id": "q_9780061244933_3",
+    "query": "collections of horror and fantasy tales",
+    "source_isbn": "9780061244933",
+    "relevant_isbns": [
+      "9781506705293",
+      "9781942712572",
+      "9781616464820",
+      "9780743417341",
+      "9781587674372",
+      "9798317901875",
+      "9780008274733",
+      "9780142437957"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:56:28.869653Z"
+  },
+  {
+    "query_id": "q_9780061244933_4",
+    "query": "stories about characters trapped in strange situations",
+    "source_isbn": "9780061244933",
+    "relevant_isbns": [
+      "9781960988249",
+      "9780061244933",
       "9780007136834",
-      "9780002318136"
+      "9781596068070",
+      "9781501163401",
+      "9781476642864",
+      "9781423190332",
+      "9780141188287"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:58:26.739090Z"
+    "created_at": "2026-06-11T13:56:59.707293Z"
   },
   {
-    "query_id": "q_9780007154852_1",
-    "query": "early works of a famous mystery writer",
-    "source_isbn": "9780007154852",
+    "query_id": "q_9798305667943_0",
+    "query": "space marine novels",
+    "source_isbn": "9798305667943",
     "relevant_isbns": [
-      "9780007154852",
-      "9780002311038",
-      "9780002312820",
-      "9780002318075",
-      "9780002313247",
-      "9780002252317",
-      "9780002318136",
-      "9780002316798",
-      "9780007136834",
-      "9780007196951",
-      "9780006717669",
-      "9780007104895"
+      "9781473619777",
+      "9781789092929",
+      "9781497485372"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T16:59:36.359781Z"
+    "created_at": "2026-06-11T13:57:15.176338Z"
   },
   {
-    "query_id": "q_9780007154852_2",
-    "query": "collection of Agatha Christie's first stories showcasing her development as a master of suspense and intrigue",
-    "source_isbn": "9780007154852",
+    "query_id": "q_9798305667943_1",
+    "query": "grimdark science fiction",
+    "source_isbn": "9798305667943",
     "relevant_isbns": [
-      "9780007154852",
-      "9780002312820",
-      "9780002318075",
-      "9780002313247",
-      "9780002311038",
-      "9780007136834",
-      "9780002318136"
+      "9781789092929",
+      "9780345547200",
+      "9781473233324",
+      "9781785726064",
+      "9781803363646",
+      "9781938570513",
+      "9780593160077"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:00:50.101053Z"
+    "created_at": "2026-06-11T13:57:33.981676Z"
   },
   {
-    "query_id": "q_9780007155002_0",
-    "query": "mind mapping techniques",
-    "source_isbn": "9780007155002",
+    "query_id": "q_9798305667943_2",
+    "query": "books about cults in space",
+    "source_isbn": "9798305667943",
     "relevant_isbns": [
-      "9780007155002"
+      "9798228585997",
+      "9781473647626"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:09:11.443910Z"
+    "created_at": "2026-06-11T13:57:48.001780Z"
   },
   {
-    "query_id": "q_9780007155002_1",
-    "query": "creativity in the workplace",
-    "source_isbn": "9780007155002",
+    "query_id": "q_9798305667943_3",
+    "query": "military sci-fi with moral dilemmas",
+    "source_isbn": "9798305667943",
     "relevant_isbns": [
-      "9780007155002"
+      "9781250389831",
+      "9780316246644",
+      "9781909149168",
+      "9798242199736",
+      "9798992884227"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:10:15.050644Z"
+    "created_at": "2026-06-11T13:58:00.044413Z"
   },
   {
-    "query_id": "q_9780007155002_2",
-    "query": "how to use mind maps to enhance productivity and creativity in a business environment",
-    "source_isbn": "9780007155002",
+    "query_id": "q_9798305667943_4",
+    "query": "stories set in a dystopian future with war themes",
+    "source_isbn": "9798305667943",
     "relevant_isbns": [
-      "9780007155002"
+      "9780062098474",
+      "9780999252512",
+      "9781789092929",
+      "9798224169153",
+      "9781785658969"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:11:18.759605Z"
+    "created_at": "2026-06-11T13:58:19.648083Z"
   },
   {
-    "query_id": "q_9780007157150_0",
-    "query": "science fiction adventure",
-    "source_isbn": "9780007157150",
+    "query_id": "q_9780691185415_0",
+    "query": "canid species guide",
+    "source_isbn": "9780691185415",
     "relevant_isbns": [
-      "9780007157150",
+      "9780691185415"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:58:42.576532Z"
+  },
+  {
+    "query_id": "q_9780691185415_1",
+    "query": "nature books about wolves",
+    "source_isbn": "9780691185415",
+    "relevant_isbns": [
+      "9781786068453",
+      "9781416914143",
+      "9781635574968"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:58:56.433576Z"
+  },
+  {
+    "query_id": "q_9780691185415_2",
+    "query": "field guides for animal lovers",
+    "source_isbn": "9780691185415",
+    "relevant_isbns": [
+      "9780691203591",
+      "9780691185415",
+      "9781786068453",
+      "9780195107784",
+      "9780241526897",
+      "9781462914333"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:59:20.021700Z"
+  },
+  {
+    "query_id": "q_9780691185415_3",
+    "query": "books on wildlife conservation",
+    "source_isbn": "9780691185415",
+    "relevant_isbns": [
+      "9780199663217",
+      "9780691203591",
+      "9780195107784",
+      "9781472989093",
+      "9781635574968",
+      "9780691228617",
+      "9781786068453",
+      "9781119403739"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:59:26.499185Z"
+  },
+  {
+    "query_id": "q_9780691185415_4",
+    "query": "photographic guides to canids around the world",
+    "source_isbn": "9780691185415",
+    "relevant_isbns": [
+      "9780691185415"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:59:41.863969Z"
+  },
+  {
+    "query_id": "q_9781789095012_0",
+    "query": "science fiction anthologies",
+    "source_isbn": "9781789095012",
+    "relevant_isbns": [
+      "9781781084373",
+      "9781466829879",
+      "9781803362335",
+      "9780989141161"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T13:59:53.900332Z"
+  },
+  {
+    "query_id": "q_9781789095012_1",
+    "query": "best short stories in sci-fi",
+    "source_isbn": "9781789095012",
+    "relevant_isbns": [
       "9780006476474",
-      "9780007119622",
-      "9780007157600",
-      "9780006753063",
-      "9780006481799",
-      "9780007157174",
-      "9780006498865",
-      "9780006172765",
-      "9780006755173",
-      "9780007196951",
-      "9780006498858",
-      "9780007157860",
-      "9780002255752",
-      "9780002246484",
-      "9780006486015",
-      "9780006499343",
-      "9780006716815",
-      "9780007159208",
-      "9780006480419"
+      "9781250169655",
+      "9781984877826",
+      "9781838937638",
+      "9780873384162",
+      "9780743423793",
+      "9781717327697"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:12:25.367078Z"
+    "created_at": "2026-06-11T14:00:16.039714Z"
   },
   {
-    "query_id": "q_9780007157150_1",
-    "query": "abduction to another planet",
-    "source_isbn": "9780007157150",
+    "query_id": "q_9781789095012_2",
+    "query": "new science fiction from podcasts",
+    "source_isbn": "9781789095012",
     "relevant_isbns": [
-      "9780007157150",
-      "9780007119622",
-      "9780007157174",
-      "9780007157600",
-      "9780006476474",
-      "9780006486015",
-      "9780006716815"
+      "9780822311683",
+      "9781964666099",
+      "9781789092929",
+      "9781849979320",
+      "9798990108301"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:13:32.657290Z"
+    "created_at": "2026-06-11T14:00:37.735110Z"
   },
   {
-    "query_id": "q_9780007157150_2",
-    "query": "academic struggles to survive on Mars while uncovering a plot against its inhabitants",
-    "source_isbn": "9780007157150",
+    "query_id": "q_9781789095012_3",
+    "query": "collections of speculative fiction",
+    "source_isbn": "9781789095012",
     "relevant_isbns": [
-      "9780007157150",
-      "9780007119622"
+      "9780356504421",
+      "9781473647626",
+      "9781625792181",
+      "9781789092929",
+      "9781785658969"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:23:37.080239Z"
+    "created_at": "2026-06-11T14:00:48.915723Z"
   },
   {
-    "query_id": "q_9780007157174_0",
-    "query": "dystopian fiction",
-    "source_isbn": "9780007157174",
+    "query_id": "q_9781789095012_4",
+    "query": "Hugo award nominated science fiction stories",
+    "source_isbn": "9781789095012",
     "relevant_isbns": [
-      "9780007157600",
-      "9780006476474",
-      "9780006755173",
-      "9780006493143",
-      "9780006481799",
-      "9780006498865",
-      "9780007157174",
-      "9780007157150",
-      "9780007196951",
-      "9780006498858",
-      "9780007136834",
-      "9780006717669",
-      "9780006486015",
-      "9780007119622",
-      "9780002246484",
-      "9780006480419",
-      "9780007159208",
-      "9780006716815"
+      "9781597805353",
+      "9781733811972",
+      "9781447281986",
+      "9781473647626",
+      "9781471228612",
+      "9780806537986",
+      "9781849979320",
+      "9781789092929"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:24:35.409741Z"
+    "created_at": "2026-06-11T14:01:02.936049Z"
   },
   {
-    "query_id": "q_9780007157174_1",
-    "query": "man caught in a sinister organization",
-    "source_isbn": "9780007157174",
+    "query_id": "q_9781780979038_0",
+    "query": "Prada fashion history",
+    "source_isbn": "9781780979038",
     "relevant_isbns": [
-      "9780007157174",
-      "9780006499343",
-      "9780007196951",
-      "9780006493143",
-      "9780002252317",
-      "9780007136834",
-      "9780006755173",
-      "9780002313247",
-      "9780006480419",
-      "9780006753063",
-      "9780006499725",
-      "9780002312820",
-      "9780002311038",
-      "9780002318136",
-      "9780002318075",
-      "9780006498513",
-      "9780007154852",
-      "9780002240802",
-      "9780007157150",
-      "9780006486015",
-      "9780006498858",
-      "9780007145348",
-      "9780006498865",
-      "9780002246484",
-      "9780007157860",
-      "9780006717669",
-      "9780006716815",
-      "9780007104895"
+      "9781786276827",
+      "9780764162947",
+      "9780500022863",
+      "9780062216007"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:25:40.699413Z"
+    "created_at": "2026-06-11T14:01:15.209053Z"
   },
   {
-    "query_id": "q_9780007157174_2",
-    "query": "a man's descent into a dark group that seeks to control humanity while his wife experiences prophetic dreams",
-    "source_isbn": "9780007157174",
+    "query_id": "q_9781780979038_1",
+    "query": "biographies of fashion designers",
+    "source_isbn": "9781780979038",
     "relevant_isbns": [
-      "9780007157174",
-      "9780007196951",
-      "9780007157600",
-      "9780007157150",
-      "9780006493143"
+      "9781847883100",
+      "9780141972992",
+      "9780764162947",
+      "9780789301161"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:26:43.126415Z"
+    "created_at": "2026-06-11T14:01:25.300772Z"
   },
   {
-    "query_id": "q_9780007157600_0",
-    "query": "fantasy epic",
-    "source_isbn": "9780007157600",
+    "query_id": "q_9781780979038_2",
+    "query": "books about luxury brands",
+    "source_isbn": "9781780979038",
     "relevant_isbns": [
-      "9780007157600",
-      "9780006498865",
-      "9780006498858",
-      "9780006481799",
-      "9780007129720",
-      "9780006755173",
-      "9780006486015",
-      "9780007157174",
-      "9780007203567",
-      "9780007123810",
-      "9780007159208",
-      "9780002246484",
-      "9780006753063",
-      "9780007157150",
-      "9780006716815"
+      "9781847882271",
+      "9781780234625",
+      "9781780979038",
+      "9780062216007",
+      "9781529732498",
+      "9780500022399"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:26:43.228986Z"
+    "created_at": "2026-06-11T14:01:35.265459Z"
   },
   {
-    "query_id": "q_9780007157600_1",
-    "query": "gods and dreamers",
-    "source_isbn": "9780007157600",
+    "query_id": "q_9781780979038_3",
+    "query": "fashion design and innovation",
+    "source_isbn": "9781780979038",
     "relevant_isbns": [
-      "9780007157600",
-      "9780007157174",
-      "9780007119622",
-      "9780007149520",
-      "9780006755173",
-      "9780006476474",
-      "9780006498865",
-      "9780006486015",
-      "9780006498858",
-      "9780007157150",
-      "9780002246484",
-      "9780007203567",
-      "9780006716815",
-      "9780007123810"
+      "9782940496105",
+      "9780713687965",
+      "9788183242035",
+      "9781855737457",
+      "9780300101928",
+      "9780367720766",
+      "9780713488739",
+      "9781135190002"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:27:46.946767Z"
+    "created_at": "2026-06-11T14:01:47.150543Z"
   },
   {
-    "query_id": "q_9780007157600_2",
-    "query": "a battle for power between ancient gods and a ruler seeking to dominate them while the world faces chaos",
-    "source_isbn": "9780007157600",
+    "query_id": "q_9781780979038_4",
+    "query": "Miuccia Prada's influence on fashion",
+    "source_isbn": "9781780979038",
     "relevant_isbns": [
-      "9780007157600",
-      "9780007129720",
-      "9780006498858",
-      "9780007157174",
-      "9780006498865",
-      "9780002246484",
-      "9780006486015",
-      "9780007123810",
-      "9780007203567"
+      "9781135190002",
+      "9781780234625",
+      "9781350376519",
+      "9780764162947",
+      "9781847882271",
+      "9780192840301"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T17:59:27.985350Z"
+    "created_at": "2026-06-11T14:01:56.871684Z"
   },
   {
-    "query_id": "q_9780007157860_0",
-    "query": "naval warfare",
-    "source_isbn": "9780007157860",
+    "query_id": "q_9780300115468_0",
+    "query": "existential philosophy books",
+    "source_isbn": "9780300115468",
     "relevant_isbns": [
-      "9780007157860",
-      "9780006172765",
-      "9780002255752",
-      "9780004701431",
-      "9780006498858",
-      "9780006498865",
-      "9780002246484"
+      "9780810875890",
+      "9780701186586",
+      "9780143037576",
+      "9781472529855",
+      "9789356611290",
+      "9781528785853"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:00:24.751216Z"
+    "created_at": "2026-06-11T14:02:11.747399Z"
   },
   {
-    "query_id": "q_9780007157860_1",
-    "query": "friendship between a captain and a doctor",
-    "source_isbn": "9780007157860",
+    "query_id": "q_9780300115468_1",
+    "query": "Sartre's key works",
+    "source_isbn": "9780300115468",
     "relevant_isbns": [
-      "9780007157150",
-      "9780007157860"
+      "9780226027968",
+      "9780300115468",
+      "9781982105440",
+      "9780811201889"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:01:32.428357Z"
+    "created_at": "2026-06-11T14:02:21.262332Z"
   },
   {
-    "query_id": "q_9780007157860_2",
-    "query": "historical fiction set during the Napoleonic Wars featuring naval battles and camaraderie",
-    "source_isbn": "9780007157860",
+    "query_id": "q_9780300115468_2",
+    "query": "books on humanism and existentialism",
+    "source_isbn": "9780300115468",
     "relevant_isbns": [
-      "9780007157860",
-      "9780006498858",
-      "9780004701431"
+      "9780300115468",
+      "9780415110525",
+      "9780375759895",
+      "9780810875890",
+      "9780674195455",
+      "9798216257714",
+      "9780679733737",
+      "9780486432502"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:02:37.212728Z"
+    "created_at": "2026-06-11T14:02:27.962045Z"
   },
   {
-    "query_id": "q_9780007159208_0",
-    "query": "vampire prince",
-    "source_isbn": "9780007159208",
+    "query_id": "q_9780300115468_3",
+    "query": "philosophical discussions on freedom",
+    "source_isbn": "9780300115468",
     "relevant_isbns": [
-      "9780007159208",
-      "9780006486015",
-      "9780006481799",
-      "9780006716815"
+      "9780486432502",
+      "9780300115468",
+      "9780226096070",
+      "9781474247672",
+      "9780333777565",
+      "9781349536931",
+      "9780687009299"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:03:42.082197Z"
+    "created_at": "2026-06-11T14:02:36.809386Z"
   },
   {
-    "query_id": "q_9780007159208_1",
-    "query": "boy's transformation into a half-vampire",
-    "source_isbn": "9780007159208",
+    "query_id": "q_9780300115468_4",
+    "query": "understanding Sartre's ideas on existence",
+    "source_isbn": "9780300115468",
     "relevant_isbns": [
-      "9780007159208",
-      "9780006481799"
+      "9780226027968",
+      "9781982105440",
+      "9780300115468",
+      "9780226254661",
+      "9789356611290",
+      "9798216257714",
+      "9780679733737"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:11:10.278604Z"
+    "created_at": "2026-06-11T14:02:47.235616Z"
   },
   {
-    "query_id": "q_9780007159208_2",
-    "query": "a young man's terrifying journey from human to vampire royalty and the challenges he faces",
-    "source_isbn": "9780007159208",
+    "query_id": "q_9780070526761_0",
+    "query": "entrepreneurship tips",
+    "source_isbn": "9780070526761",
     "relevant_isbns": [
-      "9780007159208",
-      "9780006481799",
-      "9780002246484",
-      "9780006486015"
+      "9780070526761",
+      "9781781951828",
+      "9780131491786",
+      "9781784718541",
+      "9780814400005",
+      "9780071830355",
+      "9780750669207",
+      "9781080202508"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:12:17.155107Z"
+    "created_at": "2026-06-11T14:02:56.618742Z"
   },
   {
-    "query_id": "q_9780007167128_0",
-    "query": "film guide",
-    "source_isbn": "9780007167128",
+    "query_id": "q_9780070526761_1",
+    "query": "business success strategies",
+    "source_isbn": "9780070526761",
     "relevant_isbns": [
-      "9780007167128"
+      "9780671763589",
+      "9798376068328",
+      "9781260455519",
+      "9781922553508",
+      "9781292282527",
+      "9780765614148",
+      "9781633697775"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:13:15.901114Z"
+    "created_at": "2026-06-11T14:03:05.549427Z"
   },
   {
-    "query_id": "q_9780007167128_1",
-    "query": "comprehensive movie reviews and trivia",
-    "source_isbn": "9780007167128",
+    "query_id": "q_9780070526761_2",
+    "query": "guides for new entrepreneurs",
+    "source_isbn": "9780070526761",
     "relevant_isbns": [
-      "9780007167128"
+      "9781315458045",
+      "9780230340268",
+      "9780615373966",
+      "9780131491786",
+      "9781523084722",
+      "9780750669207",
+      "9780071830355",
+      "9781292059334"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:14:21.555032Z"
+    "created_at": "2026-06-11T14:03:13.735267Z"
   },
   {
-    "query_id": "q_9780007167128_2",
-    "query": "an extensive guide covering film history, critiques, and behind-the-scenes insights from the early 1900s to 2004",
-    "source_isbn": "9780007167128",
+    "query_id": "q_9780070526761_3",
+    "query": "common pitfalls for startups",
+    "source_isbn": "9780070526761",
     "relevant_isbns": [
-      "9780007167128"
+      "9780615373966",
+      "9798534659191",
+      "9781430241867",
+      "9781491940235",
+      "9781626562400",
+      "9781315458045",
+      "9780201398526"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:15:23.227399Z"
+    "created_at": "2026-06-11T14:03:22.589005Z"
   },
   {
-    "query_id": "q_9780007170760_0",
-    "query": "Chinese history",
-    "source_isbn": "9780007170760",
+    "query_id": "q_9780070526761_4",
+    "query": "books on managing a new business",
+    "source_isbn": "9780070526761",
     "relevant_isbns": [
-      "9780007176151",
-      "9780007170760",
-      "9780004701431"
+      "9780201398526",
+      "9781315458045",
+      "9780750669207",
+      "9781784718541",
+      "9780471271543",
+      "9780099243823",
+      "9780671763589"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:30:00.888629Z"
+    "created_at": "2026-06-11T14:03:31.243030Z"
   },
   {
-    "query_id": "q_9780007170760_1",
-    "query": "three generations of women in China",
-    "source_isbn": "9780007170760",
+    "query_id": "q_9780674004689_0",
+    "query": "Renaissance humanism",
+    "source_isbn": "9780674004689",
     "relevant_isbns": [
-      "9780007170760",
-      "9780007176151"
+      "9780195330847",
+      "9780691054988",
+      "9780801866319",
+      "9781856693745",
+      "9781843830641",
+      "9780674195455",
+      "9780429977329",
+      "9780674004689"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:31:06.208787Z"
+    "created_at": "2026-06-11T14:03:38.999580Z"
   },
   {
-    "query_id": "q_9780007170760_2",
-    "query": "a powerful narrative exploring the lives of women through China's tumultuous 20th century and their struggles against societal changes",
-    "source_isbn": "9780007170760",
+    "query_id": "q_9780674004689_1",
+    "query": "books on European intellectual history",
+    "source_isbn": "9780674004689",
     "relevant_isbns": [
-      "9780007176151",
-      "9780007170760"
+      "9780857457271",
+      "9780801878152",
+      "9780674195455",
+      "9780231075916",
+      "9781789627114",
+      "9780415106559",
+      "9780521003377"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:32:10.489720Z"
+    "created_at": "2026-06-11T14:03:47.619072Z"
   },
   {
-    "query_id": "q_9780007173730_0",
-    "query": "running",
-    "source_isbn": "9780007173730",
+    "query_id": "q_9780674004689_2",
+    "query": "studies of humanistic learning",
+    "source_isbn": "9780674004689",
     "relevant_isbns": [
-      "9780007173730",
-      "9780006481799"
+      "9780691020105",
+      "9780415110525",
+      "9780674195455",
+      "9781351358040",
+      "9781134643189",
+      "9780080572994",
+      "9780801331558"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:33:11.187571Z"
+    "created_at": "2026-06-11T14:04:01.539742Z"
   },
   {
-    "query_id": "q_9780007173730_1",
-    "query": "quest to break the four-minute mile",
-    "source_isbn": "9780007173730",
+    "query_id": "q_9780674004689_3",
+    "query": "cultural history of the Renaissance",
+    "source_isbn": "9780674004689",
     "relevant_isbns": [
-      "9780007173730"
+      "9780253334916",
+      "9780801878152",
+      "9780691162409",
+      "9780429977329",
+      "9780195330847",
+      "9780192821447",
+      "9780874134742",
+      "9780674004689"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:34:14.403308Z"
+    "created_at": "2026-06-11T14:04:11.121345Z"
   },
   {
-    "query_id": "q_9780007173730_2",
-    "query": "the inspiring story of three athletes striving to achieve the four-minute mile amidst global events and personal challenges",
-    "source_isbn": "9780007173730",
+    "query_id": "q_9780674004689_4",
+    "query": "explorations of early modern scholarship",
+    "source_isbn": "9780674004689",
     "relevant_isbns": [
-      "9780007173730"
+      "9780812236293",
+      "9780521590013",
+      "9780822312758",
+      "9789047401803",
+      "9781134855933",
+      "9780791414194",
+      "9781856693745"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:35:17.388040Z"
+    "created_at": "2026-06-11T14:04:38.644259Z"
   },
   {
-    "query_id": "q_9780007176151_0",
-    "query": "biography",
-    "source_isbn": "9780007176151",
+    "query_id": "q_9798684654602_0",
+    "query": "alcohol consumption studies",
+    "source_isbn": "9798684654602",
     "relevant_isbns": [
-      "9780007149520",
-      "9780007170760",
-      "9780007176151"
+      "9798684654602",
+      "9780438069299",
+      "9780415291132",
+      "9780751542011",
+      "9781975166281",
+      "9780750666350"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:36:15.105464Z"
+    "created_at": "2026-06-11T14:04:51.474994Z"
   },
   {
-    "query_id": "q_9780007176151_1",
-    "query": "China's 20th century",
-    "source_isbn": "9780007176151",
+    "query_id": "q_9798684654602_1",
+    "query": "impact of social media on drinking",
+    "source_isbn": "9798684654602",
     "relevant_isbns": [
-      "9780007176151",
-      "9780007170760",
-      "9780004701431"
+      "9798460474653",
+      "9780438069299",
+      "9780195588019"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:37:17.762729Z"
+    "created_at": "2026-06-11T14:05:02.570951Z"
   },
   {
-    "query_id": "q_9780007176151_2",
-    "query": "an autobiographical account detailing the dramatic changes in China through the eyes of a woman across three generations",
-    "source_isbn": "9780007176151",
+    "query_id": "q_9798684654602_2",
+    "query": "research on celebrity influence",
+    "source_isbn": "9798684654602",
     "relevant_isbns": [
-      "9780007170760",
-      "9780007176151"
+      "9781598848311",
+      "9798460474653",
+      "9780226738703",
+      "9780415278928",
+      "9780240806877"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:38:20.633896Z"
+    "created_at": "2026-06-11T14:05:11.703766Z"
   },
   {
-    "query_id": "q_9780007179473_0",
-    "query": "sociology",
-    "source_isbn": "9780007179473",
+    "query_id": "q_9798684654602_3",
+    "query": "books about alcohol and behavior",
+    "source_isbn": "9798684654602",
     "relevant_isbns": [
-      "9780007149520",
-      "9780007176151",
-      "9780007170760",
-      "9780007179473"
+      "9781032500638",
+      "9781613126004"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:39:18.490412Z"
+    "created_at": "2026-06-11T14:05:21.956855Z"
   },
   {
-    "query_id": "q_9780007179473_1",
-    "query": "AS and A-Level sociology guide",
-    "source_isbn": "9780007179473",
+    "query_id": "q_9798684654602_4",
+    "query": "effects of media on alcohol cravings",
+    "source_isbn": "9798684654602",
     "relevant_isbns": [
-      "9780007179473"
+      "9798684654602",
+      "9780805846607",
+      "9780801895982"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:40:22.600355Z"
+    "created_at": "2026-06-11T14:05:32.413744Z"
   },
   {
-    "query_id": "q_9780007179473_2",
-    "query": "a student-friendly handbook designed to help learners understand key sociology concepts and prepare for their exams effectively",
-    "source_isbn": "9780007179473",
+    "query_id": "q_9780141384924_0",
+    "query": "Percy Jackson spin-off series",
+    "source_isbn": "9780141384924",
     "relevant_isbns": [
-      "9780007179473"
+      "9780141384924",
+      "9781368100830",
+      "9780241686522",
+      "9780241731437",
+      "9780141355443",
+      "9781406371703"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:41:34.259474Z"
+    "created_at": "2026-06-11T14:05:40.693004Z"
   },
   {
-    "query_id": "q_9780007193820_0",
-    "query": "Big Bang theory",
-    "source_isbn": "9780007193820",
+    "query_id": "q_9780141384924_1",
+    "query": "books about demigods",
+    "source_isbn": "9780141384924",
     "relevant_isbns": [
-      "9780007193820",
-      "9780007149520",
-      "9780006476474"
+      "9780141377704",
+      "9780241627716"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:57:17.152920Z"
+    "created_at": "2026-06-11T14:05:56.923970Z"
   },
   {
-    "query_id": "q_9780007193820_1",
-    "query": "history of the Big Bang",
-    "source_isbn": "9780007193820",
+    "query_id": "q_9780141384924_2",
+    "query": "young adult fantasy adventures",
+    "source_isbn": "9780141384924",
     "relevant_isbns": [
-      "9780007149520",
-      "9780007193820"
+      "9781250823854",
+      "9798343911350",
+      "9798999184702",
+      "9780008521417",
+      "9780993995835",
+      "9780316585934"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T18:58:13.441489Z"
+    "created_at": "2026-06-11T14:06:50.918935Z"
   },
   {
-    "query_id": "q_9780007193820_2",
-    "query": "an exploration of the scientific minds behind the Big Bang theory and their contributions to our understanding of the universe",
-    "source_isbn": "9780007193820",
+    "query_id": "q_9780141384924_3",
+    "query": "stories featuring Greek mythology",
+    "source_isbn": "9780141384924",
     "relevant_isbns": [
-      "9780007149520",
-      "9780007193820"
+      "9781583940945",
+      "9781481462396",
+      "9780141367293",
+      "9780195153446",
+      "9780141967561"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T19:06:54.947137Z"
+    "created_at": "2026-06-11T14:07:02.263799Z"
   },
   {
-    "query_id": "q_9780007196951_0",
-    "query": "thriller",
-    "source_isbn": "9780007196951",
+    "query_id": "q_9780141384924_4",
+    "query": "novels about quests and heroes",
+    "source_isbn": "9780141384924",
     "relevant_isbns": [
-      "9780006499343",
-      "9780006493143",
-      "9780007196951",
-      "9780002252317",
-      "9780007136834",
-      "9780002318136",
-      "9780006499725",
-      "9780007157174",
-      "9780006172765",
-      "9780002255752",
-      "9780002312820",
-      "9780002313247",
-      "9780002316798",
-      "9780006717669",
-      "9780007157150",
-      "9780002311038",
-      "9780006753063",
-      "9780007154852",
-      "9780006486015",
-      "9780007104895",
-      "9780006755173",
-      "9780002240802",
-      "9780006481799",
-      "9780002318075",
-      "9780006498865",
-      "9780006498858",
-      "9780007157600",
-      "9780007159208",
-      "9780007145348",
-      "9780007157860",
-      "9780006498513",
-      "9780006480419",
-      "9780002246484",
-      "9780006716815"
+      "9780199652686",
+      "9781473233287",
+      "9781473233294",
+      "9781616961053",
+      "9789529493524",
+      "9781423155119",
+      "9781429949620"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T19:08:04.171925Z"
+    "created_at": "2026-06-11T14:07:20.415613Z"
   },
   {
-    "query_id": "q_9780007196951_1",
-    "query": "dark suspense novel",
-    "source_isbn": "9780007196951",
+    "query_id": "q_9780307761613_0",
+    "query": "nature writing classics",
+    "source_isbn": "9780307761613",
     "relevant_isbns": [
-      "9780007196951",
-      "9780006481799",
-      "9780007157174",
-      "9780006499343",
-      "9780007136834",
-      "9780006755173",
-      "9780002312820",
-      "9780006493143",
-      "9780007157600",
-      "9780006753063",
-      "9780002252317",
-      "9780006486015",
-      "9780002318136",
-      "9780006498865",
-      "9780002316798",
-      "9780006172765",
-      "9780007159208",
-      "9780002311038",
-      "9780007154852",
-      "9780006498858",
-      "9780006717669",
-      "9780006499725",
-      "9780002246484",
-      "9780002313247",
-      "9780002318075",
-      "9780007104895",
-      "9780002240802",
-      "9780007145348",
-      "9780006480419",
-      "9780006498513"
+      "9780813920146",
+      "9783031509100",
+      "9780820323503",
+      "9780313346811",
+      "9781590306383",
+      "9780812976083"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T19:09:34.602815Z"
+    "created_at": "2026-06-11T14:07:29.015115Z"
   },
   {
-    "query_id": "q_9780007196951_2",
-    "query": "a gripping tale of fate and fear as an ordinary man confronts his destiny during a stormy night filled with unexpected revelations",
-    "source_isbn": "9780007196951",
+    "query_id": "q_9780307761613_1",
+    "query": "books on wilderness philosophy",
+    "source_isbn": "9780307761613",
     "relevant_isbns": [
-      "9780007196951",
-      "9780007157174",
-      "9780006481799",
-      "9780007136834",
-      "9780006498858",
-      "9780007157600",
-      "9780006753063",
-      "9780006498865",
-      "9780006486015",
-      "9780002246484",
-      "9780007157860",
-      "9780002312820",
-      "9780002252317",
-      "9780007104895",
-      "9780002316798",
-      "9780002318136",
-      "9780006493143",
-      "9780007154852",
-      "9780002311038",
-      "9780006717669",
-      "9780006476474",
-      "9780006716815",
-      "9780002313247",
-      "9780006499725",
-      "9780007145348",
-      "9780002318075"
+      "9780008686536",
+      "9780813920146",
+      "9781635574968",
+      "9780226444833",
+      "9780307761613",
+      "9780226441580"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T19:10:59.530414Z"
+    "created_at": "2026-06-11T14:07:39.218107Z"
   },
   {
-    "query_id": "q_9780007203567_0",
-    "query": "Tolkien",
-    "source_isbn": "9780007203567",
+    "query_id": "q_9780307761613_2",
+    "query": "environmental conservation literature",
+    "source_isbn": "9780307761613",
     "relevant_isbns": [
-      "9780007203567",
-      "9780006498865",
-      "9780007123810",
-      "9780007129720",
-      "9780007157150",
-      "9780006716815"
+      "9780750662246",
+      "9781597264488",
+      "9780313346811",
+      "9780415239585",
+      "9781351983297",
+      "9780199554232",
+      "9781472989093",
+      "9780471977964"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T19:12:03.820158Z"
+    "created_at": "2026-06-11T14:07:49.811804Z"
   },
   {
-    "query_id": "q_9780007203567_1",
-    "query": "epic fantasy",
-    "source_isbn": "9780007203567",
+    "query_id": "q_9780307761613_3",
+    "query": "reflections on nature and humanity",
+    "source_isbn": "9780307761613",
     "relevant_isbns": [
-      "9780007157600",
-      "9780006498865",
-      "9780006481799",
-      "9780006498858",
-      "9780006755173",
-      "9780007159208",
-      "9780007157174",
-      "9780007129720",
-      "9780006486015",
-      "9780007123810",
-      "9780007203567",
-      "9780006753063",
-      "9780002246484",
-      "9780007157150",
-      "9780006716815"
+      "9780801895357",
+      "9780307761613",
+      "9780674262430",
+      "9781610912983",
+      "9780199878628",
+      "9781635575224",
+      "9781136535024"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T19:12:03.948569Z"
+    "created_at": "2026-06-11T14:08:02.589681Z"
   },
   {
-    "query_id": "q_9780007203567_2",
-    "query": "the concluding volume of a legendary fantasy saga featuring the final battles and the fate of Middle-earth's beloved characters",
-    "source_isbn": "9780007203567",
+    "query_id": "q_9780307761613_4",
+    "query": "works by Sigurd Olson on nature",
+    "source_isbn": "9780307761613",
     "relevant_isbns": [
-      "9780007203567",
-      "9780007123810",
-      "9780007157600",
-      "9780007129720",
-      "9780007157174"
+      "9780307761613"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-06T19:13:05.108734Z"
+    "created_at": "2026-06-11T14:08:15.155341Z"
   },
   {
-    "query_id": "q_9780002188319_0",
-    "query": "World Cup statistics",
-    "source_isbn": "9780002188319",
+    "query_id": "q_9781591842590_0",
+    "query": "creativity in business",
+    "source_isbn": "9781591842590",
     "relevant_isbns": [
-      "9780002188319"
+      "9780367315269",
+      "9780811231251",
+      "9780241958223",
+      "9781878822840",
+      "9780749440022",
+      "9780553418286"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:28:57.495880Z"
+    "created_at": "2026-06-11T14:08:28.178034Z"
   },
   {
-    "query_id": "q_9780002188319_1",
-    "query": "history of soccer World Cup matches",
-    "source_isbn": "9780002188319",
+    "query_id": "q_9781591842590_1",
+    "query": "books on overcoming creative blocks",
+    "source_isbn": "9781591842590",
     "relevant_isbns": [
-      "9780002188319"
+      "9788235268020",
+      "9788194320050",
+      "9780988980204",
+      "9798231053070",
+      "9780140219784"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:29:03.661382Z"
+    "created_at": "2026-06-11T14:08:54.577463Z"
   },
   {
-    "query_id": "q_9780002188319_2",
-    "query": "comprehensive guide to every World Cup match and player statistics",
-    "source_isbn": "9780002188319",
+    "query_id": "q_9781591842590_2",
+    "query": "advice for creative professionals",
+    "source_isbn": "9781591842590",
     "relevant_isbns": [
-      "9780002188319"
+      "9788202403379",
+      "9780544611610",
+      "9783819743092",
+      "9781609944889",
+      "9781402761232",
+      "9789492595249",
+      "9780882891729"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:29:08.234252Z"
+    "created_at": "2026-06-11T14:09:05.742202Z"
   },
   {
-    "query_id": "q_9780002240802_0",
-    "query": "father-daughter relationship",
-    "source_isbn": "9780002240802",
+    "query_id": "q_9781591842590_3",
+    "query": "humorous takes on creativity",
+    "source_isbn": "9781591842590",
     "relevant_isbns": [
-      "9780002240802",
-      "9780007170760",
-      "9780006498858",
-      "9780007196951"
+      "9781591842590",
+      "9780307568069",
+      "9780575074972",
+      "9781473319776",
+      "9781984121820",
+      "9780062672247",
+      "9780857982506",
+      "9780813917238"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:29:12.755874Z"
+    "created_at": "2026-06-11T14:09:16.128802Z"
   },
   {
-    "query_id": "q_9780002240802_1",
-    "query": "journalist in Central America adventure",
-    "source_isbn": "9780002240802",
+    "query_id": "q_9781591842590_4",
+    "query": "insights on maximizing artistic potential",
+    "source_isbn": "9781591842590",
     "relevant_isbns": [
-      "9780002240802"
+      "9780892361564",
+      "9781581159639",
+      "9798691013973",
+      "9780415239202",
+      "9780674639768",
+      "9780877224402"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:29:17.141955Z"
+    "created_at": "2026-06-11T14:09:26.099124Z"
   },
   {
-    "query_id": "q_9780002240802_2",
-    "query": "exploring family secrets while navigating dangerous situations in Central America",
-    "source_isbn": "9780002240802",
+    "query_id": "q_9788233977702_0",
+    "query": "business of fantasy publishing",
+    "source_isbn": "9788233977702",
     "relevant_isbns": [
-      "9780002240802",
-      "9780006753063"
+      "9788233977276",
+      "9788233977702"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:29:22.001896Z"
+    "created_at": "2026-06-11T14:09:39.885046Z"
   },
   {
-    "query_id": "q_9780002246484_0",
-    "query": "royal court intrigue",
-    "source_isbn": "9780002246484",
+    "query_id": "q_9788233977702_1",
+    "query": "market trends in fantasy literature",
+    "source_isbn": "9788233977702",
     "relevant_isbns": [
-      "9780002246484",
-      "9780006486015",
-      "9780007154852",
-      "9780002313247",
-      "9780006498865",
-      "9780002312820",
-      "9780006498858",
-      "9780007157860",
-      "9780007157600",
-      "9780006716815"
+      "9788233977276",
+      "9780810391468"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:29:26.997535Z"
+    "created_at": "2026-06-11T14:09:49.894959Z"
   },
   {
-    "query_id": "q_9780002246484_1",
-    "query": "young assassin in a chaotic kingdom",
-    "source_isbn": "9780002246484",
-    "relevant_isbns": [
-      "9780002246484",
-      "9780006486015",
-      "9780006498865",
-      "9780006498858"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:29:32.037357Z"
-  },
-  {
-    "query_id": "q_9780002246484_2",
-    "query": "struggles of a young man caught in royal power struggles and external threats",
-    "source_isbn": "9780002246484",
-    "relevant_isbns": [
-      "9780002246484",
-      "9780006486015",
-      "9780007159208",
-      "9780006498858",
-      "9780007157174",
-      "9780006498865",
-      "9780007129720",
-      "9780007176151",
-      "9780006716815"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:29:37.315810Z"
-  },
-  {
-    "query_id": "q_9780002252317_0",
-    "query": "murder mystery thriller",
-    "source_isbn": "9780002252317",
-    "relevant_isbns": [
-      "9780002252317",
-      "9780006499343",
-      "9780006499725",
-      "9780002316798",
-      "9780002318136",
-      "9780002313247",
-      "9780007136834",
-      "9780002311038",
-      "9780007196951",
-      "9780002312820",
-      "9780007154852",
-      "9780006493143",
-      "9780002318075",
-      "9780007157174",
-      "9780006498513",
-      "9780006172765",
-      "9780006753063"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:29:42.442263Z"
-  },
-  {
-    "query_id": "q_9780002252317_1",
-    "query": "detective story involving a senator's murder",
-    "source_isbn": "9780002252317",
-    "relevant_isbns": [
-      "9780002252317",
-      "9780002313247",
-      "9780002312820",
-      "9780002311038",
-      "9780007154852",
-      "9780006499725",
-      "9780002318075"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:29:47.875736Z"
-  },
-  {
-    "query_id": "q_9780002252317_2",
-    "query": "investigation into a senator's murder linked to a series of violent crimes in Washington D.C.",
-    "source_isbn": "9780002252317",
-    "relevant_isbns": [
-      "9780002252317",
-      "9780006499343",
-      "9780006499725",
-      "9780002311038",
-      "9780002318136",
-      "9780006493143"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-07T06:29:53.065954Z"
-  },
-  {
-    "query_id": "q_9780002188319_0",
-    "query": "World Cup statistics",
-    "source_isbn": "9780002188319",
-    "relevant_isbns": [
-      "9780002188319"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T08:57:14.641885Z"
-  },
-  {
-    "query_id": "q_9780002188319_1",
-    "query": "history of soccer tournaments and famous players",
-    "source_isbn": "9780002188319",
+    "query_id": "q_9788233977702_2",
+    "query": "books on fantasy genre economics",
+    "source_isbn": "9788233977702",
     "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T08:57:28.585178Z"
+    "created_at": "2026-06-11T14:10:04.176895Z"
   },
   {
-    "query_id": "q_9780002188319_2",
-    "query": "comprehensive guide to every World Cup match and player statistics over the years",
-    "source_isbn": "9780002188319",
+    "query_id": "q_9788233977702_3",
+    "query": "reader demographics in fantasy",
+    "source_isbn": "9788233977702",
+    "relevant_isbns": [
+      "9788233977276"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:10:13.957968Z"
+  },
+  {
+    "query_id": "q_9788233977702_4",
+    "query": "social media's impact on fantasy readership",
+    "source_isbn": "9788233977702",
+    "relevant_isbns": [
+      "9788233977610",
+      "9788235247063"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:10:24.916993Z"
+  },
+  {
+    "query_id": "q_9781911405498_0",
+    "query": "doctor faustus",
+    "source_isbn": "9781911405498",
+    "relevant_isbns": [
+      "9780486282084",
+      "9781441416124",
+      "9798637093489",
+      "9780575123298"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:10:37.928740Z"
+  },
+  {
+    "query_id": "q_9781911405498_1",
+    "query": "Elizabethan tragedy plays",
+    "source_isbn": "9781911405498",
+    "relevant_isbns": [
+      "9781911405498",
+      "9798580014050",
+      "9781472575395",
+      "9798646507298"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:10:49.838229Z"
+  },
+  {
+    "query_id": "q_9781911405498_2",
+    "query": "books about selling your soul",
+    "source_isbn": "9781911405498",
     "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T08:57:42.435780Z"
+    "created_at": "2026-06-11T14:11:02.867461Z"
   },
   {
-    "query_id": "q_9780002240802_0",
-    "query": "father-daughter relationship",
-    "source_isbn": "9780002240802",
+    "query_id": "q_9781911405498_3",
+    "query": "morality plays in English literature",
+    "source_isbn": "9781911405498",
+    "relevant_isbns": [
+      "9780141199382",
+      "9781534666016",
+      "9780199536481",
+      "9798618464130"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:11:15.715957Z"
+  },
+  {
+    "query_id": "q_9781911405498_4",
+    "query": "themes of hubris and fear in drama",
+    "source_isbn": "9781911405498",
+    "relevant_isbns": [
+      "9798706062255",
+      "9789529493524",
+      "9781609456726",
+      "9780307760234"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:11:27.627747Z"
+  },
+  {
+    "query_id": "q_9780415270984_0",
+    "query": "critique of capitalism",
+    "source_isbn": "9780415270984",
+    "relevant_isbns": [
+      "9780691178226",
+      "9780415076784",
+      "9780684836386",
+      "9781859846384",
+      "9780393339390",
+      "9781408808238",
+      "9781331866763"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:11:36.529874Z"
+  },
+  {
+    "query_id": "q_9780415270984_1",
+    "query": "books on social conformity",
+    "source_isbn": "9780415270984",
+    "relevant_isbns": [
+      "9780136716945",
+      "9781133957720",
+      "9780761985570",
+      "9780750630832",
+      "9780742535480",
+      "9788170231370",
+      "9780813523675"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:11:49.835037Z"
+  },
+  {
+    "query_id": "q_9780415270984_2",
+    "query": "Erich Fromm theories",
+    "source_isbn": "9780415270984",
+    "relevant_isbns": [
+      "9780826412607",
+      "9780826418975"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:12:07.367103Z"
+  },
+  {
+    "query_id": "q_9780415270984_3",
+    "query": "how society affects individual psychology",
+    "source_isbn": "9780415270984",
+    "relevant_isbns": [
+      "9780745010090",
+      "9780674728974",
+      "9781412941259",
+      "9781461514893",
+      "9781317568582",
+      "9781133957720",
+      "9782832507605",
+      "9781593855680"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:12:28.162351Z"
+  },
+  {
+    "query_id": "q_9780415270984_4",
+    "query": "books discussing isolation in modern life",
+    "source_isbn": "9780415270984",
+    "relevant_isbns": [
+      "9780374707644",
+      "9780143112228",
+      "9780241339299",
+      "9781609450298",
+      "9780374710743",
+      "9781848884571"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:12:48.843718Z"
+  },
+  {
+    "query_id": "q_9780811200172_0",
+    "query": "coming of age stories",
+    "source_isbn": "9780811200172",
+    "relevant_isbns": [
+      "9781590173510",
+      "9780060890520",
+      "9798227281753",
+      "9798556368712",
+      "9780252022326",
+      "9781732614000",
+      "9781955765299",
+      "9781393927556"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:13:31.251992Z"
+  },
+  {
+    "query_id": "q_9780811200172_1",
+    "query": "books about childhood struggles",
+    "source_isbn": "9780811200172",
+    "relevant_isbns": [
+      "9780553052909",
+      "9780674015081",
+      "9781408716922",
+      "9780757317620",
+      "9781930997431",
+      "9798293622290",
+      "9781542015905"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:13:43.783841Z"
+  },
+  {
+    "query_id": "q_9780811200172_2",
+    "query": "humorous novels about family life",
+    "source_isbn": "9780811200172",
+    "relevant_isbns": [
+      "9781523415182",
+      "9780735224308",
+      "9780380700462",
+      "9780618724833",
+      "9780062672247",
+      "9780385323925"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:13:57.541407Z"
+  },
+  {
+    "query_id": "q_9780811200172_3",
+    "query": "narratives of small shopkeepers",
+    "source_isbn": "9780811200172",
+    "relevant_isbns": [
+      "9780807163818"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:14:07.722799Z"
+  },
+  {
+    "query_id": "q_9780811200172_4",
+    "query": "exploring themes of humiliation and failure",
+    "source_isbn": "9780811200172",
+    "relevant_isbns": [
+      "9798280724488",
+      "9781476642864",
+      "9780757318078",
+      "9781593855680",
+      "9783565213382",
+      "9783319605739",
+      "9780141986302",
+      "9781572304321"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:15:44.164469Z"
+  },
+  {
+    "query_id": "q_9781683735175_0",
+    "query": "children's books about breathing",
+    "source_isbn": "9781683735175",
+    "relevant_isbns": [
+      "9781636986197",
+      "9780063311497",
+      "9781665974820"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:15:58.630344Z"
+  },
+  {
+    "query_id": "q_9781683735175_1",
+    "query": "emotional regulation for kids",
+    "source_isbn": "9781683735175",
+    "relevant_isbns": [
+      "9781439126165",
+      "9780805819960",
+      "9781683735175",
+      "9780757317620",
+      "9781462554591",
+      "9798293622290",
+      "9780593231807",
+      "9781134770465"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:16:08.083191Z"
+  },
+  {
+    "query_id": "q_9781683735175_2",
+    "query": "stories teaching mindfulness",
+    "source_isbn": "9781683735175",
+    "relevant_isbns": [
+      "9781955377324",
+      "9781536221985",
+      "9781951046309",
+      "9781801184939",
+      "9780868066196",
+      "9781647399238",
+      "9781761160219",
+      "9781608684793"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:16:25.357107Z"
+  },
+  {
+    "query_id": "q_9781683735175_3",
+    "query": "how to help kids manage emotions",
+    "source_isbn": "9781683735175",
+    "relevant_isbns": [
+      "9781439126165",
+      "9781951046309",
+      "9781489906151",
+      "9780805819960",
+      "9780671767624",
+      "9781761160219",
+      "9780593231807",
+      "9781462554591"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:16:35.747125Z"
+  },
+  {
+    "query_id": "q_9781683735175_4",
+    "query": "books on using breath for focus and calm",
+    "source_isbn": "9781683735175",
+    "relevant_isbns": [
+      "9781684038831",
+      "9783819799938",
+      "9781601385864",
+      "9781665974820",
+      "9780199688906",
+      "9781798073223",
+      "9781620233344",
+      "9781641523967"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:16:44.371956Z"
+  },
+  {
+    "query_id": "q_9781139467049_0",
+    "query": "understanding intelligence",
+    "source_isbn": "9781139467049",
+    "relevant_isbns": [
+      "9781558605350",
+      "9789814513050",
+      "9798301388729",
+      "9783540237334",
+      "9798231559121",
+      "9780262580960",
+      "9781133313915",
+      "9780262193740"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:16:53.052441Z"
+  },
+  {
+    "query_id": "q_9781139467049_1",
+    "query": "books on IQ test scores",
+    "source_isbn": "9781139467049",
+    "relevant_isbns": [
+      "9781139467049",
+      "9780132893626",
+      "9781133313915"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:17:00.474099Z"
+  },
+  {
+    "query_id": "q_9781139467049_2",
+    "query": "Flynn effect explained",
+    "source_isbn": "9781139467049",
+    "relevant_isbns": [
+      "9781139467049"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:17:09.865679Z"
+  },
+  {
+    "query_id": "q_9781139467049_3",
+    "query": "how to enhance intelligence",
+    "source_isbn": "9781139467049",
+    "relevant_isbns": [
+      "9781139467049",
+      "9781439126165",
+      "9789814513050",
+      "9780140219784",
+      "9780786721870",
+      "9781947637825",
+      "9781462554591",
+      "9780553383713"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:17:17.759040Z"
+  },
+  {
+    "query_id": "q_9781139467049_4",
+    "query": "theories of cognitive history and intelligence",
+    "source_isbn": "9781139467049",
+    "relevant_isbns": [
+      "9780716756675",
+      "9780306466007",
+      "9780080572994",
+      "9781139467049",
+      "9780786721870",
+      "9780262580960",
+      "9781136305481"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:17:28.296140Z"
+  },
+  {
+    "query_id": "q_9783030407520_0",
+    "query": "women's ghost stories",
+    "source_isbn": "9783030407520",
+    "relevant_isbns": [
+      "9781803288086",
+      "9798561138423",
+      "9781960988249"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:17:35.832853Z"
+  },
+  {
+    "query_id": "q_9783030407520_1",
+    "query": "haunted houses in literature",
+    "source_isbn": "9783030407520",
+    "relevant_isbns": [
+      "9781616464820",
+      "9781447405450",
+      "9781523793266",
+      "9782382264379",
+      "9781505900439",
+      "9781598536706",
+      "9783895082313",
+      "9798775919078"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:17:43.171789Z"
+  },
+  {
+    "query_id": "q_9783030407520_2",
+    "query": "gender and the supernatural",
+    "source_isbn": "9783030407520",
+    "relevant_isbns": [
+      "9781479803101",
+      "9783030407520",
+      "9781443836623",
+      "9789042012349",
+      "9780810116511",
+      "9783032089663",
+      "9780415915830"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:17:51.332542Z"
+  },
+  {
+    "query_id": "q_9783030407520_3",
+    "query": "spatial theory in ghost narratives",
+    "source_isbn": "9783030407520",
+    "relevant_isbns": [
+      "9783030407520",
+      "9781616464820"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:17:59.359384Z"
+  },
+  {
+    "query_id": "q_9783030407520_4",
+    "query": "books exploring domestic space and ghosts",
+    "source_isbn": "9783030407520",
+    "relevant_isbns": [
+      "9781616464820",
+      "9781722054274",
+      "9781598536706",
+      "9781101494998",
+      "9788026897279",
+      "9781606996782",
+      "9780804188982"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:18:07.240368Z"
+  },
+  {
+    "query_id": "q_9780307776532_0",
+    "query": "travel writing about Trinidad",
+    "source_isbn": "9780307776532",
+    "relevant_isbns": [
+      "9780307776532"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:18:15.319090Z"
+  },
+  {
+    "query_id": "q_9780307776532_1",
+    "query": "books on Caribbean history",
+    "source_isbn": "9780307776532",
+    "relevant_isbns": [
+      "9780415060950",
+      "9780431042428"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:18:39.777306Z"
+  },
+  {
+    "query_id": "q_9780307776532_2",
+    "query": "legacies of colonialism in literature",
+    "source_isbn": "9780307776532",
+    "relevant_isbns": [
+      "9780415060950",
+      "9780822317401",
+      "9780321106698",
+      "9780801834783",
+      "9781786800732",
+      "9780231105996",
+      "9781443814973"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:18:48.861190Z"
+  },
+  {
+    "query_id": "q_9780307776532_3",
+    "query": "exploring cultural identity in travel",
+    "source_isbn": "9780307776532",
+    "relevant_isbns": [
+      "9781845452544",
+      "9780367365295",
+      "9783319101279",
+      "9780761949855",
+      "9798994639900",
+      "9781854186058",
+      "9780988205949",
+      "9780415060950"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:18:57.718778Z"
+  },
+  {
+    "query_id": "q_9780307776532_4",
+    "query": "narratives reflecting on slavery's impact",
+    "source_isbn": "9780307776532",
+    "relevant_isbns": [
+      "9780717806058",
+      "9780674673779",
+      "9781588384652",
+      "9781611171303"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:19:08.077679Z"
+  },
+  {
+    "query_id": "q_9780062846754_0",
+    "query": "young adult fiction about boyhood",
+    "source_isbn": "9780062846754",
+    "relevant_isbns": [
+      "9780141002941",
+      "9780451522726",
+      "9780618724833",
+      "9780063119864"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:19:18.041937Z"
+  },
+  {
+    "query_id": "q_9780062846754_1",
+    "query": "books exploring family responsibility",
+    "source_isbn": "9780062846754",
+    "relevant_isbns": [
+      "9781447308799",
+      "9780691171517",
+      "9780805837780",
+      "9780735224308",
+      "9781487520519",
+      "9781451663891",
+      "9781847921611",
+      "9781488709098"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:19:26.561298Z"
+  },
+  {
+    "query_id": "q_9780062846754_2",
+    "query": "stories of growing up in tough neighborhoods",
+    "source_isbn": "9780062846754",
+    "relevant_isbns": [
+      "9780141002941",
+      "9798749011364",
+      "9780778389309",
+      "9781644627129",
+      "9781503317581"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:19:35.700893Z"
+  },
+  {
+    "query_id": "q_9780062846754_3",
+    "query": "themes of love and sacrifice in YA",
+    "source_isbn": "9780062846754",
+    "relevant_isbns": [
+      "9789529493524",
+      "9781957779065",
+      "9780316552103",
+      "9781609456726",
+      "9781539303244",
+      "9781914425950",
+      "9780008521417"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:19:45.538985Z"
+  },
+  {
+    "query_id": "q_9780062846754_4",
+    "query": "books like The Hate U Give",
+    "source_isbn": "9780062846754",
+    "relevant_isbns": [
+      "9781432893378",
+      "9780062846754",
+      "9781400033423",
+      "9780735224308"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:19:55.947136Z"
+  },
+  {
+    "query_id": "q_9781335943118_0",
+    "query": "romance novels about second chances",
+    "source_isbn": "9781335943118",
+    "relevant_isbns": [
+      "9798590534739",
+      "9781488018329",
+      "9781488716607",
+      "9781964579054",
+      "9798242394247",
+      "9780062096531",
+      "9781335943118",
+      "9781405974530"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:20:05.058610Z"
+  },
+  {
+    "query_id": "q_9781335943118_1",
+    "query": "stories of childhood sweethearts",
+    "source_isbn": "9781335943118",
+    "relevant_isbns": [
+      "9780748116195",
+      "9780759520264",
+      "9781393927556",
+      "9780571354641"
+    ],
+    "judge_model": "gpt-4o-mini",
+    "generation_model": "gpt-4o-mini",
+    "created_at": "2026-06-11T14:20:15.218827Z"
+  },
+  {
+    "query_id": "q_9781335943118_2",
+    "query": "books set in Santiago",
+    "source_isbn": "9781335943118",
     "relevant_isbns": [],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T08:57:57.935798Z"
+    "created_at": "2026-06-11T14:20:22.706910Z"
   },
   {
-    "query_id": "q_9780002240802_1",
-    "query": "journalist uncovering family secrets in Central America",
-    "source_isbn": "9780002240802",
-    "relevant_isbns": [],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T08:58:12.876801Z"
-  },
-  {
-    "query_id": "q_9780002240802_2",
-    "query": "a woman's journey to understand her father's past while navigating danger in a foreign land",
-    "source_isbn": "9780002240802",
+    "query_id": "q_9781335943118_3",
+    "query": "themes of love and heartbreak",
+    "source_isbn": "9781335943118",
     "relevant_isbns": [
-      "9780002240802",
-      "9780006498858"
+      "9781425049102",
+      "9798223661979",
+      "9780448493985",
+      "9780743428705",
+      "9791041989065",
+      "9780812982411",
+      "9781646284719",
+      "9781998649686"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T08:58:28.981742Z"
+    "created_at": "2026-06-11T14:20:32.234636Z"
   },
   {
-    "query_id": "q_9780002246484_0",
-    "query": "young assassin's journey",
-    "source_isbn": "9780002246484",
+    "query_id": "q_9781335943118_4",
+    "query": "reunion romance novels",
+    "source_isbn": "9781335943118",
     "relevant_isbns": [
-      "9780007159208"
+      "9780349410555",
+      "9780063138933",
+      "9798248634491",
+      "9798246214008",
+      "9798242394247",
+      "9781998178117",
+      "9781402295034"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T08:58:44.081711Z"
+    "created_at": "2026-06-11T14:20:40.159148Z"
   },
   {
-    "query_id": "q_9780002246484_1",
-    "query": "political intrigue and royal court chaos in a fantasy setting",
-    "source_isbn": "9780002246484",
+    "query_id": "q_9781787304888_0",
+    "query": "Scandinavian crime thrillers",
+    "source_isbn": "9781787304888",
     "relevant_isbns": [
-      "9780006498858",
-      "9780007157600"
+      "9780099546771",
+      "9780007323432",
+      "9780307958778",
+      "9780307272119",
+      "9781476734064",
+      "9781250765482"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T08:59:00.006872Z"
+    "created_at": "2026-06-11T14:20:46.950114Z"
   },
   {
-    "query_id": "q_9780002246484_2",
-    "query": "a young man's struggle for survival amidst political turmoil and personal betrayal in a medieval kingdom",
-    "source_isbn": "9780002246484",
+    "query_id": "q_9781787304888_1",
+    "query": "detective novels with complex plots",
+    "source_isbn": "9781787304888",
     "relevant_isbns": [
-      "9780002246484",
-      "9780006716815",
-      "9780006486015",
-      "9780006498858"
+      "9781609455699",
+      "9798525924086",
+      "9781976894954",
+      "9780679722649",
+      "9798590457106",
+      "9798738523052",
+      "9781464209109",
+      "9781681773940"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T08:59:18.840312Z"
+    "created_at": "2026-06-11T14:20:58.873074Z"
   },
   {
-    "query_id": "q_9780002252317_0",
-    "query": "murder mystery in Washington D.C.",
-    "source_isbn": "9780002252317",
+    "query_id": "q_9781787304888_2",
+    "query": "books featuring Harry Hole",
+    "source_isbn": "9781787304888",
     "relevant_isbns": [
-      "9780006498513",
-      "9780006499343",
-      "9780006499725"
+      "9781787304888",
+      "9780099546771",
+      "9780061984587",
+      "9781784702298",
+      "9781039007826",
+      "9780525655404",
+      "9780307958778",
+      "9780307361028"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T08:59:33.486522Z"
+    "created_at": "2026-06-11T14:21:04.955635Z"
   },
   {
-    "query_id": "q_9780002252317_1",
-    "query": "detective investigating a senator's murder and a child's death",
-    "source_isbn": "9780002252317",
+    "query_id": "q_9781787304888_3",
+    "query": "best thrillers of the year",
+    "source_isbn": "9781787304888",
     "relevant_isbns": [
-      "9780002313247"
+      "9780241367490",
+      "9780593863572",
+      "9780297859406",
+      "9780316405409",
+      "9781984818553",
+      "9780385546034",
+      "9780759527829"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T08:59:52.980377Z"
+    "created_at": "2026-06-11T14:21:16.400006Z"
   },
   {
-    "query_id": "q_9780002252317_2",
-    "query": "a gripping tale of revenge and justice as a detective uncovers a conspiracy linked to high-profile murders",
-    "source_isbn": "9780002252317",
+    "query_id": "q_9781787304888_4",
+    "query": "explosive crime fiction stories",
+    "source_isbn": "9781787304888",
     "relevant_isbns": [
-      "9780007154852",
-      "9780006499343",
-      "9780002318136"
+      "9780752881546",
+      "9780061849961",
+      "9780759520349",
+      "9780316408752",
+      "9782384611058",
+      "9780446505963",
+      "9781596068070"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:00:17.010859Z"
+    "created_at": "2026-06-11T14:21:30.836479Z"
   },
   {
-    "query_id": "q_9780002255752_0",
-    "query": "military conflict thriller",
-    "source_isbn": "9780002255752",
+    "query_id": "q_9781351931069_0",
+    "query": "books on Greek culture",
+    "source_isbn": "9781351931069",
     "relevant_isbns": [
-      "9780006499343",
-      "9780006172765"
+      "9780819193315",
+      "9781472579393",
+      "9780192832924",
+      "9780691252834",
+      "9781893554269",
+      "9780307765338",
+      "9780872204461",
+      "9780140293234"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:00:39.350826Z"
+    "created_at": "2026-06-11T14:22:02.415151Z"
   },
   {
-    "query_id": "q_9780002255752_1",
-    "query": "action-packed story involving U.S. and China",
-    "source_isbn": "9780002255752",
+    "query_id": "q_9781351931069_1",
+    "query": "Hellenism in modern literature",
+    "source_isbn": "9781351931069",
     "relevant_isbns": [
-      "9780002255752",
-      "9780006172765",
-      "9780006493143"
+      "9781351931069",
+      "9781979530194",
+      "9780192832924",
+      "9780674195455"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:01:13.338069Z"
+    "created_at": "2026-06-11T14:25:28.076409Z"
   },
   {
-    "query_id": "q_9780002255752_2",
-    "query": "a high-stakes adventure where military forces clash in a gripping narrative of strategy and survival",
-    "source_isbn": "9780002255752",
+    "query_id": "q_9781351931069_2",
+    "query": "essays on Greek ethnicity",
+    "source_isbn": "9781351931069",
     "relevant_isbns": [
-      "9780002255752",
-      "9780006493143",
-      "9780007129720",
-      "9780006172765"
+      "9780819193315",
+      "9789004685895"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:01:33.024868Z"
+    "created_at": "2026-06-11T14:27:55.334229Z"
   },
   {
-    "query_id": "q_9780002311038_0",
-    "query": "mysterious death investigation",
-    "source_isbn": "9780002311038",
+    "query_id": "q_9781351931069_3",
+    "query": "historical perspectives on Hellenism",
+    "source_isbn": "9781351931069",
     "relevant_isbns": [
-      "9780002311038",
-      "9780006498513",
-      "9780006499725",
-      "9780007136834"
+      "9781351931069",
+      "9780691054988",
+      "9780674004689",
+      "9780260592620"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:01:54.258989Z"
+    "created_at": "2026-06-11T14:30:33.754489Z"
   },
   {
-    "query_id": "q_9780002311038_1",
-    "query": "detective story with a puzzling time discrepancy",
-    "source_isbn": "9780002311038",
+    "query_id": "q_9781351931069_4",
+    "query": "cultural studies of ancient Greece",
+    "source_isbn": "9781351931069",
     "relevant_isbns": [
-      "9780002252317"
+      "9780415120425",
+      "9781107494626",
+      "9781351931069",
+      "9781785703584",
+      "9780691252834",
+      "9781893554269",
+      "9780140293234",
+      "9780872204461"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:02:17.548193Z"
+    "created_at": "2026-06-11T14:33:40.762942Z"
   },
   {
-    "query_id": "q_9780002311038_2",
-    "query": "a stenographer discovers a body and a detective must unravel the mystery of the clocks and the murder",
-    "source_isbn": "9780002311038",
+    "query_id": "q_9781501390913_0",
+    "query": "contemporary poetry collections",
+    "source_isbn": "9781501390913",
     "relevant_isbns": [
-      "9780006499725",
-      "9780002318136"
+      "9780547525754",
+      "9781903392201",
+      "9789350292655"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:02:37.950469Z"
+    "created_at": "2026-06-11T14:36:02.119154Z"
   },
   {
-    "query_id": "q_9780002312820_0",
-    "query": "beach murder mystery",
-    "source_isbn": "9780002312820",
+    "query_id": "q_9781501390913_1",
+    "query": "humorous poetry about life",
+    "source_isbn": "9781501390913",
     "relevant_isbns": [
-      "9780002311038"
+      "9781458707277",
+      "9780938077213",
+      "9781954304840",
+      "9781683965619"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:03:05.408961Z"
+    "created_at": "2026-06-11T14:39:48.932887Z"
   },
   {
-    "query_id": "q_9780002312820_1",
-    "query": "detective unraveling a crime of passion",
-    "source_isbn": "9780002312820",
+    "query_id": "q_9781501390913_2",
+    "query": "accessible poetry for all ages",
+    "source_isbn": "9781501390913",
     "relevant_isbns": [
-      "9780002312820",
-      "9780002316798",
-      "9780002252317",
-      "9780006499725"
+      "9781954304840",
+      "9780205727582",
+      "9789350292655",
+      "9798735630296",
+      "9780938077213"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:03:27.672712Z"
+    "created_at": "2026-06-11T14:42:49.093683Z"
   },
   {
-    "query_id": "q_9780002312820_2",
-    "query": "a beautiful woman is found dead, and a detective must navigate jealousy and secrets to find the killer",
-    "source_isbn": "9780002312820",
+    "query_id": "q_9781501390913_3",
+    "query": "poems exploring emotional themes",
+    "source_isbn": "9781501390913",
     "relevant_isbns": [
-      "9780002318136",
-      "9780002252317",
-      "9780006499725"
+      "9781425049102",
+      "9788187910022",
+      "9780520231313",
+      "9798556368712",
+      "9781725944541",
+      "9780938077213",
+      "9780547525754"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:03:46.138529Z"
+    "created_at": "2026-06-11T14:52:52.065847Z"
   },
   {
-    "query_id": "q_9780002313247_0",
-    "query": "mock murder gone wrong",
-    "source_isbn": "9780002313247",
+    "query_id": "q_9781501390913_4",
+    "query": "works by Bradbury",
+    "source_isbn": "9781501390913",
     "relevant_isbns": [
-      "9780002316798",
-      "9780002311038"
+      "9780873387798",
+      "9780374608309",
+      "9780062302113",
+      "9780062242280",
+      "9780062242235",
+      "9780062242259"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:04:08.375814Z"
+    "created_at": "2026-06-11T14:52:57.125621Z"
   },
   {
-    "query_id": "q_9780002313247_1",
-    "query": "complex relationships and murder mystery",
-    "source_isbn": "9780002313247",
+    "query_id": "q_9781668001226_0",
+    "query": "Colleen Hoover sequels",
+    "source_isbn": "9781668001226",
     "relevant_isbns": [
-      "9780006498513",
-      "9780007196951",
-      "9780002252317",
-      "9780007136834"
+      "9781668026960",
+      "9781668001226",
+      "9781761105357",
+      "9781523443673",
+      "9781398548220"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:04:45.819179Z"
+    "created_at": "2026-06-11T14:53:04.188229Z"
   },
   {
-    "query_id": "q_9780002313247_2",
-    "query": "a staged murder leads to real death, and a detective must untangle a web of love and betrayal",
-    "source_isbn": "9780002313247",
+    "query_id": "q_9781668001226_1",
+    "query": "romance novels about past relationships",
+    "source_isbn": "9781668001226",
     "relevant_isbns": [
-      "9780002313247",
-      "9780006499725",
-      "9780002252317"
+      "9781476746531",
+      "9781425049102",
+      "9780062951908",
+      "9781335943118",
+      "9780374148317"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:05:01.478854Z"
+    "created_at": "2026-06-11T14:53:11.296801Z"
   },
   {
-    "query_id": "q_9780002316798_0",
-    "query": "wrongful conviction mystery",
-    "source_isbn": "9780002316798",
+    "query_id": "q_9781668001226_2",
+    "query": "books exploring love and growth",
+    "source_isbn": "9781668001226",
     "relevant_isbns": [
-      "9780002316798",
-      "9780002252317",
-      "9780007136834"
+      "9780593492550",
+      "9780241335444",
+      "9781585426256",
+      "9798399385884",
+      "9781408716922",
+      "9781475044652",
+      "9781846043260"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:05:25.473290Z"
+    "created_at": "2026-06-11T14:56:20.593531Z"
   },
   {
-    "query_id": "q_9780002316798_1",
-    "query": "family secrets and a quest for justice",
-    "source_isbn": "9780002316798",
+    "query_id": "q_9781558322059_0",
+    "query": "vegetarian recipes",
+    "source_isbn": "9781558322059",
     "relevant_isbns": [
-      "9780002313247",
-      "9780007196951",
-      "9780007170760"
+      "9780393064797",
+      "9780091933685",
+      "9781558323629",
+      "9780738211831",
+      "9781118455647",
+      "9781558322059",
+      "9780316858618",
+      "9788186469453"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:05:42.635631Z"
+    "created_at": "2026-06-11T15:04:04.596034Z"
   },
   {
-    "query_id": "q_9780002316798_2",
-    "query": "a man seeks to prove a convicted murderer\u2019s innocence after a stranger reveals shocking truths about the past",
-    "source_isbn": "9780002316798",
+    "query_id": "q_9781558322059_1",
+    "query": "meatless comfort food",
+    "source_isbn": "9781558322059",
     "relevant_isbns": [
-      "9780002316798"
+      "9780593072837",
+      "9780931411182",
+      "9781449461331",
+      "9781570670534",
+      "9781592335947",
+      "9781937512996",
+      "9780316497985",
+      "9780316858618"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:06:03.438940Z"
+    "created_at": "2026-06-11T15:04:44.703758Z"
   },
   {
-    "query_id": "q_9780002318075_0",
-    "query": "mysterious disappearance",
-    "source_isbn": "9780002318075",
+    "query_id": "q_9781558322059_2",
+    "query": "easy vegetarian meals for families",
+    "source_isbn": "9781558322059",
     "relevant_isbns": [
-      "9780007136834",
-      "9780002318136",
-      "9780002313247",
-      "9780007154852"
+      "9780316497985",
+      "9780718187767",
+      "9780393064797",
+      "9781590561164",
+      "9780008311865",
+      "9780747557166"
     ],
     "judge_model": "gpt-4o-mini",
     "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:06:21.888426Z"
-  },
-  {
-    "query_id": "q_9780002318075_1",
-    "query": "three roommates and a murder investigation",
-    "source_isbn": "9780002318075",
-    "relevant_isbns": [
-      "9780006499725",
-      "9780002313247",
-      "9780002318136"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:06:37.676964Z"
-  },
-  {
-    "query_id": "q_9780002318075_2",
-    "query": "a detective must solve the case of a missing girl while navigating the complexities of friendship and guilt",
-    "source_isbn": "9780002318075",
-    "relevant_isbns": [
-      "9780002313247",
-      "9780006716815",
-      "9780006499725"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:06:56.038533Z"
-  },
-  {
-    "query_id": "q_9780002318136_0",
-    "query": "mystery in a Victorian mansion",
-    "source_isbn": "9780002318136",
-    "relevant_isbns": [
-      "9780002318136",
-      "9780002313247",
-      "9780002311038",
-      "9780007154852"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:07:18.090157Z"
-  },
-  {
-    "query_id": "q_9780002318136_1",
-    "query": "Miss Marple investigates a shooting at a rehabilitation center",
-    "source_isbn": "9780002318136",
-    "relevant_isbns": [
-      "9780002318136"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:07:33.442041Z"
-  },
-  {
-    "query_id": "q_9780002318136_2",
-    "query": "a detective story involving a murder and a hidden agenda in a secluded mansion",
-    "source_isbn": "9780002318136",
-    "relevant_isbns": [
-      "9780006499725",
-      "9780006498513",
-      "9780002313247",
-      "9780002311038"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:08:06.814948Z"
-  },
-  {
-    "query_id": "q_9780004701431_0",
-    "query": "military history overview",
-    "source_isbn": "9780004701431",
-    "relevant_isbns": [
-      "9780004701431"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:08:41.202370Z"
-  },
-  {
-    "query_id": "q_9780004701431_1",
-    "query": "encyclopedia covering major wars and battles throughout history",
-    "source_isbn": "9780004701431",
-    "relevant_isbns": [
-      "9780004701431",
-      "9780007157860"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:09:00.133417Z"
-  },
-  {
-    "query_id": "q_9780004701431_2",
-    "query": "comprehensive guide to military tactics and strategies from ancient to modern warfare",
-    "source_isbn": "9780004701431",
-    "relevant_isbns": [
-      "9780004701431",
-      "9780007157860"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:09:24.274241Z"
-  },
-  {
-    "query_id": "q_9780006172765_0",
-    "query": "submarine thriller",
-    "source_isbn": "9780006172765",
-    "relevant_isbns": [
-      "9780006172765",
-      "9780007157860"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:09:38.832041Z"
-  },
-  {
-    "query_id": "q_9780006172765_1",
-    "query": "Cold War naval conflict with high stakes and espionage",
-    "source_isbn": "9780006172765",
-    "relevant_isbns": [
-      "9780004701431",
-      "9780006172765"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:09:54.390021Z"
-  },
-  {
-    "query_id": "q_9780006172765_2",
-    "query": "a gripping tale of a submarine chase that could ignite a global war",
-    "source_isbn": "9780006172765",
-    "relevant_isbns": [
-      "9780006172765",
-      "9780007157860",
-      "9780006493143"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:10:09.443297Z"
-  },
-  {
-    "query_id": "q_9780006476474_0",
-    "query": "classic science fiction stories",
-    "source_isbn": "9780006476474",
-    "relevant_isbns": [
-      "9780006476474",
-      "9780007119622"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:10:23.140101Z"
-  },
-  {
-    "query_id": "q_9780006476474_1",
-    "query": "collection of short stories by a master of science fiction",
-    "source_isbn": "9780006476474",
-    "relevant_isbns": [
-      "9780006476474",
-      "9780007119622"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:10:36.934286Z"
-  },
-  {
-    "query_id": "q_9780006476474_2",
-    "query": "exploration of human and robotic ethics through engaging short fiction narratives",
-    "source_isbn": "9780006476474",
-    "relevant_isbns": [
-      "9780006476474",
-      "9780007157150"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:10:55.884385Z"
-  },
-  {
-    "query_id": "q_9780006480419_0",
-    "query": "cyberpunk novel",
-    "source_isbn": "9780006480419",
-    "relevant_isbns": [],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:11:41.321660Z"
-  },
-  {
-    "query_id": "q_9780006480419_1",
-    "query": "data thief's last job involving artificial intelligence",
-    "source_isbn": "9780006480419",
-    "relevant_isbns": [
-      "9780006480419",
-      "9780006476474"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:12:17.587906Z"
-  },
-  {
-    "query_id": "q_9780006480419_2",
-    "query": "a thrilling journey through a dystopian future where technology and humanity collide",
-    "source_isbn": "9780006480419",
-    "relevant_isbns": [
-      "9780006493143"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:12:35.571223Z"
-  },
-  {
-    "query_id": "q_9780006481799_0",
-    "query": "adventure of a young bat",
-    "source_isbn": "9780006481799",
-    "relevant_isbns": [
-      "9780006753063"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:12:56.316657Z"
-  },
-  {
-    "query_id": "q_9780006481799_1",
-    "query": "story about a bat's journey to find his colony during migration",
-    "source_isbn": "9780006481799",
-    "relevant_isbns": [],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:13:19.351003Z"
-  },
-  {
-    "query_id": "q_9780006481799_2",
-    "query": "an inspiring tale of courage and friendship in the face of danger for a young silverwing bat",
-    "source_isbn": "9780006481799",
-    "relevant_isbns": [],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:13:42.254764Z"
-  },
-  {
-    "query_id": "q_9780006486015_0",
-    "query": "fantasy adventure with a prince",
-    "source_isbn": "9780006486015",
-    "relevant_isbns": [
-      "9780006753063",
-      "9780006716815",
-      "9780006498858"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:14:12.612685Z"
-  },
-  {
-    "query_id": "q_9780006486015_1",
-    "query": "search for a missing prince amidst political intrigue",
-    "source_isbn": "9780006486015",
-    "relevant_isbns": [
-      "9780006716815",
-      "9780002313247"
-    ],
-    "judge_model": "gpt-4o-mini",
-    "generation_model": "gpt-4o-mini",
-    "created_at": "2026-06-10T09:14:27.011475Z"
+    "created_at": "2026-06-11T15:07:57.812000Z"
   }
 ]
